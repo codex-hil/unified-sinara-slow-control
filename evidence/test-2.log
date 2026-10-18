@@ -1,12 +1,13 @@
 
-running 5 tests
+running 6 tests
+test fabric_tests::full_width_and_version_separation ... ok
+test tests::reject_legacy_and_forbidden_registers ... ok
 test tests::identify_and_preserve_sequence ... ok
 test tests::roundtrip_last_slot ... ok
-test tests::reject_legacy_and_forbidden_registers ... ok
 test tests::timeout_is_explicit ... ok
 test tests::unknown_opcode_and_version ... ok
 
-test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
 
 running 0 tests

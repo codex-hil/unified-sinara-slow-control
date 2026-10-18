@@ -84,3 +84,13 @@ ABI4/595. Kierunki fizyczne wymagają sprawdzonego profilu. addrspi2 zachowuje
 wymaganie hardware SPI i nie jest objęty tym demonstratorem. Kolejny krok:
 adapter lokalnego mastera SPI pod tym samym API, integracja kierunków i HIL
 rzeczywistej karty. Szczegóły: [ESPHOME_GPIO_SPI](docs/ESPHOME_GPIO_SPI.md).
+
+## Następne kroki SCF5
+
+1. Zweryfikować i przypiąć fizyczne mapy Kasli-DIOT oraz STM v1.1.
+2. Podłączyć klient C++ do natywnych BSP: STM HAL i Kasli bare-metal,
+   dodać runtime/platformę ESPHome, dopiero potem obrazy do HIL.
+3. Rozwiązać drugą magistralę Sampler ADC/PGIA bez naruszania pinmuxu.
+4. Loopback, kierunki595, tryby SPI i adresowanie na prawdziwym MAX31855.
+5. Dwie identycznie obsadzone kasety i równoległy test porównawczy,
+   zgodnie z docs/DUAL_CRATE_HIL.md; następnie triggery/interlock z pomiarami.

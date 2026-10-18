@@ -95,3 +95,52 @@ mod tests {
         assert_eq!(handle(&mut bus(),&f,100)[3],1);
     }
 }
+
+/// SCF5 uses byte addresses,32-bit Wishbone words and SC protocol version2.
+/// Kept separate from the legacy16-bit SCG1 handler to prevent ABI aliasing.
+pub const FABRIC_MAGIC:u32=0x53434635;
+pub trait FabricBus {
+    fn read32(&mut self,address:u32,deadline_ms:u32)->Result<u32,BusError>;
+    fn write32(&mut self,address:u32,value:u32,deadline_ms:u32)->Result<(),BusError>;
+}
+pub fn handle_fabric<B:FabricBus>(bus:&mut B,request:&[u8;FRAME_LEN],deadline_ms:u32)->[u8;FRAME_LEN] {
+    let mut reply=*request;
+    reply[..4].copy_from_slice(&[b'S',b'C',2,0]);reply[12..].fill(0);
+    if &request[..2]!=b"SC" || request[2]!=2 {reply[3]=1;return reply;}
+    let address=word(request,8);
+    if address&3!=0 || address>=0x900 {reply[3]=2;return reply;}
+    if request[3]!=1 && request[3]!=2 {reply[3]=1;return reply;}
+    match (bus.read32(0,deadline_ms),bus.read32(4,deadline_ms)) {
+        (Ok(FABRIC_MAGIC),Ok(5))=>{},
+        (Err(BusError::Timeout),_)|(_,Err(BusError::Timeout))=>{reply[3]=4;return reply;},
+        _=>{reply[3]=3;return reply;}
+    }
+    let result=match request[3] {
+        1=>bus.read32(address,deadline_ms),
+        2=>bus.write32(address,word(request,12),deadline_ms).map(|_|0),
+        _=>{reply[3]=1;return reply;}
+    };
+    match result {
+        Ok(value)=>reply[12..].copy_from_slice(&value.to_be_bytes()),
+        Err(BusError::Hardware)=>reply[3]=3,
+        Err(BusError::Timeout)=>reply[3]=4,
+    }
+    reply
+}
+#[cfg(test)]
+mod fabric_tests {
+ use super::*;
+ struct Bus {address:u32,value:u32}
+ impl FabricBus for Bus {
+  fn read32(&mut self,a:u32,d:u32)->Result<u32,BusError>{assert_eq!(d,100);self.address=a;Ok(if a==0 {FABRIC_MAGIC} else if a==4 {5} else {self.value})}
+  fn write32(&mut self,a:u32,v:u32,d:u32)->Result<(),BusError>{assert_eq!(d,100);self.address=a;self.value=v;Ok(())}
+ }
+ fn frame(op:u8,a:u32,v:u32)->[u8;16]{let mut f=[0;16];f[..4].copy_from_slice(&[b'S',b'C',2,op]);f[8..12].copy_from_slice(&a.to_be_bytes());f[12..].copy_from_slice(&v.to_be_bytes());f}
+ #[test] fn full_width_and_version_separation(){
+  let mut b=Bus{address:0,value:0};
+  assert_eq!(handle_fabric(&mut b,&frame(2,0x808,0xfedcba98),100)[3],0);
+  assert_eq!(word(&handle_fabric(&mut b,&frame(1,0x808,0),100),12),0xfedcba98);
+  let mut old=frame(1,0,0);old[2]=1;assert_eq!(handle_fabric(&mut b,&old,100)[3],1);
+  for a in [1,0x900,0xffff_fffcu32]{assert_eq!(handle_fabric(&mut b,&frame(2,a,0),100)[3],2);}
+ }
+}

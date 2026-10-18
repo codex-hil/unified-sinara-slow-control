@@ -1,0 +1,1 @@
+A concurrent synthesis/full-suite run exposed nondeterministic ESPHome polling starvation in the interpreted RTL fixture: not all eight first values arrived within75s. No SPI error or value mismatch occurred. The fixture now explicitly updates all eight components once after boot, then polls channel0 for the interlock test. This is not a hardware throughput measurement.

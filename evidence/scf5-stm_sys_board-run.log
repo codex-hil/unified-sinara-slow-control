@@ -1,0 +1,139 @@
+[11:49:34][0;32m[I][app:060]: Running through setup()[0m
+[11:49:36][0;35m[C][component:164]: Setup sinara_fpga took 1710ms[0m
+[11:49:36][0;36m[D][spi_device:406]: mode 3, data_rate 4000kHz[0m
+[11:49:36][0;36m[D][spi_device:406]: mode 3, data_rate 4000kHz[0m
+[11:49:36][0;36m[D][spi_device:406]: mode 3, data_rate 4000kHz[0m
+[11:49:36][0;36m[D][spi_device:406]: mode 3, data_rate 4000kHz[0m
+[11:49:36][0;36m[D][spi_device:406]: mode 3, data_rate 4000kHz[0m
+[11:49:36][0;36m[D][spi_device:406]: mode 3, data_rate 4000kHz[0m
+[11:49:36][0;36m[D][spi_device:406]: mode 3, data_rate 4000kHz[0m
+[11:49:36][0;36m[D][spi_device:406]: mode 3, data_rate 4000kHz[0m
+[11:49:44][0;35m[C][component:164]: Setup esphome.coroutine took 8216ms[0m
+[11:49:44][0;32m[I][app:117]: setup() finished successfully![0m
+[11:49:48][0;36m[D][max31855:097]: Got thermocouple temperature: -40.25°C[0m
+[11:49:48][0;32m[I][scf5_result:090]: CH0=-40.25[0m
+[11:49:48][0;33m[W][component:419]: max31855.sensor took a long time for an operation (3934 ms), max is 50 ms[0m
+[11:49:49][0;33m[W][component:419]: interval took a long time for an operation (1033 ms), max is 50 ms[0m
+[11:49:53][0;36m[D][max31855:097]: Got thermocouple temperature: 0.25°C[0m
+[11:49:53][0;32m[I][scf5_result:102]: CH1=0.25[0m
+[11:49:53][0;33m[W][component:419]: max31855.sensor took a long time for an operation (3909 ms), max is 50 ms[0m
+[11:49:57][0;36m[D][max31855:097]: Got thermocouple temperature: 25.00°C[0m
+[11:49:57][0;32m[I][scf5_result:114]: CH2=25.00[0m
+[11:49:57][0;33m[W][component:419]: max31855.sensor took a long time for an operation (3902 ms), max is 50 ms[0m
+[11:50:01][0;36m[D][max31855:097]: Got thermocouple temperature: 123.75°C[0m
+[11:50:01][0;32m[I][scf5_result:126]: CH3=123.75[0m
+[11:50:01][0;33m[W][component:419]: max31855.sensor took a long time for an operation (3937 ms), max is 50 ms[0m
+[11:50:04][0;36m[D][max31855:097]: Got thermocouple temperature: -1.00°C[0m
+[11:50:04][0;32m[I][scf5_result:138]: CH4=-1.00[0m
+[11:50:04][0;33m[W][component:419]: max31855.sensor took a long time for an operation (3911 ms), max is 50 ms[0m
+[11:50:08][0;36m[D][max31855:097]: Got thermocouple temperature: 99.75°C[0m
+[11:50:08][0;32m[I][scf5_result:150]: CH5=99.75[0m
+[11:50:08][0;33m[W][component:419]: max31855.sensor took a long time for an operation (3895 ms), max is 50 ms[0m
+[11:50:12][0;36m[D][max31855:097]: Got thermocouple temperature: 200.00°C[0m
+[11:50:12][0;32m[I][scf5_result:162]: CH6=200.00[0m
+[11:50:12][0;33m[W][component:419]: max31855.sensor took a long time for an operation (3895 ms), max is 50 ms[0m
+[11:50:12][0;32m[I][app:151]: ESPHome version 2026.9.0 compiled on 2026-10-18 11:49:28 +0100[0m
+[11:50:12][0;35m[C][logger:216]: Logger:
+  Max Level: DEBUG
+  Initial Level: DEBUG[0m
+[11:50:12][0;35m[C][logger:230]:   Task Log Buffer Slots: 64[0m
+[11:50:16][0;36m[D][max31855:097]: Got thermocouple temperature: 750.00°C[0m
+[11:50:16][0;32m[I][scf5_result:174]: CH7=750.00[0m
+[11:50:16][0;33m[W][component:419]: max31855.sensor took a long time for an operation (3887 ms), max is 50 ms[0m
+[11:50:17][1;31m[E][sinara_fpga:022]: SCF5 client error=7[0m
+[11:50:17][1;31m[E][component:297]: sinara_fpga set Error flag: SCF5 operation failed; no automatic retry[0m
+[11:50:17][1;31m[E][component:204]: sinara_fpga was marked as failed[0m
+[11:50:17][1;31m[E][component:143]:   sinara_fpga is marked FAILED: SCF5 operation failed; no automatic retry[0m
+[11:50:17][0;35m[C][spi:067]: SPI bus:[0m
+[11:50:17][0;35m[C][spi:075]:   Using HW SPI: (null)[0m
+[11:50:17][0;35m[C][spi:067]: SPI bus:[0m
+[11:50:17][0;35m[C][spi:075]:   Using HW SPI: (null)[0m
+[11:50:17][0;35m[C][spi:067]: SPI bus:[0m
+[11:50:17][0;35m[C][spi:075]:   Using HW SPI: (null)[0m
+[11:50:17][0;35m[C][spi:067]: SPI bus:[0m
+[11:50:17][0;35m[C][spi:075]:   Using HW SPI: (null)[0m
+[11:50:17][0;35m[C][spi:067]: SPI bus:[0m
+[11:50:17][0;35m[C][spi:075]:   Using HW SPI: (null)[0m
+[11:50:17][0;35m[C][spi:067]: SPI bus:[0m
+[11:50:17][0;35m[C][spi:075]:   Using HW SPI: (null)[0m
+[11:50:17][0;35m[C][spi:067]: SPI bus:[0m
+[11:50:17][0;35m[C][spi:075]:   Using HW SPI: (null)[0m
+[11:50:17][0;35m[C][spi:067]: SPI bus:[0m
+[11:50:17][0;35m[C][spi:075]:   Using HW SPI: (null)[0m
+[11:50:17][0;35m[C][max31855:022]: MAX31855:[0m
+[11:50:17][0;35m[C][max31855:131]:   CS Pin: [0m
+[11:50:17][0;35m[C][max31855:338]:   Update Interval: never[0m
+[11:50:17][0;35m[C][max31855:017]:   Thermocouple 'Thermocouple 0'
+    State Class: 'measurement'
+    Unit of Measurement: '°C'
+    Accuracy Decimals: 1[0m
+[11:50:17][0;35m[C][max31855:165]:     Device Class: 'temperature'[0m
+[11:50:17][0;35m[C][max31855:029]:   Reference temperature disabled.[0m
+[11:50:17][0;35m[C][max31855:022]: MAX31855:[0m
+[11:50:17][0;35m[C][max31855:131]:   CS Pin: [0m
+[11:50:17][0;35m[C][max31855:338]:   Update Interval: never[0m
+[11:50:17][0;35m[C][max31855:017]:   Thermocouple 'Thermocouple 1'
+    State Class: 'measurement'
+    Unit of Measurement: '°C'
+    Accuracy Decimals: 1[0m
+[11:50:17][0;35m[C][max31855:165]:     Device Class: 'temperature'[0m
+[11:50:17][0;35m[C][max31855:029]:   Reference temperature disabled.[0m
+[11:50:17][0;35m[C][max31855:022]: MAX31855:[0m
+[11:50:17][0;35m[C][max31855:131]:   CS Pin: [0m
+[11:50:17][0;35m[C][max31855:338]:   Update Interval: never[0m
+[11:50:17][0;35m[C][max31855:017]:   Thermocouple 'Thermocouple 2'
+    State Class: 'measurement'
+    Unit of Measurement: '°C'
+    Accuracy Decimals: 1[0m
+[11:50:17][0;35m[C][max31855:165]:     Device Class: 'temperature'[0m
+[11:50:17][0;35m[C][max31855:029]:   Reference temperature disabled.[0m
+[11:50:17][0;35m[C][max31855:022]: MAX31855:[0m
+[11:50:17][0;35m[C][max31855:131]:   CS Pin: [0m
+[11:50:17][0;35m[C][max31855:338]:   Update Interval: never[0m
+[11:50:17][0;35m[C][max31855:017]:   Thermocouple 'Thermocouple 3'
+    State Class: 'measurement'
+    Unit of Measurement: '°C'
+    Accuracy Decimals: 1[0m
+[11:50:17][0;35m[C][max31855:165]:     Device Class: 'temperature'[0m
+[11:50:17][0;35m[C][max31855:029]:   Reference temperature disabled.[0m
+[11:50:17][1;31m[E][max31855:045]: No data received from MAX31855 (0xFFFFFFFF). Check wiring![0m
+[11:50:17][0;32m[I][scf5_result:090]: CH0=nan[0m
+[11:50:17][1;31m[E][component:297]: max31855.sensor set Error flag: unspecified[0m
+[11:50:17][0;35m[C][max31855:022]: MAX31855:[0m
+[11:50:17][0;35m[C][max31855:131]:   CS Pin: [0m
+[11:50:17][0;35m[C][max31855:338]:   Update Interval: never[0m
+[11:50:17][0;35m[C][max31855:017]:   Thermocouple 'Thermocouple 4'
+    State Class: 'measurement'
+    Unit of Measurement: '°C'
+    Accuracy Decimals: 1[0m
+[11:50:17][0;35m[C][max31855:165]:     Device Class: 'temperature'[0m
+[11:50:17][0;35m[C][max31855:029]:   Reference temperature disabled.[0m
+[11:50:17][0;35m[C][max31855:022]: MAX31855:[0m
+[11:50:17][0;35m[C][max31855:131]:   CS Pin: [0m
+[11:50:17][0;35m[C][max31855:338]:   Update Interval: never[0m
+[11:50:17][0;35m[C][max31855:017]:   Thermocouple 'Thermocouple 5'
+    State Class: 'measurement'
+    Unit of Measurement: '°C'
+    Accuracy Decimals: 1[0m
+[11:50:17][0;35m[C][max31855:165]:     Device Class: 'temperature'[0m
+[11:50:17][0;35m[C][max31855:029]:   Reference temperature disabled.[0m
+[11:50:17][0;35m[C][max31855:022]: MAX31855:[0m
+[11:50:17][0;35m[C][max31855:131]:   CS Pin: [0m
+[11:50:17][0;35m[C][max31855:338]:   Update Interval: never[0m
+[11:50:17][0;35m[C][max31855:017]:   Thermocouple 'Thermocouple 6'
+    State Class: 'measurement'
+    Unit of Measurement: '°C'
+    Accuracy Decimals: 1[0m
+[11:50:17][0;35m[C][max31855:165]:     Device Class: 'temperature'[0m
+[11:50:17][0;35m[C][max31855:029]:   Reference temperature disabled.[0m
+[11:50:17][0;35m[C][max31855:022]: MAX31855:[0m
+[11:50:17][0;35m[C][max31855:131]:   CS Pin: [0m
+[11:50:17][0;35m[C][max31855:338]:   Update Interval: never[0m
+[11:50:17][0;35m[C][max31855:017]:   Thermocouple 'Thermocouple 7'
+    State Class: 'measurement'
+    Unit of Measurement: '°C'
+    Accuracy Decimals: 1[0m
+[11:50:17][0;35m[C][max31855:165]:     Device Class: 'temperature'[0m
+[11:50:17][0;35m[C][max31855:029]:   Reference temperature disabled.[0m
+[11:50:17][0;35m[C][mdns:259]: mDNS:
+  Hostname: scf5-max31855[0m

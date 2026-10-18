@@ -29,3 +29,8 @@ are excluded; reports identify the local artifacts used during testing.
 
 Publishing this project does not imply upstream authors tested or endorse it.
 All board-level validation statuses remain as documented in STATUS.md.
+
+SCF5 portable client/HAL headers and compile probes: MIT, independent of the
+ESPHome runtime adapter (GPLv3). STM32 HAL/CMSIS headers are fetched only into
+ignored work storage; their pinned source manifest is evidence/scf5-stm32-sdk.json.
+They are not relicensed or redistributed by this repository.

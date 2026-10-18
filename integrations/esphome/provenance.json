@@ -4,7 +4,7 @@
   "files": {
     "integrations/esphome/components/spi/__init__.py": {
       "upstream_sha256": "f67805ee070bfb2d7fcf02360a9b65b785979a4e23f45c73520af070f485a35b",
-      "local_sha256": "381028a6cc71d3049db194eb3666ffcf200d351065dd48a35dd93d8e843b08d2"
+      "local_sha256": "ca3a4e4e4e99fa2085ac7929ac1fcc59635ef9448c9bc577c47fba6c26cf665f"
     },
     "integrations/esphome/components/spi/spi.cpp": {
       "upstream_sha256": "ab9607eed8d85d5c0a6b67499b3588e90087ffb79454d1566bd5b76d4d2ee7ba",

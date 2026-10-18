@@ -293,3 +293,28 @@ Przygotowano publiczne repozytorium codex-hil/unified-sinara-slow-control:
 kod, testy, raporty, licencje i CI. Dane robocze i pobrane źródła pozostają
 lokalnie; zobacz docs/PUBLICATION.md. Ponownie uruchomiono testy programowe.
 Brak nowych działań sprzętowych; HIL nadal oczekuje na podłączenie kart.
+
+## SCF5 — wspólny sprzętowy SPI i dwie kasety, 2026-10-18
+
+Dodano wspólny rdzeń Migen: osiem kolejek SPI, cztery tryby SPI, sprzętowe
+CS, adresowanie równoległe/enkodowane, GPIO/pinmux, impuls, barierę triggera
+i zatrzaskiwany interlock AND aktywnych wejść. SPI ograniczono do linii0..7;
+linie8..15 pozostają GPIO/status/interlock. Kierunki STM aktualizuje łańcuch
+595 z blokowaniem wyjść podczas przełączenia. Kasli używa bezpośredniego OE.
+
+Działa logiczny mostek x4 QSPI–Wishbone STM oraz przyłączenie tego samego
+rdzenia do istniejącego SoC Kasli SMP4/DDR/Ethernet, bez uruchamiania Linuxa.
+Wygenerowano HDL całego SoC; nie jest to jeszcze wynik P&R ani obraz HIL.
+Przenośny klient C++ ma adaptery STM32H7 HAL QSPI i MMIO, a Rust zachowuje
+baseline i osobny handler protokołu SCF5. Kompilacja obiektów ARM/RISC-V
+nie oznacza gotowego firmware. Brakuje natywnego BSP/runtime ESPHome.
+
+Rzeczywisty ESPHome host + niezmieniony MAX31855 obsłużył osiem syntetycznych
+czujników przez rzeczywisty RTL obu wariantów; interlock innego slotu daje
+NaN i błąd komponentu. Test równoległych instancji RTL porównuje ten sam
+batch dla ośmiu slotów. Brak testów fizycznych. Profile pozostają unreviewed.
+
+Dalszy krok: sprawdzona mapa padów obu kontrolerów, natywna integracja BSP,
+a następnie loopback i dwie identycznie obsadzone kasety. Plan porównania
+zawiera docs/DUAL_CRATE_HIL.md. Sampler nadal wymaga rozwiązania dwóch
+magistral ADC/PGIA; pojedynczy nowy master na slot nie pokrywa obu naraz.

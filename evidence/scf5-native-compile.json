@@ -1,0 +1,59 @@
+{
+  "hardware_tested": false,
+  "compile_only": true,
+  "linked": false,
+  "results": {
+    "riscv": {
+      "exit_code": 0,
+      "command": [
+        "/srv/codex-hil-data/projects/kasli-v11-linux/variants/smp4-eth/toolchain/root/usr/bin/riscv64-unknown-elf-g++",
+        "-march=rv32ima",
+        "-mabi=ilp32",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-std=c++17",
+        "-ffreestanding",
+        "-fno-exceptions",
+        "-fno-rtti",
+        "-I/srv/codex-hil-data/unified-sinara-slow-control/firmware/hal",
+        "-I/srv/codex-hil-data/unified-sinara-slow-control/integrations/esphome/components/sinara_fpga",
+        "-c",
+        "/srv/codex-hil-data/unified-sinara-slow-control/firmware/hal/compile_riscv.cpp",
+        "-o",
+        "/srv/codex-hil-data/unified-sinara-slow-control/work/scf5-native/compile.o"
+      ]
+    },
+    "stm32": {
+      "exit_code": 0,
+      "command": [
+        "/nix/store/c0jm2ghmasw8rljbixrhq3vw4hx2rgk8-clang-20.1.8/bin/clang++",
+        "-resource-dir",
+        "/nix/store/diaqxdd3h63sribv98gdh6ml565yrwj3-clang-20.1.8-lib/lib/clang/20",
+        "--target=arm-none-eabi",
+        "-mcpu=cortex-m7",
+        "-mthumb",
+        "-std=c++17",
+        "-ffreestanding",
+        "-fno-exceptions",
+        "-fno-rtti",
+        "-I/srv/codex-hil-data/unified-sinara-slow-control/firmware/hal",
+        "-I/srv/codex-hil-data/unified-sinara-slow-control/integrations/esphome/components/sinara_fpga",
+        "-I/srv/codex-hil-data/unified-sinara-slow-control/work/scf5-stm32-sdk",
+        "-I/srv/codex-hil-data/projects/kasli-v11-linux/variants/smp4-eth/build/vivado/software/libc",
+        "-idirafter",
+        "/srv/codex-hil-data/projects/kasli-v11-linux/variants/smp4-eth/vendor/pythondata-software-picolibc/pythondata_software_picolibc/data/libc/include",
+        "-c",
+        "/srv/codex-hil-data/unified-sinara-slow-control/firmware/hal/compile_stm32.cpp",
+        "-o",
+        "/srv/codex-hil-data/unified-sinara-slow-control/work/scf5-native/stm_compile.o"
+      ]
+    }
+  },
+  "source_hashes": {
+    "firmware/hal/fabric_buses.h": "1d4960a17ba6bf0226bc024a87d962047b9205ee36990c3dc9dafd6aa9f8986a",
+    "firmware/hal/stm32_qspi_hal.h": "62767d3ecf4c512ebaff522664de957472be408b719319e2497dcb6055a19a0d",
+    "integrations/esphome/components/sinara_fpga/sinara_fpga.h": "7fbf4ac38610c69fd9ca0e30218b79448ae588e352b503b732362f42733b83f5",
+    "integrations/esphome/components/sinara_fpga/fabric_client.h": "3a72e9f58c1fdc4ae8294d7e7da8abeb827dbdf0ea912833d776592f18ca36a6"
+  }
+}

@@ -33,6 +33,13 @@ test_rejected_apply (test_directions.DirectionsTests.test_rejected_apply) ... ok
 test_timeout_never_reapplies (test_directions.DirectionsTests.test_timeout_never_reapplies) ... ok
 test_words_and_mask (test_directions.DirectionsTests.test_words_and_mask) ... ok
 test_wrong_abi_and_bad_parameters_do_not_write (test_directions.DirectionsTests.test_wrong_abi_and_bad_parameters_do_not_write) ... ok
+test_identical_eight_slot_batch (test_dual_fabric.DualFabricTests.test_identical_eight_slot_batch) ... /srv/codex-hil-data/unified-sinara-slow-control/references/migen/migen/sim/core.py:130: DeprecationWarning: Bitwise inversion '~' on bool is deprecated. This returns the bitwise inversion of the underlying int object and is usually not what you expect from negating a bool. Use the 'not' operator for boolean negation or ~int(x) if you really want the bitwise inversion of the underlying int.
+  return str2op[node.op](*operands)
+ok
+test_qspi_packets_and_clock_bound (test_fabric_hal.HALTests.test_qspi_packets_and_clock_bound) ... ok
+test_invalid_physical_routes (test_fabric_profile.FabricProfileTests.test_invalid_physical_routes) ... ok
+test_shared_modules_and_target_identity (test_fabric_profile.FabricProfileTests.test_shared_modules_and_target_identity) ... ok
+test_wire_packing_and_slot_envelope (test_fabric_profile.FabricProfileTests.test_wire_packing_and_slot_envelope) ... ok
 test_busy_lock_no_commands (test_fpga_flash.FlashTests.test_busy_lock_no_commands) ... ok
 test_duplicate_yaml_keys (test_fpga_flash.FlashTests.test_duplicate_yaml_keys) ... ok
 test_final_journal_disk_failure_preserves_error_semantics (test_fpga_flash.FlashTests.test_final_journal_disk_failure_preserves_error_semantics) ... ok
@@ -52,12 +59,25 @@ test_wrong_abi_and_pass_only (test_hil_capture.CaptureTests.test_wrong_abi_and_p
 test_wrong_values_even_with_pass_marker (test_hil_capture.CaptureTests.test_wrong_values_even_with_pass_marker) ... ok
 test_bad_mapping_rejected (test_pinmux.PinMuxTests.test_bad_mapping_rejected) ... ok
 test_default_and_remapped_routes (test_pinmux.PinMuxTests.test_default_and_remapped_routes) ... ok
+test_real_x4_read_and_multislot_write_burst (test_qspi_fabric.QSPITests.test_real_x4_read_and_multislot_write_burst) ... ok
+test_abort_requires_flush_and_no_replay (test_queued_spi.QueuedTests.test_abort_requires_flush_and_no_replay) ... /srv/codex-hil-data/unified-sinara-slow-control/references/migen/migen/sim/core.py:130: DeprecationWarning: Bitwise inversion '~' on bool is deprecated. This returns the bitwise inversion of the underlying int object and is usually not what you expect from negating a bool. Use the 'not' operator for boolean negation or ~int(x) if you really want the bitwise inversion of the underlying int.
+  return str2op[node.op](*operands)
+ok
+test_complete_frame_and_cs_all_modes (test_queued_spi.QueuedTests.test_complete_frame_and_cs_all_modes) ... ok
+test_interlock_and_barrier (test_queued_spi.QueuedTests.test_interlock_and_barrier) ... ok
+test_parallel_address_hold_and_encoded_idle (test_queued_spi.QueuedTests.test_parallel_address_hold_and_encoded_idle) ... ok
+test_pin_constraints (test_queued_spi.QueuedTests.test_pin_constraints) ... ok
+test_readback_capture_before_fifo_pop (test_queued_spi.QueuedTests.test_readback_capture_before_fifo_pop) ... ok
+test_session_watchdog_and_ready_input_mask (test_queued_spi.QueuedTests.test_session_watchdog_and_ready_input_mask) ... ok
+test_sessions_pulses_and_invalid_commands (test_queued_spi.QueuedTests.test_sessions_pulses_and_invalid_commands) ... ok
+test_two_slot_barrier_and_simultaneous_trigger_outputs (test_queued_spi.QueuedTests.test_two_slot_barrier_and_simultaneous_trigger_outputs) ... ok
+test_wishbone_once_and_slot_isolation (test_queued_spi.QueuedTests.test_wishbone_once_and_slot_isolation) ... ok
 test_portable_driver_and_both_register_protocols (test_sampler.SamplerTests.test_portable_driver_and_both_register_protocols) ... ok
 test_mismatch_rejected_for_both_controllers (test_urukul_pinmap.UrukulPinmapTests.test_mismatch_rejected_for_both_controllers) ... ok
 test_reference_eem0 (test_urukul_pinmap.UrukulPinmapTests.test_reference_eem0) ... ok
 test_portable_driver (test_zotino.ZotinoTests.test_portable_driver) ... ok
 
 ----------------------------------------------------------------------
-Ran 58 tests in 2.873s
+Ran 74 tests in 42.200s
 
 OK

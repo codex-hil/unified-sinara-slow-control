@@ -1,0 +1,44 @@
+INFO ESPHome 2026.9.0
+INFO Reading configuration /srv/codex-hil-data/unified-sinara-slow-control/work/scf5-esphome-tests/stm_sys_board.yaml...
+INFO External components are overriding built-in components:
+  source: /srv/codex-hil-data/unified-sinara-slow-control/integrations/esphome/components
+  components: spi
+INFO Generating C++ source...
+INFO Compiling app... Build path: /srv/codex-hil-data/unified-sinara-slow-control/work/builds/scf5-max31855
+Processing [36m[1mscf5-max31855[0m (platform: platformio/native)
+[1m--------------------------------------------------------------------------------[0m
+[0mNo dependencies
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/components/host/core.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/components/host/gpio.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/components/host/hal.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/components/host/helpers.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/components/host/preferences.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/components/logger/logger.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/components/logger/logger_host.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/components/logger/task_log_buffer_host.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/components/max31855/max31855.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/components/mdns/mdns_component.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/components/mdns/mdns_host.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/components/network/network_component.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/components/network/util.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/components/sensor/sensor.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/components/sinara_fpga/sinara_fpga.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/components/spi/spi.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/core/application.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/core/build_info_data.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/core/color.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/core/component.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/core/component_iterator.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/core/controller_registry.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/core/entity_base.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/core/helpers.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/core/log.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/core/scheduler.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/core/time.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/core/util.o
+[0mCompiling .pioenvs/scf5-max31855/src/esphome/core/wake/wake_host.o
+[0mCompiling .pioenvs/scf5-max31855/src/main.o
+[0mLinking .pioenvs/scf5-max31855/program
+[0m========================= [[32m[1mSUCCESS[0m] Took 5.32 seconds =========================[0m
+INFO Build Info: config_hash=0xb94a9c31 build_time_str=2026-10-18 11:49:28 +0100
+INFO Successfully compiled program to path '/srv/codex-hil-data/unified-sinara-slow-control/work/builds/scf5-max31855/.pioenvs/scf5-max31855/program'

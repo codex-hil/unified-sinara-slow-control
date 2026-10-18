@@ -1,0 +1,19 @@
+# Connection template; unreviewed profile intentionally rejects hardware use.
+esphome:
+  name: scf5-stm-ecp5
+host:
+logger:
+external_components:
+  - source:
+      type: local
+      path: ../components
+    components: [spi, sinara_fpga]
+packages:
+  devices: !include scf5-max31855-devices.yaml
+sinara_fpga:
+  id: fabric
+  profile: ../../../examples/fabric-max31855-stm_ecp5.yaml
+  controller: stm_sys_board
+  lock_path: /tmp/REPLACE-WITH-SHARED-BOARD-LOCK
+  initialize: true
+  serial_path: /dev/serial/by-id/REPLACE-WITH-BOARD

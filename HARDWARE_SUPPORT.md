@@ -107,3 +107,18 @@ ABI4/595. Kierunki fizyczne wymagają sprawdzonego profilu. addrspi2 zachowuje
 wymaganie hardware SPI i nie jest objęty tym demonstratorem. Kolejny krok:
 adapter lokalnego mastera SPI pod tym samym API, integracja kierunków i HIL
 rzeczywistej karty. Szczegóły: [ESPHOME_GPIO_SPI](docs/ESPHOME_GPIO_SPI.md).
+
+## SCF5 — stan dodatkowego rdzenia
+
+| Element | Dostępne | Niewykonane |
+|---|---|---|
+| Wspólny SPI/pinmux/trigger/interlock | RTL i testy rzeczywistej symulacji Migen | fizyczne czasy i zachowanie wyjść |
+| STM ECP5 QSPI x4 | mostek Wishbone, symulacja transakcji, synteza logiczna | uzgodniona mapa padów, P&R, HIL |
+| Kasli SMP4 | integracja Wishbone w istniejącym SoC, generacja HDL | nowy pełny build i HIL |
+| ESPHome MAX31855 | stock driver, osiem adresów, host przez RTL obu wariantów | natywny runtime, realne czujniki |
+| Adapter STM32H7 C++ | rzeczywiste API HAL QSPI, kompilacja obiektu ARM | BSP, link, transfery fizyczne |
+| Adapter Kasli C++ | MMIO z fence, kompilacja obiektu RV32 | runtime, link, start aplikacji |
+
+Nowy konserwatywny mostek wymaga sys_clk >=16×QSPI_SCK: przy100MHz
+maksymalnie6.25MHz. Nie deklaruje100MHz QSPI. Profile logical build ID
+nie zastępują audytu fizycznego pinoutu.

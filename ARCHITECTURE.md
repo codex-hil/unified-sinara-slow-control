@@ -232,3 +232,20 @@ ABI4/595. Kierunki fizyczne wymagają sprawdzonego profilu. addrspi2 zachowuje
 wymaganie hardware SPI i nie jest objęty tym demonstratorem. Kolejny krok:
 adapter lokalnego mastera SPI pod tym samym API, integracja kierunków i HIL
 rzeczywistej karty. Szczegóły: [ESPHOME_GPIO_SPI](docs/ESPHOME_GPIO_SPI.md).
+
+## SCF5: wspólny rdzeń, różne przyłącza
+
+`queued_fabric.py` jest wspólną implementacją dla obu FPGA. Wishbone
+oddziela go od QSPI STM i CPU Kasli. `queued_spi.py` wykorzystuje istniejący
+MiSoC SPIMachine; kolejki przechowują komendy i dane, nie sterowanie RTIO.
+`control_signals.py` realizuje wspólną barierę triggerów i fail-closed
+interlock; `fabric_pinmux.py` przełącza grupę SPI/GPIO. Mapa tras i tryb
+adresowania wynikają z profilu builda, nie z dowolnej dynamicznej matrycy.
+`platform_adapters.py` oddziela fizyczne I/O i sterowanie zewnętrznym 595.
+
+SCF5 ma osobne magic/ABI od SCG1. Klient sprawdza identyfikator profilu;
+nie wykonuje automatycznego powtórzenia operacji o nieznanym wyniku.
+Konfiguracja urządzeń ESPHome pozostaje wspólna, połączenie i fizyczny
+profil kontrolera są osobne. Adapter ESPHome działa obecnie na host;
+portable C++ HAL/MMIO jest podstawą przyszłego natywnego portu.
+Szczegóły rejestrów i czasów: docs/SCF5.md.

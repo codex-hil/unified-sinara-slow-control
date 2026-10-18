@@ -1,0 +1,405 @@
+{
+  "timestamp": "2026-10-18T10:48:51.757462+00:00",
+  "hardware_tested": false,
+  "place_and_route": false,
+  "targets": {
+    "stm_ecp5": {
+      "result": "PASS",
+      "log": "evidence/scf5-ecp5-synthesis.log",
+      "manifest": {
+        "abi": "SCF5",
+        "version": 5,
+        "build_id": "137707516ee28886",
+        "profile": {
+          "schema_version": 1,
+          "target": "stm_ecp5",
+          "sys_clk_hz": 100000000,
+          "fifo_depth": 64,
+          "reviewed": false,
+          "slots": [
+            {
+              "slot": 1,
+              "route": {
+                "clk": 0,
+                "mosi": 1,
+                "miso": 2,
+                "selects": [
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "mode": "direct",
+                "trigger": 15,
+                "ready": 14,
+                "interlock": 13
+              },
+              "output_capable": 57339,
+              "input_capable": 8196
+            },
+            {
+              "slot": 2,
+              "route": {
+                "clk": 0,
+                "mosi": 1,
+                "miso": 2,
+                "selects": [
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "mode": "direct",
+                "trigger": 15,
+                "ready": 14,
+                "interlock": 13
+              },
+              "output_capable": 57339,
+              "input_capable": 8196
+            },
+            {
+              "slot": 3,
+              "route": {
+                "clk": 0,
+                "mosi": 1,
+                "miso": 2,
+                "selects": [
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "mode": "direct",
+                "trigger": 15,
+                "ready": 14,
+                "interlock": 13
+              },
+              "output_capable": 57339,
+              "input_capable": 8196
+            },
+            {
+              "slot": 4,
+              "route": {
+                "clk": 0,
+                "mosi": 1,
+                "miso": 2,
+                "selects": [
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "mode": "direct",
+                "trigger": 15,
+                "ready": 14,
+                "interlock": 13
+              },
+              "output_capable": 57339,
+              "input_capable": 8196
+            },
+            {
+              "slot": 5,
+              "route": {
+                "clk": 0,
+                "mosi": 1,
+                "miso": 2,
+                "selects": [
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "mode": "direct",
+                "trigger": 15,
+                "ready": 14,
+                "interlock": 13
+              },
+              "output_capable": 57339,
+              "input_capable": 8196
+            },
+            {
+              "slot": 6,
+              "route": {
+                "clk": 0,
+                "mosi": 1,
+                "miso": 2,
+                "selects": [
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "mode": "direct",
+                "trigger": 15,
+                "ready": 14,
+                "interlock": 13
+              },
+              "output_capable": 57339,
+              "input_capable": 8196
+            },
+            {
+              "slot": 7,
+              "route": {
+                "clk": 0,
+                "mosi": 1,
+                "miso": 2,
+                "selects": [
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "mode": "direct",
+                "trigger": 15,
+                "ready": 14,
+                "interlock": 13
+              },
+              "output_capable": 57339,
+              "input_capable": 8196
+            },
+            {
+              "slot": 8,
+              "route": {
+                "clk": 0,
+                "mosi": 1,
+                "miso": 2,
+                "selects": [
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "mode": "direct",
+                "trigger": 15,
+                "ready": 14,
+                "interlock": 13
+              },
+              "output_capable": 57339,
+              "input_capable": 8196
+            }
+          ]
+        },
+        "verilog_sha256": "ab7844cb01b0a0ea2871e64f5e58278f6332d41948617ff0c149f8307b9f03f2",
+        "source_hashes": {
+          "queued_targets.py": "18cd4f52de2c10b1347a92bb50282655823884a6e85a9435ea12f2b6bd418736",
+          "queued_spi.py": "db1e6fe9c92c79518e319df1b1309f97d9aead28c0569a672c455891892b12c1",
+          "qspi_wishbone.py": "c1e50af04c9f8e966b1839c52f8643df21b7716acee8860a8c26a934d320ca2b",
+          "csr_bank.py": "78676c779959d2f8db329f00751602cb7e82c58a4004732da43a72bf805f5020",
+          "kasli_uart_gpio.py": "19c1db726e286ba51ab891b4537355d8c7d66bfb956f5a3f91b007cdb1df5c63",
+          "control_signals.py": "6617a76450233b27ce8745111bd49bf7553e6d48307eb44ee59b6ffc042c6572",
+          "fabric_pinmux.py": "14772375a1cc8f6104ed8962031b6f5aacddb7febb7aa0987e1eba04e5b0918c",
+          "gpio.py": "6c12c05b9a1b48ad0c729d14046a37b71a0800a4a5ec0b356613157c2ef2053a",
+          "direction.py": "d94fb901bd478243a660b12c1582bb24613f59ceb645d589d574b2a542cf261e",
+          "slow_fabric.py": "bb120be24790cc8e6393d20c4939b36ec294aba123ffe792aa942c45d3473174",
+          "direction_csr.py": "bd4ad618a28c36f554dc39173e66cf047a973c95841c07809025aabd5e7b3d80",
+          "queued_fabric.py": "8e80da7dbeff3ba57ebaae30c84def3c65d62a58568e64e5f878ea840d7337b0",
+          "pinmux.py": "8fbf6b8381685b28aef468c5318e666855585df18c1d855c3da460e833159095",
+          "platform_adapters.py": "5d5466c46a2557e3c74a11f75b49f391ac2e88a3dd1523c12b14fabf5d1804ae"
+        },
+        "hardware_tested": false,
+        "programming_ready": false,
+        "physical_pad_wrapper": "not instantiated",
+        "qspi_max_sck_hz": 6250000
+      }
+    },
+    "kasli": {
+      "result": "PASS",
+      "log": "evidence/scf5-kasli-synthesis.log",
+      "manifest": {
+        "abi": "SCF5",
+        "version": 5,
+        "build_id": "1df041975dc4d890",
+        "profile": {
+          "schema_version": 1,
+          "target": "kasli",
+          "sys_clk_hz": 100000000,
+          "fifo_depth": 64,
+          "reviewed": false,
+          "slots": [
+            {
+              "slot": 1,
+              "route": {
+                "clk": 0,
+                "mosi": 1,
+                "miso": 2,
+                "selects": [
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "mode": "direct",
+                "trigger": 15,
+                "ready": 14,
+                "interlock": 13
+              },
+              "output_capable": 57339,
+              "input_capable": 8196
+            },
+            {
+              "slot": 2,
+              "route": {
+                "clk": 0,
+                "mosi": 1,
+                "miso": 2,
+                "selects": [
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "mode": "direct",
+                "trigger": 15,
+                "ready": 14,
+                "interlock": 13
+              },
+              "output_capable": 57339,
+              "input_capable": 8196
+            },
+            {
+              "slot": 3,
+              "route": {
+                "clk": 0,
+                "mosi": 1,
+                "miso": 2,
+                "selects": [
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "mode": "direct",
+                "trigger": 15,
+                "ready": 14,
+                "interlock": 13
+              },
+              "output_capable": 57339,
+              "input_capable": 8196
+            },
+            {
+              "slot": 4,
+              "route": {
+                "clk": 0,
+                "mosi": 1,
+                "miso": 2,
+                "selects": [
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "mode": "direct",
+                "trigger": 15,
+                "ready": 14,
+                "interlock": 13
+              },
+              "output_capable": 57339,
+              "input_capable": 8196
+            },
+            {
+              "slot": 5,
+              "route": {
+                "clk": 0,
+                "mosi": 1,
+                "miso": 2,
+                "selects": [
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "mode": "direct",
+                "trigger": 15,
+                "ready": 14,
+                "interlock": 13
+              },
+              "output_capable": 57339,
+              "input_capable": 8196
+            },
+            {
+              "slot": 6,
+              "route": {
+                "clk": 0,
+                "mosi": 1,
+                "miso": 2,
+                "selects": [
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "mode": "direct",
+                "trigger": 15,
+                "ready": 14,
+                "interlock": 13
+              },
+              "output_capable": 57339,
+              "input_capable": 8196
+            },
+            {
+              "slot": 7,
+              "route": {
+                "clk": 0,
+                "mosi": 1,
+                "miso": 2,
+                "selects": [
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "mode": "direct",
+                "trigger": 15,
+                "ready": 14,
+                "interlock": 13
+              },
+              "output_capable": 57339,
+              "input_capable": 8196
+            },
+            {
+              "slot": 8,
+              "route": {
+                "clk": 0,
+                "mosi": 1,
+                "miso": 2,
+                "selects": [
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "mode": "direct",
+                "trigger": 15,
+                "ready": 14,
+                "interlock": 13
+              },
+              "output_capable": 57339,
+              "input_capable": 8196
+            }
+          ]
+        },
+        "verilog_sha256": "c4e0065444d009284fe7409ea11d49b4ea5ddc8e1b908a9af069cdca8b12b977",
+        "source_hashes": {
+          "queued_targets.py": "18cd4f52de2c10b1347a92bb50282655823884a6e85a9435ea12f2b6bd418736",
+          "queued_spi.py": "db1e6fe9c92c79518e319df1b1309f97d9aead28c0569a672c455891892b12c1",
+          "qspi_wishbone.py": "c1e50af04c9f8e966b1839c52f8643df21b7716acee8860a8c26a934d320ca2b",
+          "csr_bank.py": "78676c779959d2f8db329f00751602cb7e82c58a4004732da43a72bf805f5020",
+          "kasli_uart_gpio.py": "19c1db726e286ba51ab891b4537355d8c7d66bfb956f5a3f91b007cdb1df5c63",
+          "control_signals.py": "6617a76450233b27ce8745111bd49bf7553e6d48307eb44ee59b6ffc042c6572",
+          "fabric_pinmux.py": "14772375a1cc8f6104ed8962031b6f5aacddb7febb7aa0987e1eba04e5b0918c",
+          "gpio.py": "6c12c05b9a1b48ad0c729d14046a37b71a0800a4a5ec0b356613157c2ef2053a",
+          "direction.py": "d94fb901bd478243a660b12c1582bb24613f59ceb645d589d574b2a542cf261e",
+          "slow_fabric.py": "bb120be24790cc8e6393d20c4939b36ec294aba123ffe792aa942c45d3473174",
+          "direction_csr.py": "bd4ad618a28c36f554dc39173e66cf047a973c95841c07809025aabd5e7b3d80",
+          "queued_fabric.py": "8e80da7dbeff3ba57ebaae30c84def3c65d62a58568e64e5f878ea840d7337b0",
+          "pinmux.py": "8fbf6b8381685b28aef468c5318e666855585df18c1d855c3da460e833159095",
+          "platform_adapters.py": "5d5466c46a2557e3c74a11f75b49f391ac2e88a3dd1523c12b14fabf5d1804ae"
+        },
+        "hardware_tested": false,
+        "programming_ready": false,
+        "physical_pad_wrapper": "not instantiated",
+        "qspi_max_sck_hz": null
+      }
+    }
+  }
+}

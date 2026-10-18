@@ -1,0 +1,14 @@
+{
+  "source": "/srv/codex-hil-data/projects/kasli-v11-linux/variants/smp4-eth/target.py",
+  "source_sha256": "c7cc88b07a7e26948b954162d7df785a8523894575e8a4bbab1d2792470ad360",
+  "cpu_count": 4,
+  "ethernet": "reused LiteEth1000BASE-X",
+  "cpu_variant": "reused linux-capable VexRiscv; Linux software not built/loaded",
+  "base_address": "0x81000000",
+  "fabric_id": "1df041975dc4d890",
+  "profile": "/srv/codex-hil-data/unified-sinara-slow-control/examples/fabric-kasli.yaml",
+  "physical_slow_control_pads": "not connected: reviewed Kasli-DIOT carrier map required",
+  "hardware_tested": false,
+  "programming_ready": false,
+  "elaboration": "PASS"
+}

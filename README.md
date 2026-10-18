@@ -143,3 +143,12 @@ ABI4/595. Kierunki fizyczne wymagają sprawdzonego profilu. addrspi2 zachowuje
 wymaganie hardware SPI i nie jest objęty tym demonstratorem. Kolejny krok:
 adapter lokalnego mastera SPI pod tym samym API, integracja kierunków i HIL
 rzeczywistej karty. Szczegóły: [ESPHOME_GPIO_SPI](docs/ESPHOME_GPIO_SPI.md).
+
+## Wspólny fabric FPGA SCF5
+
+Nowy rdzeń Migen współdzieli kolejki SPI, pinmux, triggery i interlock między
+ECP5 a Kasli. STM ma mostek QSPI–Wishbone, Kasli korzysta z Wishbone CPU.
+Opis ABI, przykłady ESPHome i ograniczenia: [docs/SCF5.md](docs/SCF5.md).
+Test dwóch równoległych instancji RTL: `python3 -m unittest discover -s tests -p test_dual_fabric.py -v`.
+To implementacja i symulacja programowa; natywny runtime ESPHome oraz HIL obu
+kontrolerów pozostają do wykonania.

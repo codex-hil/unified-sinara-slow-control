@@ -588,7 +588,18 @@ if CORE.is_host:
         cv.Optional(CONF_MOSI_PIN): pins.gpio_output_pin_schema,
         cv.Required(CONF_INTERFACE): cv.one_of("software"),
     }), cv.has_at_least_one_key(CONF_MISO_PIN, CONF_MOSI_PIN), validate_gpio_bus)
-    CONFIG_SCHEMA = cv.ensure_list(cv.Any(cv.Schema({
+    FPGAComponent = cg.esphome_ns.namespace("sinara_fpga").class_("FPGAComponent", cg.Component)
+    FPGA_SPI_SCHEMA = cv.Schema({
+        cv.GenerateID(): cv.declare_id(SPIComponent),
+        cv.Required("fpga_id"): cv.use_id(FPGAComponent),
+        cv.Required("slot"): cv.int_range(min=1,max=8),
+        cv.Required("selector"): cv.int_range(min=0,max=15),
+        cv.Optional(CONF_INTERFACE,default="hardware"): cv.one_of("hardware"),
+        # Presence of these flags permits unchanged downstream SPI schema checks.
+        cv.Optional(CONF_MOSI_PIN): cv.one_of("profile"),
+        cv.Optional(CONF_MISO_PIN): cv.one_of("profile"),
+    })
+    CONFIG_SCHEMA = cv.ensure_list(cv.Any(FPGA_SPI_SCHEMA,cv.Schema({
         cv.GenerateID(): cv.declare_id(SPIComponent),
         cv.Required("endpoint"): cv.use_id(AddressedBus),
     }), HOST_GPIO_SPI_SCHEMA))
@@ -598,7 +609,10 @@ if CORE.is_host:
         for config in configs:
             var = cg.new_Pvariable(config[CONF_ID])
             await cg.register_component(var, config)
-            if "endpoint" in config:
+            if "fpga_id" in config:
+                root = await cg.get_variable(config["fpga_id"])
+                cg.add(var.set_bus(root.make_spi_bus(config["slot"]-1,config["selector"])))
+            elif "endpoint" in config:
                 bus = await cg.get_variable(config["endpoint"])
                 cg.add(var.set_bus(bus.get_spi_bus()))
             else:

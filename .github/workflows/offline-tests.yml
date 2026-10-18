@@ -15,6 +15,7 @@ jobs:
         run: |
           python -m pip install .
           python -m pip install "migen @ git+https://github.com/m-labs/migen.git@e19524c963a8342952840983047557707fbe0b6a" "litex @ git+https://github.com/enjoy-digital/litex.git@b2759f69bcae8be0357fb2ee5eebe216365d1f00"
+          python -m pip install "misoc @ git+https://github.com/m-labs/misoc.git@98227d90be73ead8b797eca74da7c58d0c18f378"
       - name: Python, native C++ and Migen simulation tests
         run: python -m unittest discover -s tests -v
       - name: Rust gateway and flash protocol cores

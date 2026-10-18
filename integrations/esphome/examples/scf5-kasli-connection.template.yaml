@@ -1,0 +1,21 @@
+# Connection template; unreviewed profile intentionally rejects hardware use.
+esphome:
+  name: scf5-kasli
+host:
+logger:
+external_components:
+  - source:
+      type: local
+      path: ../components
+    components: [spi, sinara_fpga]
+packages:
+  devices: !include scf5-max31855-devices.yaml
+sinara_fpga:
+  id: fabric
+  profile: ../../../examples/fabric-max31855-kasli.yaml
+  controller: kasli
+  lock_path: /tmp/REPLACE-WITH-SHARED-BOARD-LOCK
+  initialize: true
+  host_address: 192.0.2.2
+  tcp_port: 1234
+  base_address: 0x81000000

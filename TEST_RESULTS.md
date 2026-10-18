@@ -276,3 +276,27 @@ work/ ani references/:58 testów Python/native C++/Migen PASS,1 pominięty
 (porównanie z niepobranym ARTIQ); zewnętrzne zależności Migen/LiteX dostarczono
 przez PYTHONPATH. Naprawiono tworzenie work/tmp przez test flasha na nowym
 checkoucie. Log: evidence/publication-clean-checkout.log. Bez HIL.
+
+## SCF5 — walidacja programowa, 2026-10-18
+
+Testy obejmują rzeczywisty RTL Migen: cztery tryby SPI, ciągłość bajtów,
+pełne ramki, sesje CS, watchdog, niepełne dane, błędy Wishbone, FIFO RX,
+adresowanie i impuls, interlock i wspólną barierę triggera. Dwie instancje
+RTL wykonują równolegle ten sam batch ośmiu slotów i porównują wyniki.
+
+`evidence/scf5-esphome-tests.json`: rzeczywisty ESPHome host, stock
+MAX31855, osiem syntetycznych wartości od -40.25 do750°C, oba transporty
+(STM PTY/protokół32bit i Kasli LiteX TCP), rzeczywisty RTL. Oba PASS,
+łącznie z NaN po interlocku innego slotu. To nie były pomiary temperatury.
+
+Wygenerowano HDL SoC Kasli SMP4 z nowym slave Wishbone; synteza logiczna
+rdzenia ECP5/XC7 oraz kompilacje obiektów klienta C++ RV32 i ARM przeszły.
+Brak linkowania nowych kompletnych firmware, nowego P&R i HIL. Logi
+syntezy/kompilacji opisują konkretny przebieg, nie walidację sprzętową.
+Aktualne wyniki pełnego pakietu: evidence/test-results.json.
+
+Pełny pakiet końcowy:74 testy Pythona PASS, oba zestawy Rust PASS,
+reference identity i cross-language wire PASS. Rerun fixture ESPHome
+wykrył losowe opóźnienie pierwszego pollingu przy obciążeniu syntezą;
+fixture wymusza teraz deterministyczny pierwszy odczyt ośmiu komponentów.
+Wyjaśnienie: evidence/scf5-cosim-rerun-note.txt.

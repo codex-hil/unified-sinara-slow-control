@@ -1,0 +1,115 @@
+# Common module definition: unchanged for both controller connections.
+spi:
+- id: tc0
+  fpga_id: fabric
+  slot: 7
+  selector: 0
+  interface: hardware
+- id: tc1
+  fpga_id: fabric
+  slot: 7
+  selector: 1
+  interface: hardware
+- id: tc2
+  fpga_id: fabric
+  slot: 7
+  selector: 2
+  interface: hardware
+- id: tc3
+  fpga_id: fabric
+  slot: 7
+  selector: 3
+  interface: hardware
+- id: tc4
+  fpga_id: fabric
+  slot: 7
+  selector: 4
+  interface: hardware
+- id: tc5
+  fpga_id: fabric
+  slot: 7
+  selector: 5
+  interface: hardware
+- id: tc6
+  fpga_id: fabric
+  slot: 7
+  selector: 6
+  interface: hardware
+- id: tc7
+  fpga_id: fabric
+  slot: 7
+  selector: 7
+  interface: hardware
+sensor:
+- platform: max31855
+  id: thermocouple0
+  name: Thermocouple 0
+  spi_id: tc0
+  cs_pin:
+    sinara_fpga: fabric
+    number: '7_3'
+    allow_other_uses: true
+  update_interval: 2s
+- platform: max31855
+  id: thermocouple1
+  name: Thermocouple 1
+  spi_id: tc1
+  cs_pin:
+    sinara_fpga: fabric
+    number: '7_3'
+    allow_other_uses: true
+  update_interval: 2s
+- platform: max31855
+  id: thermocouple2
+  name: Thermocouple 2
+  spi_id: tc2
+  cs_pin:
+    sinara_fpga: fabric
+    number: '7_3'
+    allow_other_uses: true
+  update_interval: 2s
+- platform: max31855
+  id: thermocouple3
+  name: Thermocouple 3
+  spi_id: tc3
+  cs_pin:
+    sinara_fpga: fabric
+    number: '7_3'
+    allow_other_uses: true
+  update_interval: 2s
+- platform: max31855
+  id: thermocouple4
+  name: Thermocouple 4
+  spi_id: tc4
+  cs_pin:
+    sinara_fpga: fabric
+    number: '7_3'
+    allow_other_uses: true
+  update_interval: 2s
+- platform: max31855
+  id: thermocouple5
+  name: Thermocouple 5
+  spi_id: tc5
+  cs_pin:
+    sinara_fpga: fabric
+    number: '7_3'
+    allow_other_uses: true
+  update_interval: 2s
+- platform: max31855
+  id: thermocouple6
+  name: Thermocouple 6
+  spi_id: tc6
+  cs_pin:
+    sinara_fpga: fabric
+    number: '7_3'
+    allow_other_uses: true
+  update_interval: 2s
+- platform: max31855
+  id: thermocouple7
+  name: Thermocouple 7
+  spi_id: tc7
+  cs_pin:
+    sinara_fpga: fabric
+    number: '7_3'
+    allow_other_uses: true
+  update_interval: 2s

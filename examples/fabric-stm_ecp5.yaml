@@ -1,0 +1,135 @@
+# Synthetic logical profile, not a reviewed physical pad map.
+schema_version: 1
+target: stm_ecp5
+sys_clk_hz: 100000000
+fifo_depth: 64
+reviewed: false
+slots:
+- slot: 1
+  route:
+    clk: 0
+    mosi: 1
+    miso: 2
+    selects:
+    - 3
+    - 4
+    - 5
+    - 6
+    mode: direct
+    trigger: 15
+    ready: 14
+    interlock: 13
+  output_capable: 57339
+  input_capable: 8196
+- slot: 2
+  route:
+    clk: 0
+    mosi: 1
+    miso: 2
+    selects:
+    - 3
+    - 4
+    - 5
+    - 6
+    mode: direct
+    trigger: 15
+    ready: 14
+    interlock: 13
+  output_capable: 57339
+  input_capable: 8196
+- slot: 3
+  route:
+    clk: 0
+    mosi: 1
+    miso: 2
+    selects:
+    - 3
+    - 4
+    - 5
+    - 6
+    mode: direct
+    trigger: 15
+    ready: 14
+    interlock: 13
+  output_capable: 57339
+  input_capable: 8196
+- slot: 4
+  route:
+    clk: 0
+    mosi: 1
+    miso: 2
+    selects:
+    - 3
+    - 4
+    - 5
+    - 6
+    mode: direct
+    trigger: 15
+    ready: 14
+    interlock: 13
+  output_capable: 57339
+  input_capable: 8196
+- slot: 5
+  route:
+    clk: 0
+    mosi: 1
+    miso: 2
+    selects:
+    - 3
+    - 4
+    - 5
+    - 6
+    mode: direct
+    trigger: 15
+    ready: 14
+    interlock: 13
+  output_capable: 57339
+  input_capable: 8196
+- slot: 6
+  route:
+    clk: 0
+    mosi: 1
+    miso: 2
+    selects:
+    - 3
+    - 4
+    - 5
+    - 6
+    mode: direct
+    trigger: 15
+    ready: 14
+    interlock: 13
+  output_capable: 57339
+  input_capable: 8196
+- slot: 7
+  route:
+    clk: 0
+    mosi: 1
+    miso: 2
+    selects:
+    - 3
+    - 4
+    - 5
+    - 6
+    mode: direct
+    trigger: 15
+    ready: 14
+    interlock: 13
+  output_capable: 57339
+  input_capable: 8196
+- slot: 8
+  route:
+    clk: 0
+    mosi: 1
+    miso: 2
+    selects:
+    - 3
+    - 4
+    - 5
+    - 6
+    mode: direct
+    trigger: 15
+    ready: 14
+    interlock: 13
+  output_capable: 57339
+  input_capable: 8196
