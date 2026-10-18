@@ -24,3 +24,8 @@ and AWS tokens, credential URLs and credential assignments; no matches found.
 Software regression rerun, and root licensing/third-party attribution added.
 CI is offline with respect to laboratory hardware, but downloads software
 dependencies. Its first remote run is reported separately from local tests.
+
+Clean Git export verification:58 unit tests completed, one explicit ARTIQ
+reference-check skip; no dependence on local build artifacts. External
+Migen/LiteX dependencies were supplied through PYTHONPATH. See
+`evidence/publication.json` and `publication-clean-checkout.log`.

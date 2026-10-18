@@ -268,3 +268,11 @@ ABI4/595. Kierunki fizyczne wymagają sprawdzonego profilu. addrspi2 zachowuje
 wymaganie hardware SPI i nie jest objęty tym demonstratorem. Kolejny krok:
 adapter lokalnego mastera SPI pod tym samym API, integracja kierunków i HIL
 rzeczywistej karty. Szczegóły: [ESPHOME_GPIO_SPI](docs/ESPHOME_GPIO_SPI.md).
+
+## Eksport publiczny — 2026-10-18
+
+Pełny lokalny `tools/test_all.py` PASS. Czysty eksport Git bez lokalnego
+work/ ani references/:58 testów Python/native C++/Migen PASS,1 pominięty
+(porównanie z niepobranym ARTIQ); zewnętrzne zależności Migen/LiteX dostarczono
+przez PYTHONPATH. Naprawiono tworzenie work/tmp przez test flasha na nowym
+checkoucie. Log: evidence/publication-clean-checkout.log. Bez HIL.

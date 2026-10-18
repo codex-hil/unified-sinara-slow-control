@@ -1,0 +1,17 @@
+{
+  "date_utc": "2026-10-18T07:34:45.369993+00:00",
+  "repository": "https://github.com/codex-hil/unified-sinara-slow-control",
+  "visibility": "public",
+  "initial_source_commit": "bc09f39af338fd65beca6c3f6fc6c23f647cf137",
+  "tracked_files": 332,
+  "secret_pattern_matches": 0,
+  "local_full_regression": "PASS",
+  "clean_export_python_tests": {
+    "run": 58,
+    "skipped": 1,
+    "result": "PASS",
+    "skip_reason": "Pinned ARTIQ checkout not included; reference comparison explicitly skipped",
+    "log": "evidence/publication-clean-checkout.log"
+  },
+  "hardware_tested": false
+}
