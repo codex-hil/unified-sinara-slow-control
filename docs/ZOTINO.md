@@ -121,3 +121,17 @@ Stary zapis samym numerem linii został zastąpiony jawną parą.
 Test powtarzalny: uruchom `tools/test_gpio_references.py` interpreterem
 z zainstalowanym ESPHome. Cztery poprawne konfiguracje i16 negatywnych
 przypadków walidacji PASS; bez testów sprzętowych.
+
+## Publiczna publikacja — 2026-10-18
+
+Kod, endpoint, komponent Sampler współdzielący endpoint, przenośne przykłady
+i testy opublikowano w publicznym repozytorium:
+https://github.com/codex-hil/esphome-components/tree/publish/sinara-zotino-20261018
+
+Commit publikacji: `d3a9bebc1cbf4c7d0d37317b0841acc3b19b6175`.
+PR: https://github.com/codex-hil/esphome-components/pull/9
+Licencja nowych komponentów GPLv3-or-later, z atrybucją źródeł ARTIQ.
+W publicznym checkout usunięto lokalne absolutne build_path z przykładów.
+Native C++ i compile/runtime obu przykładów PASS, importy schematów
+i manifest SHA PASS; pobieranie gałęzi bez konfiguracji uwierzytelniania PASS.
+Skrypt odtworzenia: `scripts/test-sinara-zotino.py` w repozytorium publicznym.
