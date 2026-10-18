@@ -1,0 +1,97 @@
+# Synthetic register addresses/capabilities; not a physical wiring profile.
+# Uses existing GPIO ABI (sinara-gpio-v1), not integrated ABI4 or a new crossbar.
+esphome:
+  name: sampler-stm-simulation
+  build_path: /srv/codex-hil-data/unified-sinara-slow-control/work/builds/sampler-stm-simulation
+host:
+logger:
+  level: DEBUG
+external_components:
+  - source:
+      type: local
+      path: ../components
+    components: [sinara_gpio_endpoint, sinara_sampler]
+sinara_gpio_endpoint:
+  id: endpoint0
+  controller: stm_sys_board
+  mode: simulation
+  slot: 1
+  output_address: 0
+  input_address: 1
+  oe_address: 2
+  abi_address: 0
+  output_capable: [0, 2, 3, 4, 5, 7]
+  input_capable: [1, 6]
+sinara_sampler:
+  id: sampler0
+  endpoint_id: endpoint0
+  hardware_revision: v2.2
+  gains: [1, 10, 100, 1000, 1, 10, 100, 1000]
+  update_interval: 1s
+  # All functions use GPIO endpoint registers. No runtime FPGA crossbar exists.
+  pinmux:
+    adc_clk: {slot: 1, line: 0}
+    adc_miso: {slot: 1, line: 1}
+    sdr: {slot: 1, line: 2}
+    cnv: {slot: 1, line: 3}
+    pgia_clk: {slot: 1, line: 4}
+    pgia_mosi: {slot: 1, line: 5}
+    pgia_miso: {slot: 1, line: 6}
+    pgia_latch: {slot: 1, line: 7}
+sensor:
+  - platform: sinara_sampler
+    sampler_id: sampler0
+    channel: 0
+    name: Simulated Sampler CH0
+    on_value:
+      then:
+        - lambda: 'ESP_LOGI("sampler_result", "SIMULATED_CH0=%.8f", x);'
+  - platform: sinara_sampler
+    sampler_id: sampler0
+    channel: 1
+    name: Simulated Sampler CH1
+    on_value:
+      then:
+        - lambda: 'ESP_LOGI("sampler_result", "SIMULATED_CH1=%.8f", x);'
+  - platform: sinara_sampler
+    sampler_id: sampler0
+    channel: 2
+    name: Simulated Sampler CH2
+    on_value:
+      then:
+        - lambda: 'ESP_LOGI("sampler_result", "SIMULATED_CH2=%.8f", x);'
+  - platform: sinara_sampler
+    sampler_id: sampler0
+    channel: 3
+    name: Simulated Sampler CH3
+    on_value:
+      then:
+        - lambda: 'ESP_LOGI("sampler_result", "SIMULATED_CH3=%.8f", x);'
+  - platform: sinara_sampler
+    sampler_id: sampler0
+    channel: 4
+    name: Simulated Sampler CH4
+    on_value:
+      then:
+        - lambda: 'ESP_LOGI("sampler_result", "SIMULATED_CH4=%.8f", x);'
+  - platform: sinara_sampler
+    sampler_id: sampler0
+    channel: 5
+    name: Simulated Sampler CH5
+    on_value:
+      then:
+        - lambda: 'ESP_LOGI("sampler_result", "SIMULATED_CH5=%.8f", x);'
+  - platform: sinara_sampler
+    sampler_id: sampler0
+    channel: 6
+    name: Simulated Sampler CH6
+    on_value:
+      then:
+        - lambda: 'ESP_LOGI("sampler_result", "SIMULATED_CH6=%.8f", x);'
+  - platform: sinara_sampler
+    sampler_id: sampler0
+    channel: 7
+    name: Simulated Sampler CH7
+    on_value:
+      then:
+        - lambda: 'ESP_LOGI("sampler_result", "SIMULATED_CH7=%.8f", x);'

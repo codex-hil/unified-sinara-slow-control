@@ -1,0 +1,16 @@
+{
+  "source_project": "/srv/codex-hil-data/projects/kasli-v11-linux",
+  "board": "KASLI01 Kasli v1.1 Artix-7",
+  "evidence_report": "/srv/codex-hil-data/projects/kasli-v11-linux/variants/smp4-eth/evidence/20261011T133506Z-pqc-boot-test/report.json",
+  "upstream_result": "PASS",
+  "boot_transport": "Ethernet/TFTP",
+  "reuse": [
+    "LiteX platform/CRG",
+    "LiteDRAM DDR3",
+    "LiteEth SFP0 1000BASE-X",
+    "VexRiscv Linux/buildroot boot infrastructure"
+  ],
+  "slow_control_integrated": false,
+  "hardware_actions_this_review": false,
+  "limitations": "Adding CSR endpoints requires new gateware/DTB integration and validation; existing image is not automatically compatible with slow control."
+}

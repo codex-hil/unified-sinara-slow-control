@@ -1,0 +1,9 @@
+{
+  "type": "source_analysis",
+  "main_address_capacity": 128,
+  "required_slot_registers": 160,
+  "main_capacity_sufficient": false,
+  "tpr_wire_header_bits": 16,
+  "firmware_wire_header_bits": 16,
+  "hardware_tested": false
+}

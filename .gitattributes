@@ -1,0 +1,4 @@
+# Preserve vendor source excerpts and generated evidence verbatim.
+evidence/** -whitespace
+licenses/** -whitespace
+integrations/esphome/upstream-adapter.patch -whitespace

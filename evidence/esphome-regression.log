@@ -1,0 +1,22 @@
+{
+  "esphome": "Version: 2026.9.0",
+  "result": "PASS",
+  "hardware_tested": false,
+  "existing_drivers_modified": false,
+  "spi_bus_injection": "local patched external component",
+  "values_simulated": {
+    "LM75B": "25.0000",
+    "PT100": "-0.0088"
+  },
+  "validation": {
+    "hardware_rejected": "PASS",
+    "slot_range": "PASS"
+  },
+  "limits": [
+    "x86_64 Linux host only; no Kasli cross-build",
+    "STM platform/service not integrated",
+    "I2C logical model; SPI tunnel not implemented",
+    "Addressed SPI hardware protocol from other thread not integrated",
+    "Simulation does not verify atomicity/timing/fault recovery of real buses"
+  ]
+}

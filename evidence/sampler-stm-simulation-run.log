@@ -1,0 +1,35 @@
+[20:00:40][0;32m[I][app:060]: Running through setup()[0m
+[20:00:40][0;32m[I][app:117]: setup() finished successfully![0m
+[20:00:40][0;32m[I][app:151]: ESPHome version 2026.9.0 compiled on 2026-10-17 20:00:38 +0100[0m
+[20:00:40][0;35m[C][logger:216]: Logger:
+  Max Level: DEBUG
+  Initial Level: DEBUG[0m
+[20:00:40][0;35m[C][logger:230]:   Task Log Buffer Slots: 64[0m
+[20:00:40][0;35m[C][sinara_endpoint:067]: Sinara STM GPIO endpoint: SIMULATION; native STM/Kasli runtime port not implied[0m
+[20:00:40][0;35m[C][sinara_sampler:031]: Sampler 8-channel slow SPI/GPIO, v2.2 reference, all channels captured together[0m
+[20:00:40][0;35m[C][mdns:259]: mDNS:
+  Hostname: sampler-stm-simulation[0m
+[20:00:40][0;32m[I][sampler_result:048]: SIMULATED_CH0=-10.23999977[0m
+[20:00:40][0;32m[I][sampler_result:055]: SIMULATED_CH1=-0.51199996[0m
+[20:00:40][0;32m[I][sampler_result:062]: SIMULATED_CH2=-0.00000312[0m
+[20:00:40][0;32m[I][sampler_result:069]: SIMULATED_CH3=0.00000000[0m
+[20:00:40][0;32m[I][sampler_result:076]: SIMULATED_CH4=0.00031250[0m
+[20:00:40][0;32m[I][sampler_result:083]: SIMULATED_CH5=0.51199996[0m
+[20:00:40][0;32m[I][sampler_result:090]: SIMULATED_CH6=0.10239687[0m
+[20:00:40][0;32m[I][sampler_result:097]: SIMULATED_CH7=0.00038562[0m
+[20:00:41][0;32m[I][sampler_result:048]: SIMULATED_CH0=-10.23999977[0m
+[20:00:41][0;32m[I][sampler_result:055]: SIMULATED_CH1=-0.51199996[0m
+[20:00:41][0;32m[I][sampler_result:062]: SIMULATED_CH2=-0.00000312[0m
+[20:00:41][0;32m[I][sampler_result:069]: SIMULATED_CH3=0.00000000[0m
+[20:00:41][0;32m[I][sampler_result:076]: SIMULATED_CH4=0.00031250[0m
+[20:00:41][0;32m[I][sampler_result:083]: SIMULATED_CH5=0.51199996[0m
+[20:00:41][0;32m[I][sampler_result:090]: SIMULATED_CH6=0.10239687[0m
+[20:00:41][0;32m[I][sampler_result:097]: SIMULATED_CH7=0.00038562[0m
+[20:00:42][0;32m[I][sampler_result:048]: SIMULATED_CH0=-10.23999977[0m
+[20:00:42][0;32m[I][sampler_result:055]: SIMULATED_CH1=-0.51199996[0m
+[20:00:42][0;32m[I][sampler_result:062]: SIMULATED_CH2=-0.00000312[0m
+[20:00:42][0;32m[I][sampler_result:069]: SIMULATED_CH3=0.00000000[0m
+[20:00:42][0;32m[I][sampler_result:076]: SIMULATED_CH4=0.00031250[0m
+[20:00:42][0;32m[I][sampler_result:083]: SIMULATED_CH5=0.51199996[0m
+[20:00:42][0;32m[I][sampler_result:090]: SIMULATED_CH6=0.10239687[0m
+[20:00:42][0;32m[I][sampler_result:097]: SIMULATED_CH7=0.00038562[0m

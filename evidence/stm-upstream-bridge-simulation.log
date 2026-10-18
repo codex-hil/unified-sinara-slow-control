@@ -1,0 +1,2 @@
+PASS upstream SPI2WB: 25MHz x1, 16-bit header, dummy5, IDs160..162, write/readback140, no read-side writes
+tests/stm_bridge_tb.v:71: $finish called at 8601000 (1ps)

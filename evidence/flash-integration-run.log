@@ -1,0 +1,14 @@
+{
+  "last_sector_tail_preserved": true,
+  "synthetic_boot_rpc_only": true,
+  "erase_roundtrip": true,
+  "result": "PASS",
+  "hardware_tested": false,
+  "emulated_chip": "W25Q128.V",
+  "transport": "real TCP serprog core",
+  "host_api": "HTTP authenticated POST + strict YAML",
+  "raw_image_sha256": "d7dc08ab9f8e074c0e8c701234cdd444bbd1b2b90fcdafc29ca01c9cc3c1830a",
+  "full_readback_sha256": "6a377d40bc042bed806973ef18321d88cd9e1ce1241a1cd0c3b8e8804551397d",
+  "outside_image_preserved": true,
+  "flashrom_commit": "fb281f64bf58b547300a38ab9634711ddaf05e39"
+}

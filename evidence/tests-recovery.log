@@ -1,0 +1,5 @@
+0: python3 -m unittest discover -s tests -v
+0: cargo test --manifest-path firmware/stm-service/Cargo.toml
+0: cargo build --example stdio_simulator --manifest-path firmware/stm-service/Cargo.toml
+0: python3 tools/check_reference.py
+0: python3 tools/test_rust_wire.py

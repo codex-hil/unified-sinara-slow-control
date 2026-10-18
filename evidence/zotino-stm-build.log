@@ -1,0 +1,42 @@
+INFO ESPHome 2026.9.0
+INFO Reading configuration integrations/esphome/examples/zotino-stm-simulation.yaml...
+INFO Core config or version changed, cleaning build files...
+INFO Generating C++ source...
+INFO Compiling app... Build path: /srv/codex-hil-data/unified-sinara-slow-control/work/builds/zotino-stm-simulation
+Processing [36m[1mzotino-stm-simulation[0m (platform: platformio/native)
+[1m--------------------------------------------------------------------------------[0m
+[0mNo dependencies
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/components/host/core.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/components/host/gpio.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/components/host/hal.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/components/host/helpers.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/components/host/preferences.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/components/logger/logger.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/components/logger/logger_host.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/components/logger/task_log_buffer_host.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/components/mdns/mdns_component.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/components/mdns/mdns_host.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/components/network/network_component.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/components/network/util.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/components/output/float_output.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/components/sinara_gpio_endpoint/sinara_gpio_endpoint.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/core/alloc_helpers.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/core/application.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/core/build_info_data.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/core/color.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/core/component.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/core/component_iterator.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/core/controller_registry.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/core/entity_base.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/core/gpio.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/core/helpers.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/core/log.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/core/scheduler.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/core/time.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/core/util.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/core/wake/wake_host.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/main.o
+[0mLinking .pioenvs/zotino-stm-simulation/program
+[0m========================= [[32m[1mSUCCESS[0m] Took 4.92 seconds =========================[0m
+INFO Build Info: config_hash=0x85245546 build_time_str=2026-10-17 19:54:41 +0100
+INFO Successfully compiled program to path '/srv/codex-hil-data/unified-sinara-slow-control/work/builds/zotino-stm-simulation/.pioenvs/zotino-stm-simulation/program'

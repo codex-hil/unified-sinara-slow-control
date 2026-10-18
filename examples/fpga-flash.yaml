@@ -1,0 +1,9 @@
+# Maintenance job; never run automatically by module configure.
+schema_version: 1
+operation: fpga_flash
+format: raw
+fpga_part: lfe5u-85f
+image: ../work/hil-kit/2026-10-14/stm_sys_board-strict-429830fa7909.bit
+sha256: 429830fa79099fff3ed3711a4c24f4e9d7d17ad48f16adf43620ddfaf68d18f5
+offset: 0
+reconfigure: false

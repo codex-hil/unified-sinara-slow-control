@@ -1,0 +1,81 @@
+{
+  "version": "2026.9.0",
+  "source": "locally installed official ESPHome package; shared installation not modified",
+  "files": {
+    "integrations/esphome/components/spi/__init__.py": {
+      "upstream_sha256": "f67805ee070bfb2d7fcf02360a9b65b785979a4e23f45c73520af070f485a35b",
+      "local_sha256": "381028a6cc71d3049db194eb3666ffcf200d351065dd48a35dd93d8e843b08d2"
+    },
+    "integrations/esphome/components/spi/spi.cpp": {
+      "upstream_sha256": "ab9607eed8d85d5c0a6b67499b3588e90087ffb79454d1566bd5b76d4d2ee7ba",
+      "local_sha256": "20675341b88a883c5dfa66aa28e4743e3096f86714c2ca30bf64a028ed559c24"
+    },
+    "integrations/esphome/components/spi/spi.h": {
+      "upstream_sha256": "2219df88c87051dff6ad59d8a6cff4fea5bcc035efe2cf42bd5942ffac98851d",
+      "local_sha256": "55332dc9d315bc0cd703350dd98698b86dfc83815a54d57b4d92a62adddcd83c"
+    },
+    "integrations/esphome/components/spi/spi_arduino.cpp": {
+      "upstream_sha256": "3a9d28b6ad5bee0adb577223a95c7c99ed0e545431923eb544fd2f2820a5b087",
+      "local_sha256": "3a9d28b6ad5bee0adb577223a95c7c99ed0e545431923eb544fd2f2820a5b087"
+    },
+    "integrations/esphome/components/spi/spi_esp_idf.cpp": {
+      "upstream_sha256": "d6b7ef40fbae80cfbae8b508c034d5e6e399d6c2578bbf5d1b84218e447ff87d",
+      "local_sha256": "d6b7ef40fbae80cfbae8b508c034d5e6e399d6c2578bbf5d1b84218e447ff87d"
+    },
+    "integrations/esphome/components/i2c/__init__.py": {
+      "upstream_sha256": "e2d583d0e454e22ce92406d2cf32b533be333275f65a94faa812f29659d82d91",
+      "local_sha256": "27ec24781ff8d0b8a3afc29b2fe6fcf81ca87cb5f0adb455bd7723fa2f6cfd73"
+    },
+    "integrations/esphome/components/i2c/i2c.cpp": {
+      "upstream_sha256": "4ce9e5f5c04db837932843536273d0f0e43d691abd8d436e21a90e4ba850cae0",
+      "local_sha256": "4ce9e5f5c04db837932843536273d0f0e43d691abd8d436e21a90e4ba850cae0"
+    },
+    "integrations/esphome/components/i2c/i2c.h": {
+      "upstream_sha256": "a6c086d9496b03a282742cfac46f44bef72782a4edfd2b9c0253f1bae144e14e",
+      "local_sha256": "a6c086d9496b03a282742cfac46f44bef72782a4edfd2b9c0253f1bae144e14e"
+    },
+    "integrations/esphome/components/i2c/i2c_bus.h": {
+      "upstream_sha256": "db47e9bf3794c483b23773eb28822cb8d07af6e676c1a1a586a637a1e63d3378",
+      "local_sha256": "db47e9bf3794c483b23773eb28822cb8d07af6e676c1a1a586a637a1e63d3378"
+    },
+    "integrations/esphome/components/i2c/i2c_bus_arduino.cpp": {
+      "upstream_sha256": "41e27b9e63f07344e53d2f9a3af5cf3810262e4bfe0052d24605691661c47da8",
+      "local_sha256": "41e27b9e63f07344e53d2f9a3af5cf3810262e4bfe0052d24605691661c47da8"
+    },
+    "integrations/esphome/components/i2c/i2c_bus_arduino.h": {
+      "upstream_sha256": "ffef405a844e3acc289b18ec7d215b4a1faba0db5f23b40abebac50c179cbb4a",
+      "local_sha256": "ffef405a844e3acc289b18ec7d215b4a1faba0db5f23b40abebac50c179cbb4a"
+    },
+    "integrations/esphome/components/i2c/i2c_bus_esp_idf.cpp": {
+      "upstream_sha256": "02ee82d8b77ff392bcb3e9c34e1e0a8e5cecf309d1c73b13c6b0b1abc78a9056",
+      "local_sha256": "02ee82d8b77ff392bcb3e9c34e1e0a8e5cecf309d1c73b13c6b0b1abc78a9056"
+    },
+    "integrations/esphome/components/i2c/i2c_bus_esp_idf.h": {
+      "upstream_sha256": "b5070d695567001d2054b0d6806fea271b09c19f241dcee1b6e0ab412949d83d",
+      "local_sha256": "b5070d695567001d2054b0d6806fea271b09c19f241dcee1b6e0ab412949d83d"
+    },
+    "integrations/esphome/components/i2c/i2c_bus_host.cpp": {
+      "upstream_sha256": "879c06532a08e3ed22a4865ca5af2099672cc3b1f0acee2b66a4c3c7237078ba",
+      "local_sha256": "879c06532a08e3ed22a4865ca5af2099672cc3b1f0acee2b66a4c3c7237078ba"
+    },
+    "integrations/esphome/components/i2c/i2c_bus_host.h": {
+      "upstream_sha256": "399b6070a4b50de60f0115ff61454df8887f37a82c3e4fec05e5b3e4389e8744",
+      "local_sha256": "399b6070a4b50de60f0115ff61454df8887f37a82c3e4fec05e5b3e4389e8744"
+    },
+    "integrations/esphome/components/i2c/i2c_bus_zephyr.cpp": {
+      "upstream_sha256": "4088760faea92e3e7f41ea7998e2446d9da6152faec01fbad0662f09822d973c",
+      "local_sha256": "4088760faea92e3e7f41ea7998e2446d9da6152faec01fbad0662f09822d973c"
+    },
+    "integrations/esphome/components/i2c/i2c_bus_zephyr.h": {
+      "upstream_sha256": "77eae17ad1bce6e9596f6021542715eaf9955e8900a389e2c4e9ba63106500ce",
+      "local_sha256": "77eae17ad1bce6e9596f6021542715eaf9955e8900a389e2c4e9ba63106500ce"
+    }
+  },
+  "unmodified_driver_components": [
+    "lm75b",
+    "max31855",
+    "max31865"
+  ],
+  "license": "ESPHome C++ GPLv3, Python MIT; see UPSTREAM_LICENSE.txt",
+  "addressed_spi_manifest": "evidence/addressed-spi-upstream/manifest.json"
+}

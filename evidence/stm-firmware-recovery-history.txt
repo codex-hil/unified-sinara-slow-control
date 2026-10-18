@@ -1,0 +1,15 @@
+19bc5913abe66b39f5fce9cf45c9f7126b8782c4 2026-02-12T16:20:12+01:00 shortened Templogger telemetry topic name
+e8cb859de2d4a7b6e1ff74356ae22ba6c44f634e 2026-02-05T17:38:11+01:00 Merge remote-tracking branch 'origin/tpr_dev' into debug
+83d4bb7bf385fc2f1c2dcd11b795be5025067ee0 2026-02-05T17:10:04+01:00 temp log auto start
+a8a511b72c864415d1052c4109f566c547c611e3 2025-10-14T17:51:50+02:00 Added delay before initializing isoSPI due to possible bug in power supplies.
+08e3a44d867d7ce88d930a29b5eacc9d557157c6 2025-09-23T17:00:04+02:00 update default settings for temp_logger
+4d82bf720e8e3052fdb5d531a604d33a9c408c5f 2025-09-23T16:53:17+02:00 temp_logger update
+5d95002d564ceaf3d8665866617a9e4e4a3532e4 2025-09-09T17:26:16+02:00 Merge branch 'pku_dev' into debug
+a071177ce99cd9676c5d60107f3f419de5c2de47 2025-09-09T17:11:15+02:00 Merging
+3ba61bd95fb099a5a51644eb61fbc60c378820dc 2025-09-09T17:08:45+02:00 Merging
+7ad23874e0ba35a72a74e12feeb6a5805f8ad445 2025-09-09T17:03:07+02:00 Cleanup, getting ready for merge
+fbcd6882b380bafee8481127c8cdd8b672999341 2025-09-09T16:37:20+02:00 Commented out temperature measurement to make 8 magnetometers work
+bb6d673dd341913e9a033ce16ad7b0fe7aa494b8 2025-09-09T12:24:03+02:00 deleted device0 from stm_sys_board task
+3f06d35d7845416dde1c01ae98e0dccf62a75110 2025-09-09T12:11:11+02:00 Fixed bug with dead FPGA. Added gateware revision to telemetry
+185e478a33bb223a85d914acff6e7380f6b1e33f 2025-09-09T12:06:44+02:00 Removed presence from Magnetometer telemetry
+731e9f4bf4e40a18a2f26352b5c9078168ebeccc 2025-08-27T19:44:04+02:00 Added performing bridge offset measurement from settings, decreased poll wait delay

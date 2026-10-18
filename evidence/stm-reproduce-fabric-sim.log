@@ -1,0 +1,9 @@
+{
+  "serial": "PASS",
+  "direct": "PASS",
+  "stm_full_target_elaboration": "PASS",
+  "kasli_eight_slot_logical_hdl": "PASS",
+  "hardware_tested": false,
+  "upstream_sha256": "abaa4fae38fd186cf8a39e533c5d89aad71c1aa60cd9673dc0a720ee7e3206ff",
+  "limitations": "Physical mapping inherited, not reviewed for programming. Kasli logical fabric only; no EEM pads/host SoC."
+}

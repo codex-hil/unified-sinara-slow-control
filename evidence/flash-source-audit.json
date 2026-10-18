@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-17",
+  "hardware_tested": false,
+  "target": "STM System Board v1.1",
+  "pdf": "evidence/STM_System_Board_Extended.PDF",
+  "pdf_sha256": "4f2c24b04be57d269ccccffdf80844ad4fe4ac39724887b8b68a05a6ad73cecd",
+  "pages": {
+    "cpu": 4,
+    "configuration": 17
+  },
+  "flash": "W25Q128JVPIQ",
+  "capacity_bytes": 16777216,
+  "switch": "74HC4066PW",
+  "pins": {
+    "sck": "PG11 AF5",
+    "miso": "PG9 AF5",
+    "mosi": "PD7 AF5",
+    "cs_n": "PG10 GPIO",
+    "mux_enable": "PE15 GPIO",
+    "program_n": "PG0 GPIO",
+    "done": "PE1 input",
+    "uart_tx": "PD8 AF7",
+    "uart_rx": "PD9 AF7"
+  },
+  "standard_protocol": "serprog v1",
+  "flashrom_commit": "fb281f64bf58b547300a38ab9634711ddaf05e39",
+  "openfpgaloader_commit": "bf2b52916e7b6216ba1cc0b30933827d7735b05d",
+  "limits": [
+    "HIL not run",
+    "Raw image metadata/hash checked; not full FPGA bitstream parser",
+    "Native ESPHome/platform network integration pending; current API runs on host",
+    "External JTAG runner command tests only"
+  ]
+}

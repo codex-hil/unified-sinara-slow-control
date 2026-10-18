@@ -1,0 +1,18 @@
+
+running 5 tests
+test tests::identify_and_preserve_sequence ... ok
+test tests::roundtrip_last_slot ... ok
+test tests::reject_legacy_and_forbidden_registers ... ok
+test tests::timeout_is_explicit ... ok
+test tests::unknown_opcode_and_version ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.00s
+     Running unittests src/lib.rs (firmware/stm-service/target/debug/deps/sinara_stm_gateway-aecfe2bd0bf59985)
+   Doc-tests sinara_stm_gateway

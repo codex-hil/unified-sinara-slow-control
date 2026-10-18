@@ -1,0 +1,106 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "system": {
+      "const": "sinara"
+    },
+    "on_error": {
+      "const": "safe_and_stop"
+    },
+    "modules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-zA-Z][a-zA-Z0-9_]*$"
+          },
+          "slot": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 8
+          },
+          "type": {
+            "const": "urukul"
+          },
+          "revision": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cpld_protocol": {
+            "const": 8
+          },
+          "safe_state": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "rf_enabled": {
+                "const": false
+              },
+              "attenuation": {
+                "const": "31.5 dB"
+              }
+            },
+            "required": [
+              "rf_enabled",
+              "attenuation"
+            ]
+          },
+          "channels": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 3
+                },
+                "attenuation": {
+                  "type": "string",
+                  "pattern": "^[0-9]+(?:\\.[0-9]+)? dB$"
+                },
+                "enabled": {
+                  "const": false
+                }
+              },
+              "required": [
+                "id",
+                "attenuation",
+                "enabled"
+              ]
+            }
+          }
+        },
+        "required": [
+          "id",
+          "slot",
+          "type",
+          "revision",
+          "cpld_protocol",
+          "safe_state",
+          "channels"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "system",
+    "on_error",
+    "modules"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sinara.invalid/slow-control/config-v1.schema.json",
+  "title": "Restricted Urukul CPLD v8 slow-control demonstrator"
+}

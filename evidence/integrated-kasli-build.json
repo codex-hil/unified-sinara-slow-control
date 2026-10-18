@@ -1,0 +1,22 @@
+{
+  "source_sha256": {
+    "gateware/csr_bank.py": "78676c779959d2f8db329f00751602cb7e82c58a4004732da43a72bf805f5020",
+    "gateware/direction.py": "d94fb901bd478243a660b12c1582bb24613f59ceb645d589d574b2a542cf261e",
+    "gateware/direction_csr.py": "bd4ad618a28c36f554dc39173e66cf047a973c95841c07809025aabd5e7b3d80",
+    "gateware/gpio.py": "6c12c05b9a1b48ad0c729d14046a37b71a0800a4a5ec0b356613157c2ef2053a",
+    "gateware/kasli_uart_gpio.py": "e386abd8cb428fb533e641030e0ec7aae3e8a1c71ce391ac41dbd086c56deacf",
+    "gateware/pinmux.py": "10cf4f946ffddb0c143308f864621940972ef70a6c7a7f418879343cbe84bae0",
+    "gateware/slow_fabric.py": "bb120be24790cc8e6393d20c4939b36ec294aba123ffe792aa942c45d3473174"
+  },
+  "target": "kasli",
+  "hardware_tested": false,
+  "timestamp": "2026-10-13T19:18:33.969969+00:00",
+  "synthesis": "PASS",
+  "out_of_context_route": "PASS",
+  "timing": {
+    "setup_slack_ns": 8.936,
+    "hold_slack_ns": 0.11
+  },
+  "limitations": "Logical eight-slot fabric only. No SoC/EEM IO constraints or bitstream. 62.5 MHz constraint; no external IO timing proof.",
+  "result": "PASS"
+}

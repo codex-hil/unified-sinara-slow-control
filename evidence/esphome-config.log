@@ -1,0 +1,73 @@
+INFO ESPHome 2026.9.0
+INFO Reading configuration integrations/esphome/examples/max31865-simulation.yaml...
+INFO External components are overriding built-in components:
+  source: /srv/codex-hil-data/unified-sinara-slow-control/integrations/esphome/examples/../components
+  components: spi
+esphome:
+  name: sinara-esphome-simulation
+  build_path: ../../../work/builds/esphome-host
+  min_version: 2026.9.0
+  friendly_name: ''
+  platformio_options: {}
+  build_flags: []
+  environment_variables: {}
+  includes: []
+  includes_c: []
+  libraries: []
+  name_add_mac_suffix: false
+  merge_warnings: true
+  debug_scheduler: false
+  areas: []
+  devices: []
+host:
+  mac_address: 98:35:69:AB:F6:79
+logger:
+  level: DEBUG
+  baud_rate: 115200
+  tx_buffer_size: 512
+  deassert_rts_dtr: false
+  logs: {}
+  runtime_tag_levels: false
+external_components:
+  - source:
+      path: /srv/codex-hil-data/unified-sinara-slow-control/integrations/esphome/examples/../components
+      type: local
+    components:
+      - spi
+      - sinara_bus
+    refresh: 1d
+sinara_bus:
+  - id: endpoint0
+    mode: simulation
+    slot: 0
+    port: 0
+spi:
+  - id: addressed_spi
+    endpoint: endpoint0
+sensor:
+  - platform: max31865
+    id: pt100
+    name: Simulated PT100
+    spi_id: addressed_spi
+    cs_pin:
+      number: 0
+      mode:
+        output: true
+        input: false
+        open_drain: false
+        pullup: false
+        pulldown: false
+      inverted: false
+    reference_resistance: 430.0
+    rtd_nominal_resistance: 100.0
+    rtd_wires: 4
+    mains_filter: 50HZ
+    update_interval: 1s
+    disabled_by_default: false
+    force_update: false
+    unit_of_measurement: °C
+    accuracy_decimals: 2
+    device_class: temperature
+    state_class: measurement
+
+INFO Configuration is valid!

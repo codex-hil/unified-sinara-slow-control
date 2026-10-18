@@ -1,0 +1,93 @@
+--- upstream/spi/__init__.py
++++ integrations/esphome/components/spi/__init__.py
+@@ -572,3 +572,38 @@
+         },
+     }
+ )
++
++# Local proof of concept: host bus injection only; upstream device schemas unchanged.
++if CORE.is_host:
++    AddressedBus = cg.esphome_ns.namespace("sinara_bus").class_("AddressedBus", cg.Component)
++    def validate_gpio_bus(config):
++        owner = config[CONF_CLK_PIN].get("sinara_gpio")
++        if owner is None or any(config[k].get("sinara_gpio") != owner for k in (CONF_MOSI_PIN, CONF_MISO_PIN) if k in config):
++            raise cv.Invalid("Host GPIO SPI requires pins from one sinara_gpio provider")
++        return config
++    HOST_GPIO_SPI_SCHEMA = cv.All(cv.Schema({
++        cv.GenerateID(): cv.declare_id(SPIComponent),
++        cv.Required(CONF_CLK_PIN): pins.gpio_output_pin_schema,
++        cv.Optional(CONF_MISO_PIN): pins.gpio_input_pin_schema,
++        cv.Optional(CONF_MOSI_PIN): pins.gpio_output_pin_schema,
++        cv.Required(CONF_INTERFACE): cv.one_of("software"),
++    }), cv.has_at_least_one_key(CONF_MISO_PIN, CONF_MOSI_PIN), validate_gpio_bus)
++    CONFIG_SCHEMA = cv.ensure_list(cv.Any(cv.Schema({
++        cv.GenerateID(): cv.declare_id(SPIComponent),
++        cv.Required("endpoint"): cv.use_id(AddressedBus),
++    }), HOST_GPIO_SPI_SCHEMA))
++    @coroutine_with_priority(CoroPriority.BUS)
++    async def to_code(configs):
++        cg.add_define("USE_SPI")
++        for config in configs:
++            var = cg.new_Pvariable(config[CONF_ID])
++            await cg.register_component(var, config)
++            if "endpoint" in config:
++                bus = await cg.get_variable(config["endpoint"])
++                cg.add(var.set_bus(bus.get_spi_bus()))
++            else:
++                clk = await cg.gpio_pin_expression(config[CONF_CLK_PIN])
++                mosi = await cg.gpio_pin_expression(config[CONF_MOSI_PIN]) if CONF_MOSI_PIN in config else cg.nullptr
++                miso = await cg.gpio_pin_expression(config[CONF_MISO_PIN]) if CONF_MISO_PIN in config else cg.nullptr
++                owner = await cg.get_variable(config[CONF_CLK_PIN]["sinara_gpio"])
++                cg.add(var.set_bus(owner.make_spi_bus(clk, mosi, miso)))
+--- upstream/spi/spi.cpp
++++ integrations/esphome/components/spi/spi.cpp
+@@ -36,6 +36,7 @@
+ }
+ 
+ void SPIComponent::setup() {
++  if (this->spi_bus_ != nullptr) return; // Explicit external transport, no host GPIO bitbang.
+   if (this->sdo_pin_ == nullptr)
+     this->sdo_pin_ = NullPin::NULL_PIN;
+   if (this->sdi_pin_ == nullptr)
+--- upstream/spi/spi.h
++++ integrations/esphome/components/spi/spi.h
+@@ -341,11 +341,13 @@
+ 
+ class SPIClient;
+ 
+-class SPIComponent final : public Component {
+- public:
+-  SPIDelegate *register_device(SPIClient *device, SPIMode mode, SPIBitOrder bit_order, uint32_t data_rate,
++class SPIComponent : public Component {
++ public:
++  virtual SPIDelegate *register_device(SPIClient *device, SPIMode mode, SPIBitOrder bit_order, uint32_t data_rate,
+                                GPIOPin *cs_pin, bool release_device, bool write_only);
+-  void unregister_device(SPIClient *device);
++  virtual void unregister_device(SPIClient *device);
++
++  void set_bus(SPIBus *bus) { this->spi_bus_ = bus; }
+ 
+   void set_clk(GPIOPin *clk) { this->clk_pin_ = clk; }
+ 
+--- upstream/i2c/__init__.py
++++ integrations/esphome/components/i2c/__init__.py
+@@ -463,3 +463,19 @@
+         "i2c_bus_host.cpp": {PlatformFramework.HOST_NATIVE},
+     }
+ )
++
++# Local host virtual bus POC; no real SPI/I2C bridge wire protocol yet.
++if CORE.is_host:
++    VirtualI2C = cg.esphome_ns.namespace("i2c").class_("SimI2CBus",cg.Component,I2CBus)
++    CONFIG_SCHEMA = cv.ensure_list(cv.Schema({
++        cv.GenerateID(): cv.declare_id(VirtualI2C),
++        cv.Required("mode"): cv.one_of("simulation"),
++        cv.Required("slot"): cv.int_range(min=0,max=7),
++        cv.Required("port"): cv.int_range(min=0,max=7),
++    }).extend(cv.COMPONENT_SCHEMA))
++    async def to_code(configs):
++        cg.add_define("USE_I2C")
++        for config in configs:
++            var=cg.new_Pvariable(config[CONF_ID])
++            await cg.register_component(var,config)
++            cg.add(var.set_route(config["slot"],config["port"]))

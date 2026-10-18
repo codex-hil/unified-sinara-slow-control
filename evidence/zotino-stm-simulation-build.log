@@ -1,0 +1,13 @@
+INFO ESPHome 2026.9.0
+INFO Reading configuration /srv/codex-hil-data/unified-sinara-slow-control/integrations/esphome/examples/zotino-stm-simulation.yaml...
+INFO Generating C++ source...
+INFO Compiling app... Build path: /srv/codex-hil-data/unified-sinara-slow-control/work/builds/zotino-stm-simulation
+Processing [36m[1mzotino-stm-simulation[0m (platform: platformio/native)
+[1m--------------------------------------------------------------------------------[0m
+[0mNo dependencies
+[0mCompiling .pioenvs/zotino-stm-simulation/src/esphome/core/build_info_data.o
+[0mCompiling .pioenvs/zotino-stm-simulation/src/main.o
+[0mLinking .pioenvs/zotino-stm-simulation/program
+[0m========================= [[32m[1mSUCCESS[0m] Took 1.41 seconds =========================[0m
+INFO Build Info: config_hash=0xf31c6845 build_time_str=2026-10-17 20:00:17 +0100
+INFO Successfully compiled program to path '/srv/codex-hil-data/unified-sinara-slow-control/work/builds/zotino-stm-simulation/.pioenvs/zotino-stm-simulation/program'

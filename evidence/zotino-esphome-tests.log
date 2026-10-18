@@ -1,0 +1,23 @@
+tcp port: 0
+Connected with 127.0.0.1:42330
+Disconnect
+{
+  "stm_simulation": "PASS",
+  "stm_transport_model_and_fault": "PASS",
+  "stm_unreviewed": "PASS",
+  "stm_overlap": "PASS",
+  "stm_direction": "PASS",
+  "stm_shared": "PASS",
+  "stm_duplicate_output": "PASS",
+  "stm_mixed_owner": "PASS",
+  "stm_channel": "PASS",
+  "kasli_simulation": "PASS",
+  "kasli_transport_model_and_fault": "PASS",
+  "kasli_unreviewed": "PASS",
+  "kasli_overlap": "PASS",
+  "kasli_direction": "PASS",
+  "kasli_shared": "PASS",
+  "kasli_duplicate_output": "PASS",
+  "kasli_mixed_owner": "PASS",
+  "kasli_channel": "PASS"
+}

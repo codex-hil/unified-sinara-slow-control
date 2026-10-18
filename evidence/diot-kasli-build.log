@@ -1,0 +1,16 @@
+INFO ESPHome 2026.9.0
+INFO Reading configuration /srv/codex-hil-data/unified-sinara-slow-control/work/diot-esphome-tests/kasli.yaml...
+INFO External components are overriding built-in components:
+  source: /srv/codex-hil-data/unified-sinara-slow-control/integrations/esphome/components
+  components: spi
+INFO Generating C++ source...
+INFO Compiling app... Build path: /srv/codex-hil-data/unified-sinara-slow-control/work/builds/max31855-diot
+Processing [36m[1mmax31855-diot[0m (platform: platformio/native)
+[1m--------------------------------------------------------------------------------[0m
+[0mNo dependencies
+[0mCompiling .pioenvs/max31855-diot/src/esphome/core/build_info_data.o
+[0mCompiling .pioenvs/max31855-diot/src/main.o
+[0mLinking .pioenvs/max31855-diot/program
+[0m========================= [[32m[1mSUCCESS[0m] Took 1.45 seconds =========================[0m
+INFO Build Info: config_hash=0x88547bcc build_time_str=2026-10-17 20:25:57 +0100
+INFO Successfully compiled program to path '/srv/codex-hil-data/unified-sinara-slow-control/work/builds/max31855-diot/.pioenvs/max31855-diot/program'

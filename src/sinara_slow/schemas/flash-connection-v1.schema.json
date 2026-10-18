@@ -1,0 +1,249 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "controller",
+    "board_id",
+    "fpga_part",
+    "capacity_bytes",
+    "chip",
+    "tool",
+    "programmer",
+    "resource_lock",
+    "timeout_s",
+    "reviewed",
+    "use",
+    "board_revision"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "controller": {
+      "enum": [
+        "stm_sys_board",
+        "kasli"
+      ]
+    },
+    "board_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "fpga_part": {
+      "type": "string",
+      "minLength": 1
+    },
+    "capacity_bytes": {
+      "type": "integer",
+      "minimum": 1048576,
+      "maximum": 16777216,
+      "multipleOf": 4096
+    },
+    "chip": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tool": {
+      "type": "string",
+      "pattern": "^/[A-Za-z0-9_./+-]+$"
+    },
+    "programmer": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "device",
+            "baud"
+          ],
+          "properties": {
+            "kind": {
+              "const": "serprog-serial"
+            },
+            "device": {
+              "type": "string",
+              "pattern": "^/dev/serial/by-id/[A-Za-z0-9_.:+-]+$"
+            },
+            "baud": {
+              "const": 1000000
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "host",
+            "port"
+          ],
+          "properties": {
+            "kind": {
+              "const": "serprog-tcp"
+            },
+            "host": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9.-]+$"
+            },
+            "port": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 65535
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "driver",
+            "parameters"
+          ],
+          "properties": {
+            "kind": {
+              "const": "external"
+            },
+            "driver": {
+              "enum": [
+                "ft2232_spi",
+                "ch341a_spi",
+                "dediprog",
+                "stlinkv3_spi"
+              ]
+            },
+            "parameters": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.=/,+:-]*$"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "kind",
+            "cable",
+            "serial",
+            "chain_index",
+            "frequency_hz",
+            "jedec_id"
+          ],
+          "properties": {
+            "kind": {
+              "const": "openfpgaloader-jtag"
+            },
+            "cable": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_-]+$"
+            },
+            "serial": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.:-]+$"
+            },
+            "chain_index": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 15
+            },
+            "frequency_hz": {
+              "type": "integer",
+              "minimum": 100000,
+              "maximum": 6000000
+            },
+            "jedec_id": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{6}$"
+            }
+          }
+        }
+      ]
+    },
+    "resource_lock": {
+      "type": "string",
+      "pattern": "^/[^\\u0000]+\\.lock$"
+    },
+    "timeout_s": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "maximum": 7200
+    },
+    "reviewed": {
+      "type": "boolean"
+    },
+    "use": {
+      "enum": [
+        "simulation",
+        "hardware"
+      ]
+    },
+    "protected_regions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "offset",
+          "length"
+        ],
+        "properties": {
+          "offset": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "length": {
+            "type": "integer",
+            "minimum": 1
+          }
+        }
+      }
+    },
+    "board_revision": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "controller": {
+            "const": "stm_sys_board"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "board_revision": {
+            "const": "v1.1"
+          },
+          "capacity_bytes": {
+            "const": 16777216
+          },
+          "fpga_part": {
+            "const": "lfe5u-85f"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "controller": {
+            "const": "kasli"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "fpga_part": {
+            "pattern": "^xc7a[0-9]+t$"
+          }
+        }
+      }
+    }
+  ]
+}

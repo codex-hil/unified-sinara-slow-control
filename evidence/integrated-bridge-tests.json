@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "hardware_tested": false,
+  "serial_clock_mhz": 25,
+  "header_bits": 16,
+  "dummy_cycles": 5,
+  "chain_bits": 48,
+  "register_bank": "actual CSR, no RAM substitute",
+  "limitations": "Behavioral FD1P3BX, no pad delays/metastability; upstream bridge startup and duplicate-read issues retained."
+}

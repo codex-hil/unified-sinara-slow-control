@@ -1,0 +1,18 @@
+# Placeholder hardware identity; execution is rejected until reviewed.
+schema_version: 1
+controller: stm_sys_board
+board_revision: v1.1
+board_id: REPLACE_WITH_VERIFIED_STM_ID
+fpga_part: lfe5u-85f
+chip: W25Q128.V
+capacity_bytes: 16777216
+tool: /srv/codex-hil-data/unified-sinara-slow-control/work/builds/flashrom/flashrom
+programmer:
+  kind: serprog-serial
+  device: /dev/serial/by-id/REPLACE_WITH_VERIFIED_UART
+  baud: 1000000
+resource_lock: /home/codex-hil/.cache/stm-sys-board-REPLACE_WITH_VERIFIED_ID.lock
+timeout_s: 1800
+reviewed: false
+use: hardware
+protected_regions: []

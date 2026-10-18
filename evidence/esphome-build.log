@@ -1,0 +1,18 @@
+INFO ESPHome 2026.9.0
+INFO Reading configuration /srv/codex-hil-data/unified-sinara-slow-control/integrations/esphome/examples/max31865-simulation.yaml...
+INFO External components are overriding built-in components:
+  source: /srv/codex-hil-data/unified-sinara-slow-control/integrations/esphome/examples/../components
+  components: i2c, spi
+INFO Generating C++ source...
+INFO Compiling app... Build path: /srv/codex-hil-data/unified-sinara-slow-control/work/builds/esphome-host
+Processing [36m[1msinara-esphome-simulation[0m (platform: platformio/native)
+[1m--------------------------------------------------------------------------------[0m
+[0mNo dependencies
+[0mCompiling .pioenvs/sinara-esphome-simulation/src/esphome/components/max31865/max31865.o
+[0mCompiling .pioenvs/sinara-esphome-simulation/src/esphome/components/spi/spi.o
+[0mCompiling .pioenvs/sinara-esphome-simulation/src/esphome/core/build_info_data.o
+[0mCompiling .pioenvs/sinara-esphome-simulation/src/main.o
+[0mLinking .pioenvs/sinara-esphome-simulation/program
+[0m========================= [[32m[1mSUCCESS[0m] Took 1.47 seconds =========================[0m
+INFO Build Info: config_hash=0x09a7a576 build_time_str=2026-10-17 20:24:27 +0100
+INFO Successfully compiled program to path '/srv/codex-hil-data/unified-sinara-slow-control/work/builds/esphome-host/.pioenvs/sinara-esphome-simulation/program'

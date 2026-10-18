@@ -1,0 +1,125 @@
+{
+  "hardware_tested": false,
+  "results": [
+    {
+      "module": "sampler",
+      "controller": "stm",
+      "case": "valid",
+      "passed": true
+    },
+    {
+      "module": "sampler",
+      "controller": "stm",
+      "case": "cross_slot",
+      "passed": true
+    },
+    {
+      "module": "sampler",
+      "controller": "stm",
+      "case": "out_of_range",
+      "passed": true
+    },
+    {
+      "module": "sampler",
+      "controller": "stm",
+      "case": "overlap",
+      "passed": true
+    },
+    {
+      "module": "sampler",
+      "controller": "stm",
+      "case": "integer",
+      "passed": true
+    },
+    {
+      "module": "sampler",
+      "controller": "kasli",
+      "case": "valid",
+      "passed": true
+    },
+    {
+      "module": "sampler",
+      "controller": "kasli",
+      "case": "cross_slot",
+      "passed": true
+    },
+    {
+      "module": "sampler",
+      "controller": "kasli",
+      "case": "out_of_range",
+      "passed": true
+    },
+    {
+      "module": "sampler",
+      "controller": "kasli",
+      "case": "overlap",
+      "passed": true
+    },
+    {
+      "module": "sampler",
+      "controller": "kasli",
+      "case": "integer",
+      "passed": true
+    },
+    {
+      "module": "zotino",
+      "controller": "stm",
+      "case": "valid",
+      "passed": true
+    },
+    {
+      "module": "zotino",
+      "controller": "stm",
+      "case": "cross_slot",
+      "passed": true
+    },
+    {
+      "module": "zotino",
+      "controller": "stm",
+      "case": "out_of_range",
+      "passed": true
+    },
+    {
+      "module": "zotino",
+      "controller": "stm",
+      "case": "overlap",
+      "passed": true
+    },
+    {
+      "module": "zotino",
+      "controller": "stm",
+      "case": "integer",
+      "passed": true
+    },
+    {
+      "module": "zotino",
+      "controller": "kasli",
+      "case": "valid",
+      "passed": true
+    },
+    {
+      "module": "zotino",
+      "controller": "kasli",
+      "case": "cross_slot",
+      "passed": true
+    },
+    {
+      "module": "zotino",
+      "controller": "kasli",
+      "case": "out_of_range",
+      "passed": true
+    },
+    {
+      "module": "zotino",
+      "controller": "kasli",
+      "case": "overlap",
+      "passed": true
+    },
+    {
+      "module": "zotino",
+      "controller": "kasli",
+      "case": "integer",
+      "passed": true
+    }
+  ]
+}

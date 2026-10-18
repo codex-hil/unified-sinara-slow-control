@@ -1,0 +1,8 @@
+flashrom v2.0.0-devel on Linux 7.0.0-38-generic (x86_64)
+flashrom is free software, get the source code at https://flashrom.org
+
+serprog: Programmer name is "Sinara-SPI1"
+Found Winbond flash chip "W25Q128.V" (16384 kB, SPI) on serprog.
+Reading old flash chip contents... done.
+Updating flash chip contents... Erase/write done from 0 to ffffff
+Verifying flash... VERIFIED.

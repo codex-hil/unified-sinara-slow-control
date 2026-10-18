@@ -1,0 +1,88 @@
+INFO ESPHome 2026.9.0
+INFO Reading configuration integrations/esphome/examples/max31855-diot-simulation.yaml...
+INFO External components are overriding built-in components:
+  source: /srv/codex-hil-data/unified-sinara-slow-control/integrations/esphome/examples/../components
+  components: spi
+INFO Core config or version changed, cleaning build files...
+INFO Generating C++ source...
+INFO Compiling app... Build path: /srv/codex-hil-data/unified-sinara-slow-control/work/builds/max31855-diot
+Processing [36m[1mmax31855-diot[0m (platform: platformio/native)
+[1m--------------------------------------------------------------------------------[0m
+[0mNo dependencies
+[0mCompiling .pioenvs/max31855-diot/src/esphome/components/addrspi/addrspi.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/components/host/core.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/components/host/gpio.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/components/host/hal.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/components/host/helpers.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/components/host/preferences.o
+[33mIn file included from src/esphome/components/addrspi/addrspi.cpp:1:
+[0m[33msrc/esphome/components/addrspi/addrspi.cpp: In member function ‘virtual void esphome::addrspi::ADDRSPIComponent::setup()’:
+[0m[33msrc/esphome/components/addrspi/addrspi.cpp:10:17: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘std::vector<esphome::GPIOPin*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+[0m[33m   10 |   ESP_LOGD(TAG, "ADDRSPI setup with %d address pins (%d channels)", address_pins_.size(), max_channel_ + 1);
+[0m      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[33msrc/esphome/core/log.h:77:36: note: in definition of macro ‘ESPHOME_LOG_FORMAT’
+[0m[33m   77 | #define ESPHOME_LOG_FORMAT(format) format
+[0m      |                                    ^~~~~~
+[33msrc/esphome/core/log.h:157:28: note: in expansion of macro ‘esph_log_d’
+[0m[33m  157 | #define ESP_LOGD(tag, ...) esph_log_d(tag, __VA_ARGS__)
+[0m      |                            ^~~~~~~~~~
+[33msrc/esphome/components/addrspi/addrspi.cpp:10:3: note: in expansion of macro ‘ESP_LOGD’
+[0m[33m   10 |   ESP_LOGD(TAG, "ADDRSPI setup with %d address pins (%d channels)", address_pins_.size(), max_channel_ + 1);
+[0m      |   ^~~~~~~~
+[33msrc/esphome/components/addrspi/addrspi.cpp:10:38: note: format string is defined here
+[0m[33m   10 |   ESP_LOGD(TAG, "ADDRSPI setup with %d address pins (%d channels)", address_pins_.size(), max_channel_ + 1);
+[0m[33m      |                                     ~^
+[0m[33m      |                                      |
+[0m[33m      |                                      int
+[0m[33m      |                                     %ld
+[0m[33msrc/esphome/components/addrspi/addrspi.cpp: In member function ‘virtual void esphome::addrspi::ADDRSPIComponent::dump_config()’:
+[0m[33msrc/esphome/components/addrspi/addrspi.cpp:29:22: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘std::vector<esphome::GPIOPin*>::size_type’ {aka ‘long unsigned int’} [-Wformat=]
+[0m[33m   29 |   ESP_LOGCONFIG(TAG, "  Address Pins: %d", address_pins_.size());
+[0m      |                      ^~~~~~~~~~~~~~~~~~~~
+[33msrc/esphome/core/log.h:77:36: note: in definition of macro ‘ESPHOME_LOG_FORMAT’
+[0m[33m   77 | #define ESPHOME_LOG_FORMAT(format) format
+[0m      |                                    ^~~~~~
+[33msrc/esphome/core/log.h:158:33: note: in expansion of macro ‘esph_log_config’
+[0m[33m  158 | #define ESP_LOGCONFIG(tag, ...) esph_log_config(tag, __VA_ARGS__)
+[0m      |                                 ^~~~~~~~~~~~~~~
+[33msrc/esphome/components/addrspi/addrspi.cpp:29:3: note: in expansion of macro ‘ESP_LOGCONFIG’
+[0m[33m   29 |   ESP_LOGCONFIG(TAG, "  Address Pins: %d", address_pins_.size());
+[0m      |   ^~~~~~~~~~~~~
+[33msrc/esphome/components/addrspi/addrspi.cpp:29:40: note: format string is defined here
+[0m[33m   29 |   ESP_LOGCONFIG(TAG, "  Address Pins: %d", address_pins_.size());
+[0m[33m      |                                       ~^
+[0m[33m      |                                        |
+[0m[33m      |                                        int
+[0m[33m      |                                       %ld
+[0mCompiling .pioenvs/max31855-diot/src/esphome/components/logger/logger.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/components/logger/logger_host.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/components/logger/task_log_buffer_host.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/components/max31855/max31855.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/components/mdns/mdns_component.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/components/mdns/mdns_host.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/components/network/network_component.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/components/network/util.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/components/sensor/sensor.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/components/sinara_gpio_endpoint/sinara_gpio_endpoint.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/components/spi/spi.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/core/alloc_helpers.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/core/application.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/core/build_info_data.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/core/color.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/core/component.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/core/component_iterator.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/core/controller_registry.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/core/entity_base.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/core/gpio.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/core/helpers.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/core/log.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/core/scheduler.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/core/time.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/core/util.o
+[0mCompiling .pioenvs/max31855-diot/src/esphome/core/wake/wake_host.o
+[0mCompiling .pioenvs/max31855-diot/src/main.o
+[0mLinking .pioenvs/max31855-diot/program
+[0m========================= [[32m[1mSUCCESS[0m] Took 5.36 seconds =========================[0m
+[0m
+INFO Build Info: config_hash=0xa7930beb build_time_str=2026-10-17 20:20:28 +0100
+INFO Successfully compiled program to path '/srv/codex-hil-data/unified-sinara-slow-control/work/builds/max31855-diot/.pioenvs/max31855-diot/program'

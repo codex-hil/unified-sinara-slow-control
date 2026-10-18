@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "hardware_tested": false,
+  "protocol_core_sha256": "23ef90bdb1126bcfbc201e718233bd9db36407d9d62a95ba3540ed56048acf22",
+  "source_sha256": "bed9ca4132e385305e00fa2491823f8357c969e9097510e7e1045d9871c97654",
+  "limitations": "Maintenance image resets FPGA on startup. Not installed. GPIO mapping, flash access, UART and DONE timeout need HIL. Blocking SPI HAL may stall on peripheral faults.",
+  "elf": "work/builds/hil-probe/thumbv7em-none-eabihf/release/flash_serprog",
+  "elf_sha256": "534b44b40d70d9a6fcbea0bf29d20e82602d67ac32fdd4cf139abffdc59c8145",
+  "frozen_elf": "work/flash-kit/flash_serprog-534b44b40d70.elf"
+}

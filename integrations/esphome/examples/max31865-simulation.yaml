@@ -1,0 +1,49 @@
+esphome:
+  name: sinara-esphome-simulation
+  build_path: /srv/codex-hil-data/unified-sinara-slow-control/work/builds/esphome-host
+host:
+logger:
+  level: DEBUG
+external_components:
+  - source:
+      type: local
+      path: ../components
+    components: [spi, sinara_bus, i2c]
+sinara_bus:
+  id: endpoint0
+  mode: simulation
+  slot: 0
+  port: 0
+spi:
+  id: addressed_spi
+  endpoint: endpoint0
+i2c:
+  id: virtual_i2c
+  mode: simulation
+  slot: 0
+  port: 1
+sensor:
+  - platform: max31865
+    id: pt100
+    name: Simulated PT100
+    spi_id: addressed_spi
+    cs_pin:
+      sinara_bus: endpoint0
+      number: 0
+      mode: OUTPUT
+    reference_resistance: 430 ohm
+    rtd_nominal_resistance: 100 ohm
+    rtd_wires: 4
+    mains_filter: 50Hz
+    update_interval: 1s
+    on_value:
+      then:
+        - lambda: 'ESP_LOGI("simulation_result", "SIMULATED_PT100=%.4f", x);'
+  - platform: lm75b
+    name: Simulated LM75B
+    i2c_id: virtual_i2c
+    address: 0x48
+    update_interval: 1s
+    on_value:
+      then:
+        - lambda: 'ESP_LOGI("simulation_result", "SIMULATED_LM75B=%.4f", x);'

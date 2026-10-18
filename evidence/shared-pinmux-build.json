@@ -1,0 +1,11 @@
+{
+  "direction_serial_and_direct_hdl": "PASS",
+  "direction_csr_simulation": "PASS",
+  "ecp5_full_target_elaboration": "PASS",
+  "kasli_v1_1_slot_lowering": "PASS",
+  "stm_register_count": 163,
+  "slot_register_count": 20,
+  "hardware_tested": false,
+  "upstream_modified": false,
+  "limitations": "Kasli logical slot only, no CSR bridge/pads/bitstream. STM candidate not synthesized or routed."
+}

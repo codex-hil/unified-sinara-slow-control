@@ -1,0 +1,14 @@
+Failed config
+
+sinara_bus: [source /srv/codex-hil-data/unified-sinara-slow-control/work/esphome-tests/hardware_rejected.yaml:12]
+  - id: endpoint0
+    
+    Unknown value 'hardware', valid options are 'simulation'.
+    mode: hardware
+    slot: 0
+    port: 0
+INFO ESPHome 2026.9.0
+INFO Reading configuration /srv/codex-hil-data/unified-sinara-slow-control/work/esphome-tests/hardware_rejected.yaml...
+INFO External components are overriding built-in components:
+  source: /srv/codex-hil-data/unified-sinara-slow-control/integrations/esphome/components
+  components: i2c, spi

@@ -1,0 +1,23 @@
+# SIMULATION ONLY: module-side EEM0 map; synthetic controller CSR/adapter.
+schema_version: 1
+controller: stm_sys_board
+transport: serial_wb
+address: /dev/REQUIRES_STM_GATEWAY
+timeout_s: 5
+gateware_abi: sinara-gpio-v1
+bindings:
+  rf0:
+    endpoint: 0
+    mosi: 1
+    miso: 2
+    clk: 0
+    cs:
+    - 3
+    - 4
+    - 5
+    pinmux: urukul_eem0
+csr_map:
+  gpio0_output: 0
+  gpio0_input: 1
+  gpio0_oe: 2
+use: simulation

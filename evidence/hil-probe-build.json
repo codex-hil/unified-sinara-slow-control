@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "exit_code": 0,
+  "hardware_tested": false,
+  "rust": "1.88.0",
+  "target": "thumbv7em-none-eabihf",
+  "probe_source_sha256": "b355a7a5d5dcb85e973b41dd4b629d95a9c2ff734cd7474a369fd224c26aadda",
+  "limitations": "Upstream setup retained; HAL/setup may block. No module init or CSR writes. Not flashed.",
+  "elf": "work/builds/hil-probe/thumbv7em-none-eabihf/release/hil_probe",
+  "elf_sha256": "2d7041e00b6da0abb47dadfdcf628e68cbc704624911eecb5586c22a556dded4"
+}

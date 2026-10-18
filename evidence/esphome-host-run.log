@@ -1,0 +1,155 @@
+[20:24:29][0;32m[I][app:060]: Running through setup()[0m
+[20:24:29][0;36m[D][spi_device:406]: mode 1, data_rate 4000kHz[0m
+[20:24:29][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:29][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:29][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:29][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:29][0;32m[I][app:117]: setup() finished successfully![0m
+[20:24:29][0;32m[I][app:151]: ESPHome version 2026.9.0 compiled on 2026-10-17 20:24:27 +0100[0m
+[20:24:29][0;35m[C][logger:216]: Logger:
+  Max Level: DEBUG
+  Initial Level: DEBUG[0m
+[20:24:29][0;35m[C][logger:230]:   Task Log Buffer Slots: 64[0m
+[20:24:29][0;35m[C][spi:067]: SPI bus:[0m
+[20:24:29][0;35m[C][spi:077]:   Using software SPI[0m
+[20:24:29][0;35m[C][sinara_bus:049]: SIMULATION ONLY: addressed SPI slot=0 port=0[0m
+[20:24:29][0;36m[D][sinara_bus:013]: SIM virtual I2C slot=0 port=1 address=0x48 write1/read2 repeated START; SPI bridge pending[0m
+[20:24:29][0;32m[I][simulation_result:049]: SIMULATED_LM75B=25.0000[0m
+[20:24:29][0;35m[C][max31865:017]: MAX31865 'Simulated PT100'
+  State Class: 'measurement'
+  Unit of Measurement: '°C'
+  Accuracy Decimals: 2[0m
+[20:24:29][0;35m[C][max31865:165]:   Device Class: 'temperature'[0m
+[20:24:29][0;35m[C][max31865:131]:   CS Pin: [0m
+[20:24:29][0;35m[C][max31865:340]:   Update Interval: 1.000s[0m
+[20:24:29][0;35m[C][max31865:083]:   Reference Resistance: 430.00Ω
+  RTD: 4-wire 100.00Ω
+  Mains Filter: 50 Hz[0m
+[20:24:29][0;35m[C][lm75b:010]: LM75B:[0m
+[20:24:29][0;35m[C][lm75b:011]:   Address: 0x48[0m
+[20:24:29][0;35m[C][lm75b:340]:   Update Interval: 1.000s[0m
+[20:24:29][0;35m[C][lm75b:017]:   Temperature 'Simulated LM75B'
+    State Class: 'measurement'
+    Unit of Measurement: '°C'
+    Accuracy Decimals: 3[0m
+[20:24:29][0;35m[C][lm75b:165]:     Device Class: 'temperature'[0m
+[20:24:29][0;35m[C][mdns:259]: mDNS:
+  Hostname: sinara-esphome-simulation[0m
+[20:24:29][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:29][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:29][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:29][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:29][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:29][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:29][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:29][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:29][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:29][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:29][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:29][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:29][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:29][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:29][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:29][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:29][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:29][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:29][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:29][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:29][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:29][0;32m[I][simulation_result:041]: SIMULATED_PT100=-0.0088[0m
+[20:24:30][0;36m[D][sinara_bus:013]: SIM virtual I2C slot=0 port=1 address=0x48 write1/read2 repeated START; SPI bridge pending[0m
+[20:24:30][0;32m[I][simulation_result:049]: SIMULATED_LM75B=25.0000[0m
+[20:24:30][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:30][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:30][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:30][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:30][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:30][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:30][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:30][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:30][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:30][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:30][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:30][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:30][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:30][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:30][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:30][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:30][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:30][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:30][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:30][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:30][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:30][0;32m[I][simulation_result:041]: SIMULATED_PT100=-0.0088[0m
+[20:24:31][0;36m[D][sinara_bus:013]: SIM virtual I2C slot=0 port=1 address=0x48 write1/read2 repeated START; SPI bridge pending[0m
+[20:24:31][0;32m[I][simulation_result:049]: SIMULATED_LM75B=25.0000[0m
+[20:24:31][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:31][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:31][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:31][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:31][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:31][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:31][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:31][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:31][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:31][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:31][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:31][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:31][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:31][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:31][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:31][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:31][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:31][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:31][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:31][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:31][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:31][0;32m[I][simulation_result:041]: SIMULATED_PT100=-0.0088[0m
+[20:24:32][0;36m[D][sinara_bus:013]: SIM virtual I2C slot=0 port=1 address=0x48 write1/read2 repeated START; SPI bridge pending[0m
+[20:24:32][0;32m[I][simulation_result:049]: SIMULATED_LM75B=25.0000[0m
+[20:24:32][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:32][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:32][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:32][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:32][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:32][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:32][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:32][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:32][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:32][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:32][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:32][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:32][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:32][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:32][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:32][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:32][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:32][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:32][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:32][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:32][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:32][0;32m[I][simulation_result:041]: SIMULATED_PT100=-0.0088[0m
+[20:24:33][0;36m[D][sinara_bus:013]: SIM virtual I2C slot=0 port=1 address=0x48 write1/read2 repeated START; SPI bridge pending[0m
+[20:24:33][0;32m[I][simulation_result:049]: SIMULATED_LM75B=25.0000[0m
+[20:24:33][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:33][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:33][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:33][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:33][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:33][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:33][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:33][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:33][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:33][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:33][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:33][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:33][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:33][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:33][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:33][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:33][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:33][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:33][0;36m[D][sinara_bus:016]: SIM SPI begin slot=0 port=0 mode=1 hz=4000000[0m
+[20:24:33][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=0[0m
+[20:24:33][0;36m[D][sinara_bus:047]: SIM GPIO slot=0 port=0 line=0 value=1[0m
+[20:24:33][0;32m[I][simulation_result:041]: SIMULATED_PT100=-0.0088[0m

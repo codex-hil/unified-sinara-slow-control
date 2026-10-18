@@ -1,0 +1,79 @@
+{
+  "artiq": {
+    "commit": "7d7b85f377e0c172ae3496f0c03cfb6cb85ba022",
+    "date": "2026-01-18T18:40:16+08:00",
+    "origin": "https://github.com/m-labs/artiq.git",
+    "branch": "master",
+    "checkout": "full"
+  },
+  "litex-boards": {
+    "commit": "c2abe2465dbe72de385a4c8b453ffb31c2d86bbb",
+    "date": "2026-10-09T19:03:53+02:00",
+    "origin": "https://github.com/litex-hub/litex-boards.git",
+    "branch": "master",
+    "checkout": "full"
+  },
+  "stm-hardware": {
+    "commit": "45b07b4deea53068a308d3dec5fc917937cc2b1e",
+    "date": "2025-08-26T13:20:41+02:00",
+    "origin": "https://github.com/sinara-hw/STM_Sys_Board.git",
+    "branch": "master",
+    "checkout": "sparse"
+  },
+  "stm-gateware": {
+    "commit": "b84376286bf7971d7907b8945c3c677ba972fd61",
+    "date": "2024-05-09T14:34:51+02:00",
+    "origin": "https://github.com/elhep/stm_system_board_gateware.git",
+    "branch": "main",
+    "checkout": "full"
+  },
+  "urukul": {
+    "commit": "26aa02a0b66ebe02d6381ad023455da1e4391f4c",
+    "date": "2023-07-17T13:05:16+02:00",
+    "origin": "https://github.com/sinara-hw/Urukul.git",
+    "branch": "master",
+    "checkout": "sparse"
+  },
+  "kasli": {
+    "commit": "98ffc2b1b2c60cfbf7acc94f949f92f182a6fc77",
+    "date": "2025-09-15T09:33:37+02:00",
+    "origin": "https://github.com/sinara-hw/Kasli.git",
+    "branch": "master",
+    "checkout": "sparse"
+  },
+  "esphome": {
+    "commit": "c5cbc4a4e080beb27a6eda36758df97f550d305d",
+    "date": "2026-10-11T12:50:42+00:00",
+    "origin": "https://github.com/esphome/esphome.git",
+    "branch": "dev",
+    "checkout": "sparse"
+  },
+  "migen": {
+    "commit": "e19524c963a8342952840983047557707fbe0b6a",
+    "date": "2026-01-05T12:05:22+08:00",
+    "origin": "https://github.com/m-labs/migen.git",
+    "branch": "master",
+    "checkout": "full"
+  },
+  "misoc": {
+    "commit": "98227d90be73ead8b797eca74da7c58d0c18f378",
+    "date": "2026-01-05T12:06:29+08:00",
+    "origin": "https://github.com/m-labs/misoc.git",
+    "branch": "master",
+    "checkout": "sparse"
+  },
+  "stm-firmware": {
+    "commit": "19bc5913abe66b39f5fce9cf45c9f7126b8782c4",
+    "date": "2026-02-12T16:20:12+01:00",
+    "origin": "https://github.com/elhep/stm_system_board_firmware.git",
+    "branch": "debug",
+    "checkout": "full"
+  },
+  "litex": {
+    "commit": "b2759f69bcae8be0357fb2ee5eebe216365d1f00",
+    "date": "2026-10-09T13:43:29+02:00",
+    "origin": "https://github.com/enjoy-digital/litex.git",
+    "branch": "master",
+    "checkout": "full"
+  }
+}

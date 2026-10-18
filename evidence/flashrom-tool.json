@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "commit": "fb281f64bf58b547300a38ab9634711ddaf05e39",
+  "binary": "work/builds/flashrom/flashrom",
+  "binary_sha256": "56c872eb4134483865031a16ac796eafa21dcf3baa75037828131bfae3a6c6bf",
+  "drivers": [
+    "serprog",
+    "dummy"
+  ],
+  "hardware_tested": false
+}

@@ -1,0 +1,18 @@
+[20:00:37][0;32m[I][app:060]: Running through setup()[0m
+[20:00:37][0;35m[C][component:164]: Setup sinara_zotino took 152ms[0m
+[20:00:37][0;32m[I][app:117]: setup() finished successfully![0m
+[20:00:37][0;32m[I][app:151]: ESPHome version 2026.9.0 compiled on 2026-10-17 20:00:35 +0100[0m
+[20:00:37][0;35m[C][logger:216]: Logger:
+  Max Level: DEBUG
+  Initial Level: DEBUG[0m
+[20:00:37][0;35m[C][logger:230]:   Task Log Buffer Slots: 64[0m
+[20:00:37][0;35m[C][sinara_endpoint:067]: Sinara Kasli GPIO endpoint: host transport; native STM/Kasli runtime port not implied[0m
+[20:00:37][0;32m[I][zotino_result:074]: SIMULATED_WRITE_OK[0m
+[20:00:37][0;33m[W][component:419]: interval took a long time for an operation (73 ms), max is 50 ms[0m
+[20:00:37][0;35m[C][mdns:259]: mDNS:
+  Hostname: zotino-kasli-loopback[0m
+[20:00:39][0;32m[I][zotino_result:074]: SIMULATED_WRITE_OK[0m
+[20:00:41][1;31m[E][component:297]: sinara_gpio_endpoint set Error flag: Register transport failed; reopen required[0m
+[20:00:41][1;31m[E][component:204]: sinara_gpio_endpoint was marked as failed[0m
+[20:00:41][1;31m[E][component:297]: sinara_zotino set Error flag: Zotino operation failed; state uncertain[0m
+[20:00:41][1;31m[E][component:204]: sinara_zotino was marked as failed[0m

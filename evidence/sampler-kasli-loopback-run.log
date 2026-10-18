@@ -1,0 +1,33 @@
+[20:00:56][0;32m[I][app:060]: Running through setup()[0m
+[20:00:56][0;32m[I][app:117]: setup() finished successfully![0m
+[20:00:56][0;32m[I][app:151]: ESPHome version 2026.9.0 compiled on 2026-10-17 20:00:55 +0100[0m
+[20:00:56][0;35m[C][logger:216]: Logger:
+  Max Level: DEBUG
+  Initial Level: DEBUG[0m
+[20:00:56][0;35m[C][logger:230]:   Task Log Buffer Slots: 64[0m
+[20:00:56][0;35m[C][sinara_endpoint:067]: Sinara Kasli GPIO endpoint: host transport; native STM/Kasli runtime port not implied[0m
+[20:00:56][0;35m[C][sinara_sampler:031]: Sampler 8-channel slow SPI/GPIO, v2.2 reference, all channels captured together[0m
+[20:00:57][0;35m[C][mdns:259]: mDNS:
+  Hostname: sampler-kasli-loopback[0m
+[20:00:57][0;32m[I][sampler_result:084]: SIMULATED_CH0=-10.23999977[0m
+[20:00:57][0;32m[I][sampler_result:091]: SIMULATED_CH1=-0.51199996[0m
+[20:00:57][0;32m[I][sampler_result:098]: SIMULATED_CH2=-0.00000312[0m
+[20:00:57][0;32m[I][sampler_result:105]: SIMULATED_CH3=0.00000000[0m
+[20:00:57][0;32m[I][sampler_result:112]: SIMULATED_CH4=0.00031250[0m
+[20:00:57][0;32m[I][sampler_result:119]: SIMULATED_CH5=0.51199996[0m
+[20:00:57][0;32m[I][sampler_result:126]: SIMULATED_CH6=0.10239687[0m
+[20:00:57][0;32m[I][sampler_result:133]: SIMULATED_CH7=0.00038562[0m
+[20:00:57][0;33m[W][component:419]: sinara_sampler took a long time for an operation (110 ms), max is 50 ms[0m
+[20:00:58][1;31m[E][component:297]: sinara_gpio_endpoint set Error flag: Register transport failed; reopen required[0m
+[20:00:58][1;31m[E][component:204]: sinara_gpio_endpoint was marked as failed[0m
+[20:00:58][0;32m[I][sampler_result:084]: SIMULATED_CH0=nan[0m
+[20:00:58][0;32m[I][sampler_result:091]: SIMULATED_CH1=nan[0m
+[20:00:58][0;32m[I][sampler_result:098]: SIMULATED_CH2=nan[0m
+[20:00:58][0;32m[I][sampler_result:105]: SIMULATED_CH3=nan[0m
+[20:00:58][0;32m[I][sampler_result:112]: SIMULATED_CH4=nan[0m
+[20:00:58][0;32m[I][sampler_result:119]: SIMULATED_CH5=nan[0m
+[20:00:58][0;32m[I][sampler_result:126]: SIMULATED_CH6=nan[0m
+[20:00:58][0;32m[I][sampler_result:133]: SIMULATED_CH7=nan[0m
+[20:00:58][1;31m[E][sinara_sampler:024]: Acquisition failed; endpoint must be reopened, no automatic replay[0m
+[20:00:58][1;31m[E][component:204]: sinara_sampler was marked as failed[0m
+[20:00:58][1;31m[E][component:297]: sinara_sampler set Error flag: unspecified[0m

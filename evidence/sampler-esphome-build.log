@@ -1,0 +1,25 @@
+INFO ESPHome 2026.9.0
+INFO Reading configuration integrations/esphome/examples/sampler-stm-simulation.yaml...
+INFO Generating C++ source...
+INFO Compiling app... Build path: /srv/codex-hil-data/unified-sinara-slow-control/work/builds/sampler-stm-simulation
+Processing [36m[1msampler-stm-simulation[0m (platform: platformio/native)
+[1m--------------------------------------------------------------------------------[0m
+[0mNo dependencies
+[0mCompiling .pioenvs/sampler-stm-simulation/src/esphome/components/sinara_gpio_endpoint/sinara_gpio_endpoint.o
+[0mCompiling .pioenvs/sampler-stm-simulation/src/esphome/components/sinara_sampler/sinara_sampler.o
+[0mCompiling .pioenvs/sampler-stm-simulation/src/esphome/core/build_info_data.o
+[0mCompiling .pioenvs/sampler-stm-simulation/src/esphome/core/component_iterator.o
+[0mCompiling .pioenvs/sampler-stm-simulation/src/esphome/core/controller_registry.o
+[0mCompiling .pioenvs/sampler-stm-simulation/src/esphome/core/entity_base.o
+[0mCompiling .pioenvs/sampler-stm-simulation/src/esphome/core/gpio.o
+[0mCompiling .pioenvs/sampler-stm-simulation/src/esphome/core/helpers.o
+[0mCompiling .pioenvs/sampler-stm-simulation/src/esphome/core/log.o
+[0mCompiling .pioenvs/sampler-stm-simulation/src/esphome/core/scheduler.o
+[0mCompiling .pioenvs/sampler-stm-simulation/src/esphome/core/time.o
+[0mCompiling .pioenvs/sampler-stm-simulation/src/esphome/core/util.o
+[0mCompiling .pioenvs/sampler-stm-simulation/src/esphome/core/wake/wake_host.o
+[0mCompiling .pioenvs/sampler-stm-simulation/src/main.o
+[0mLinking .pioenvs/sampler-stm-simulation/program
+[0m========================= [[32m[1mSUCCESS[0m] Took 2.35 seconds =========================[0m
+INFO Build Info: config_hash=0x261361a7 build_time_str=2026-10-17 18:41:53 +0100
+INFO Successfully compiled program to path '/srv/codex-hil-data/unified-sinara-slow-control/work/builds/sampler-stm-simulation/.pioenvs/sampler-stm-simulation/program'

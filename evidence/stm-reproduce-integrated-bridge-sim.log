@@ -1,0 +1,3 @@
+PASS integrated x1 SPI2WB/WB2CSR/CSR/595: 25MHz dummy5 ABI4;48bits/3latches;blocked write and clear; active readback
+OBSERVED Wishbone acknowledgements: writes=13 reads=18; baseline duplicate-read issue not fixed
+/srv/codex-hil-data/unified-sinara-slow-control/tests/integrated_bridge_tb.v:61: $finish called at 213401000 (1ps)

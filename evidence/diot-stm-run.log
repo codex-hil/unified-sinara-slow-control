@@ -1,0 +1,297 @@
+[20:25:46][0;32m[I][app:060]: Running through setup()[0m
+[20:25:46][0;36m[D][addrspi:010]: ADDRSPI setup with 3 address pins (8 channels)[0m
+[20:25:46][0;36m[D][addrspi:048]: Selecting channel 0[0m
+[20:25:46][0;36m[D][addrspi:024]: ADDRSPI setup complete[0m
+[20:25:46][0;36m[D][spi_device:406]: mode 3, data_rate 4000kHz[0m
+[20:25:46][0;36m[D][addrspi:098]: Channel 0: registering SPI device[0m
+[20:25:46][0;36m[D][addrspi:113]: Channel 0: registered successfully[0m
+[20:25:46][0;36m[D][spi_device:406]: mode 3, data_rate 4000kHz[0m
+[20:25:46][0;36m[D][addrspi:098]: Channel 1: registering SPI device[0m
+[20:25:46][0;36m[D][addrspi:113]: Channel 1: registered successfully[0m
+[20:25:46][0;36m[D][spi_device:406]: mode 3, data_rate 4000kHz[0m
+[20:25:46][0;36m[D][addrspi:098]: Channel 2: registering SPI device[0m
+[20:25:46][0;36m[D][addrspi:113]: Channel 2: registered successfully[0m
+[20:25:46][0;36m[D][spi_device:406]: mode 3, data_rate 4000kHz[0m
+[20:25:46][0;36m[D][addrspi:098]: Channel 3: registering SPI device[0m
+[20:25:46][0;36m[D][addrspi:113]: Channel 3: registered successfully[0m
+[20:25:46][0;36m[D][spi_device:406]: mode 3, data_rate 4000kHz[0m
+[20:25:46][0;36m[D][addrspi:098]: Channel 4: registering SPI device[0m
+[20:25:46][0;36m[D][addrspi:113]: Channel 4: registered successfully[0m
+[20:25:46][0;36m[D][spi_device:406]: mode 3, data_rate 4000kHz[0m
+[20:25:46][0;36m[D][addrspi:098]: Channel 5: registering SPI device[0m
+[20:25:46][0;36m[D][addrspi:113]: Channel 5: registered successfully[0m
+[20:25:46][0;36m[D][spi_device:406]: mode 3, data_rate 4000kHz[0m
+[20:25:46][0;36m[D][addrspi:098]: Channel 6: registering SPI device[0m
+[20:25:46][0;36m[D][addrspi:113]: Channel 6: registered successfully[0m
+[20:25:46][0;36m[D][spi_device:406]: mode 3, data_rate 4000kHz[0m
+[20:25:46][0;36m[D][addrspi:098]: Channel 7: registering SPI device[0m
+[20:25:46][0;36m[D][addrspi:113]: Channel 7: registered successfully[0m
+[20:25:46][0;32m[I][app:117]: setup() finished successfully![0m
+[20:25:47][0;32m[I][app:151]: ESPHome version 2026.9.0 compiled on 2026-10-17 20:25:45 +0100[0m
+[20:25:47][0;35m[C][logger:216]: Logger:
+  Max Level: DEBUG
+  Initial Level: DEBUG[0m
+[20:25:47][0;35m[C][logger:230]:   Task Log Buffer Slots: 64[0m
+[20:25:47][0;35m[C][sinara_endpoint:067]: Sinara STM GPIO endpoint: host transport; native STM/Kasli runtime port not implied[0m
+[20:25:47][0;35m[C][spi:067]: SPI bus:[0m
+[20:25:47][0;35m[C][spi:077]:   Using software SPI[0m
+[20:25:47][0;36m[D][addrspi:048]: Selecting channel 1[0m
+[20:25:47][0;36m[D][addrspi:048]: Selecting channel 0[0m
+[20:25:47][0;36m[D][addrspi:048]: Selecting channel 3[0m
+[20:25:47][0;35m[C][addrspi:028]: ADDRSPI:[0m
+[20:25:47][0;35m[C][addrspi:029]:   Address Pins: 3[0m
+[20:25:47][0;35m[C][addrspi:030]:   Max Channels: 8[0m
+[20:25:47][0;35m[C][addrspi:131]:   Address Pin %d: [0m
+[20:25:47][0;35m[C][addrspi:131]:   Address Pin %d: [0m
+[20:25:47][0;35m[C][addrspi:131]:   Address Pin %d: [0m
+[20:25:47][0;35m[C][addrspi:036]:   Current Channel: 3[0m
+[20:25:47][0;35m[C][max31855:022]: MAX31855:[0m
+[20:25:47][0;35m[C][max31855:131]:   CS Pin: [0m
+[20:25:47][0;35m[C][max31855:340]:   Update Interval: 2.000s[0m
+[20:25:47][0;35m[C][max31855:017]:   Thermocouple 'Thermocouple 0'
+    State Class: 'measurement'
+    Unit of Measurement: '°C'
+    Accuracy Decimals: 1[0m
+[20:25:47][0;35m[C][max31855:165]:     Device Class: 'temperature'[0m
+[20:25:47][0;35m[C][max31855:029]:   Reference temperature disabled.[0m
+[20:25:47][0;35m[C][max31855:022]: MAX31855:[0m
+[20:25:47][0;35m[C][max31855:131]:   CS Pin: [0m
+[20:25:47][0;35m[C][max31855:340]:   Update Interval: 2.000s[0m
+[20:25:47][0;35m[C][max31855:017]:   Thermocouple 'Thermocouple 1'
+    State Class: 'measurement'
+    Unit of Measurement: '°C'
+    Accuracy Decimals: 1[0m
+[20:25:47][0;35m[C][max31855:165]:     Device Class: 'temperature'[0m
+[20:25:47][0;35m[C][max31855:029]:   Reference temperature disabled.[0m
+[20:25:47][0;35m[C][max31855:022]: MAX31855:[0m
+[20:25:47][0;35m[C][max31855:131]:   CS Pin: [0m
+[20:25:47][0;35m[C][max31855:340]:   Update Interval: 2.000s[0m
+[20:25:47][0;35m[C][max31855:017]:   Thermocouple 'Thermocouple 2'
+    State Class: 'measurement'
+    Unit of Measurement: '°C'
+    Accuracy Decimals: 1[0m
+[20:25:47][0;35m[C][max31855:165]:     Device Class: 'temperature'[0m
+[20:25:47][0;35m[C][max31855:029]:   Reference temperature disabled.[0m
+[20:25:47][0;35m[C][max31855:022]: MAX31855:[0m
+[20:25:47][0;35m[C][max31855:131]:   CS Pin: [0m
+[20:25:47][0;35m[C][max31855:340]:   Update Interval: 2.000s[0m
+[20:25:47][0;35m[C][max31855:017]:   Thermocouple 'Thermocouple 3'
+    State Class: 'measurement'
+    Unit of Measurement: '°C'
+    Accuracy Decimals: 1[0m
+[20:25:47][0;35m[C][max31855:165]:     Device Class: 'temperature'[0m
+[20:25:47][0;35m[C][max31855:029]:   Reference temperature disabled.[0m
+[20:25:47][0;35m[C][max31855:022]: MAX31855:[0m
+[20:25:47][0;35m[C][max31855:131]:   CS Pin: [0m
+[20:25:47][0;35m[C][max31855:340]:   Update Interval: 2.000s[0m
+[20:25:47][0;35m[C][max31855:017]:   Thermocouple 'Thermocouple 4'
+    State Class: 'measurement'
+    Unit of Measurement: '°C'
+    Accuracy Decimals: 1[0m
+[20:25:47][0;35m[C][max31855:165]:     Device Class: 'temperature'[0m
+[20:25:47][0;35m[C][max31855:029]:   Reference temperature disabled.[0m
+[20:25:47][0;35m[C][max31855:022]: MAX31855:[0m
+[20:25:47][0;35m[C][max31855:131]:   CS Pin: [0m
+[20:25:47][0;35m[C][max31855:340]:   Update Interval: 2.000s[0m
+[20:25:47][0;35m[C][max31855:017]:   Thermocouple 'Thermocouple 5'
+    State Class: 'measurement'
+    Unit of Measurement: '°C'
+    Accuracy Decimals: 1[0m
+[20:25:47][0;35m[C][max31855:165]:     Device Class: 'temperature'[0m
+[20:25:47][0;35m[C][max31855:029]:   Reference temperature disabled.[0m
+[20:25:47][0;35m[C][max31855:022]: MAX31855:[0m
+[20:25:47][0;35m[C][max31855:131]:   CS Pin: [0m
+[20:25:47][0;35m[C][max31855:340]:   Update Interval: 2.000s[0m
+[20:25:47][0;35m[C][max31855:017]:   Thermocouple 'Thermocouple 6'
+    State Class: 'measurement'
+    Unit of Measurement: '°C'
+    Accuracy Decimals: 1[0m
+[20:25:47][0;35m[C][max31855:165]:     Device Class: 'temperature'[0m
+[20:25:47][0;35m[C][max31855:029]:   Reference temperature disabled.[0m
+[20:25:47][0;36m[D][addrspi:048]: Selecting channel 1[0m
+[20:25:47][0;36m[D][max31855:097]: Got thermocouple temperature: -1.00°C[0m
+[20:25:47][0;32m[I][max_result:103]: CH1=-1.00[0m
+[20:25:47][0;35m[C][max31855:022]: MAX31855:[0m
+[20:25:47][0;35m[C][max31855:131]:   CS Pin: [0m
+[20:25:47][0;35m[C][max31855:340]:   Update Interval: 2.000s[0m
+[20:25:47][0;35m[C][max31855:017]:   Thermocouple 'Thermocouple 7'
+    State Class: 'measurement'
+    Unit of Measurement: '°C'
+    Accuracy Decimals: 1[0m
+[20:25:47][0;35m[C][max31855:165]:     Device Class: 'temperature'[0m
+[20:25:47][0;35m[C][max31855:029]:   Reference temperature disabled.[0m
+[20:25:47][0;35m[C][mdns:259]: mDNS:
+  Hostname: max31855-diot[0m
+[20:25:47][0;36m[D][addrspi:048]: Selecting channel 6[0m
+[20:25:47][0;36m[D][addrspi:048]: Selecting channel 0[0m
+[20:25:47][0;36m[D][max31855:097]: Got thermocouple temperature: -40.25°C[0m
+[20:25:47][0;32m[I][max_result:091]: CH0=-40.25[0m
+[20:25:47][0;36m[D][addrspi:048]: Selecting channel 3[0m
+[20:25:47][0;36m[D][max31855:097]: Got thermocouple temperature: 0.25°C[0m
+[20:25:47][0;32m[I][max_result:127]: CH3=0.25[0m
+[20:25:47][0;36m[D][addrspi:048]: Selecting channel 6[0m
+[20:25:47][0;36m[D][max31855:097]: Got thermocouple temperature: 200.00°C[0m
+[20:25:47][0;32m[I][max_result:163]: CH6=200.00[0m
+[20:25:47][0;36m[D][addrspi:048]: Selecting channel 4[0m
+[20:25:47][0;36m[D][addrspi:048]: Selecting channel 5[0m
+[20:25:47][0;36m[D][addrspi:048]: Selecting channel 7[0m
+[20:25:47][0;36m[D][addrspi:048]: Selecting channel 2[0m
+[20:25:47][0;36m[D][addrspi:048]: Selecting channel 4[0m
+[20:25:47][0;36m[D][max31855:097]: Got thermocouple temperature: 25.00°C[0m
+[20:25:47][0;32m[I][max_result:139]: CH4=25.00[0m
+[20:25:47][0;33m[W][component:419]: max31855.sensor took a long time for an operation (51 ms), max is 50 ms[0m
+[20:25:47][0;36m[D][addrspi:048]: Selecting channel 5[0m
+[20:25:48][0;36m[D][max31855:097]: Got thermocouple temperature: 99.75°C[0m
+[20:25:48][0;32m[I][max_result:151]: CH5=99.75[0m
+[20:25:48][0;33m[W][component:419]: max31855.sensor took a long time for an operation (59 ms), max is 50 ms[0m
+[20:25:48][0;36m[D][addrspi:048]: Selecting channel 7[0m
+[20:25:48][0;36m[D][max31855:097]: Got thermocouple temperature: 750.00°C[0m
+[20:25:48][0;32m[I][max_result:175]: CH7=750.00[0m
+[20:25:48][0;36m[D][addrspi:048]: Selecting channel 2[0m
+[20:25:48][0;36m[D][max31855:097]: Got thermocouple temperature: 0.00°C[0m
+[20:25:48][0;32m[I][max_result:115]: CH2=0.00[0m
+[20:25:48][0;33m[W][component:419]: max31855.sensor took a long time for an operation (51 ms), max is 50 ms[0m
+[20:25:49][0;36m[D][addrspi:048]: Selecting channel 1[0m
+[20:25:49][0;36m[D][addrspi:048]: Selecting channel 0[0m
+[20:25:49][0;36m[D][addrspi:048]: Selecting channel 3[0m
+[20:25:49][0;36m[D][addrspi:048]: Selecting channel 1[0m
+[20:25:49][0;36m[D][max31855:097]: Got thermocouple temperature: -1.00°C[0m
+[20:25:49][0;32m[I][max_result:103]: CH1=-1.00[0m
+[20:25:49][0;36m[D][addrspi:048]: Selecting channel 6[0m
+[20:25:49][0;36m[D][addrspi:048]: Selecting channel 0[0m
+[20:25:49][0;36m[D][max31855:097]: Got thermocouple temperature: -40.25°C[0m
+[20:25:49][0;32m[I][max_result:091]: CH0=-40.25[0m
+[20:25:49][0;36m[D][addrspi:048]: Selecting channel 3[0m
+[20:25:49][0;36m[D][max31855:097]: Got thermocouple temperature: 0.25°C[0m
+[20:25:49][0;32m[I][max_result:127]: CH3=0.25[0m
+[20:25:49][0;36m[D][addrspi:048]: Selecting channel 6[0m
+[20:25:49][0;36m[D][max31855:097]: Got thermocouple temperature: 200.00°C[0m
+[20:25:49][0;32m[I][max_result:163]: CH6=200.00[0m
+[20:25:49][0;36m[D][addrspi:048]: Selecting channel 4[0m
+[20:25:49][0;36m[D][addrspi:048]: Selecting channel 5[0m
+[20:25:49][0;36m[D][addrspi:048]: Selecting channel 7[0m
+[20:25:49][0;36m[D][addrspi:048]: Selecting channel 2[0m
+[20:25:49][0;36m[D][addrspi:048]: Selecting channel 4[0m
+[20:25:49][0;36m[D][max31855:097]: Got thermocouple temperature: 25.00°C[0m
+[20:25:49][0;32m[I][max_result:139]: CH4=25.00[0m
+[20:25:49][0;36m[D][addrspi:048]: Selecting channel 5[0m
+[20:25:50][0;36m[D][max31855:097]: Got thermocouple temperature: 99.75°C[0m
+[20:25:50][0;32m[I][max_result:151]: CH5=99.75[0m
+[20:25:50][0;36m[D][addrspi:048]: Selecting channel 7[0m
+[20:25:50][0;36m[D][max31855:097]: Got thermocouple temperature: 750.00°C[0m
+[20:25:50][0;32m[I][max_result:175]: CH7=750.00[0m
+[20:25:50][0;33m[W][component:419]: max31855.sensor took a long time for an operation (54 ms), max is 50 ms[0m
+[20:25:50][0;36m[D][addrspi:048]: Selecting channel 2[0m
+[20:25:50][0;36m[D][max31855:097]: Got thermocouple temperature: 0.00°C[0m
+[20:25:50][0;32m[I][max_result:115]: CH2=0.00[0m
+[20:25:51][0;36m[D][addrspi:048]: Selecting channel 1[0m
+[20:25:51][0;36m[D][addrspi:048]: Selecting channel 0[0m
+[20:25:51][0;36m[D][addrspi:048]: Selecting channel 3[0m
+[20:25:51][0;36m[D][addrspi:048]: Selecting channel 1[0m
+[20:25:51][0;36m[D][max31855:097]: Got thermocouple temperature: -1.00°C[0m
+[20:25:51][0;32m[I][max_result:103]: CH1=-1.00[0m
+[20:25:51][0;36m[D][addrspi:048]: Selecting channel 6[0m
+[20:25:51][0;36m[D][addrspi:048]: Selecting channel 0[0m
+[20:25:51][0;36m[D][max31855:097]: Got thermocouple temperature: -40.25°C[0m
+[20:25:51][0;32m[I][max_result:091]: CH0=-40.25[0m
+[20:25:51][0;36m[D][addrspi:048]: Selecting channel 3[0m
+[20:25:51][0;36m[D][max31855:097]: Got thermocouple temperature: 0.25°C[0m
+[20:25:51][0;32m[I][max_result:127]: CH3=0.25[0m
+[20:25:51][0;33m[W][component:419]: max31855.sensor took a long time for an operation (55 ms), max is 50 ms[0m
+[20:25:51][0;36m[D][addrspi:048]: Selecting channel 6[0m
+[20:25:51][0;36m[D][max31855:097]: Got thermocouple temperature: 200.00°C[0m
+[20:25:51][0;32m[I][max_result:163]: CH6=200.00[0m
+[20:25:51][0;33m[W][component:419]: max31855.sensor took a long time for an operation (52 ms), max is 50 ms[0m
+[20:25:51][0;36m[D][addrspi:048]: Selecting channel 4[0m
+[20:25:51][0;36m[D][addrspi:048]: Selecting channel 5[0m
+[20:25:51][0;36m[D][addrspi:048]: Selecting channel 7[0m
+[20:25:51][0;36m[D][addrspi:048]: Selecting channel 2[0m
+[20:25:51][0;36m[D][addrspi:048]: Selecting channel 4[0m
+[20:25:51][0;36m[D][max31855:097]: Got thermocouple temperature: 25.00°C[0m
+[20:25:51][0;32m[I][max_result:139]: CH4=25.00[0m
+[20:25:51][0;36m[D][addrspi:048]: Selecting channel 5[0m
+[20:25:52][0;36m[D][max31855:097]: Got thermocouple temperature: 99.75°C[0m
+[20:25:52][0;32m[I][max_result:151]: CH5=99.75[0m
+[20:25:52][0;33m[W][component:419]: max31855.sensor took a long time for an operation (62 ms), max is 60 ms[0m
+[20:25:52][0;36m[D][addrspi:048]: Selecting channel 7[0m
+[20:25:52][0;36m[D][max31855:097]: Got thermocouple temperature: 750.00°C[0m
+[20:25:52][0;32m[I][max_result:175]: CH7=750.00[0m
+[20:25:52][0;36m[D][addrspi:048]: Selecting channel 2[0m
+[20:25:52][0;36m[D][max31855:097]: Got thermocouple temperature: 0.00°C[0m
+[20:25:52][0;32m[I][max_result:115]: CH2=0.00[0m
+[20:25:53][0;36m[D][addrspi:048]: Selecting channel 1[0m
+[20:25:53][0;36m[D][addrspi:048]: Selecting channel 0[0m
+[20:25:53][0;36m[D][addrspi:048]: Selecting channel 3[0m
+[20:25:53][0;36m[D][addrspi:048]: Selecting channel 1[0m
+[20:25:53][1;31m[E][component:297]: sinara_gpio_endpoint set Error flag: Register transport failed; reopen required[0m
+[20:25:53][1;31m[E][component:204]: sinara_gpio_endpoint was marked as failed[0m
+[20:25:53][1;31m[E][component:297]: sinara_gpio set Error flag: FPGA GPIO unavailable; restart required[0m
+[20:25:53][1;31m[E][component:204]: sinara_gpio was marked as failed[0m
+[20:25:53][1;31m[E][max31855:045]: No data received from MAX31855 (0xFFFFFFFF). Check wiring![0m
+[20:25:53][0;32m[I][max_result:103]: CH1=nan[0m
+[20:25:53][1;31m[E][component:297]: max31855.sensor set Error flag: unspecified[0m
+[20:25:53][0;36m[D][addrspi:048]: Selecting channel 6[0m
+[20:25:53][0;36m[D][addrspi:048]: Selecting channel 0[0m
+[20:25:53][1;31m[E][max31855:045]: No data received from MAX31855 (0xFFFFFFFF). Check wiring![0m
+[20:25:53][0;32m[I][max_result:091]: CH0=nan[0m
+[20:25:53][1;31m[E][component:297]: max31855.sensor set Error flag: unspecified[0m
+[20:25:53][0;36m[D][addrspi:048]: Selecting channel 3[0m
+[20:25:53][1;31m[E][max31855:045]: No data received from MAX31855 (0xFFFFFFFF). Check wiring![0m
+[20:25:53][0;32m[I][max_result:127]: CH3=nan[0m
+[20:25:53][1;31m[E][component:297]: max31855.sensor set Error flag: unspecified[0m
+[20:25:53][0;36m[D][addrspi:048]: Selecting channel 6[0m
+[20:25:53][1;31m[E][max31855:045]: No data received from MAX31855 (0xFFFFFFFF). Check wiring![0m
+[20:25:53][0;32m[I][max_result:163]: CH6=nan[0m
+[20:25:53][1;31m[E][component:297]: max31855.sensor set Error flag: unspecified[0m
+[20:25:53][0;36m[D][addrspi:048]: Selecting channel 4[0m
+[20:25:53][0;36m[D][addrspi:048]: Selecting channel 5[0m
+[20:25:53][0;36m[D][addrspi:048]: Selecting channel 7[0m
+[20:25:53][0;36m[D][addrspi:048]: Selecting channel 2[0m
+[20:25:53][0;36m[D][addrspi:048]: Selecting channel 4[0m
+[20:25:53][1;31m[E][max31855:045]: No data received from MAX31855 (0xFFFFFFFF). Check wiring![0m
+[20:25:53][0;32m[I][max_result:139]: CH4=nan[0m
+[20:25:53][1;31m[E][component:297]: max31855.sensor set Error flag: unspecified[0m
+[20:25:53][0;36m[D][addrspi:048]: Selecting channel 5[0m
+[20:25:53][1;31m[E][max31855:045]: No data received from MAX31855 (0xFFFFFFFF). Check wiring![0m
+[20:25:53][0;32m[I][max_result:151]: CH5=nan[0m
+[20:25:53][1;31m[E][component:297]: max31855.sensor set Error flag: unspecified[0m
+[20:25:53][0;36m[D][addrspi:048]: Selecting channel 7[0m
+[20:25:53][1;31m[E][max31855:045]: No data received from MAX31855 (0xFFFFFFFF). Check wiring![0m
+[20:25:53][0;32m[I][max_result:175]: CH7=nan[0m
+[20:25:53][1;31m[E][component:297]: max31855.sensor set Error flag: unspecified[0m
+[20:25:54][0;36m[D][addrspi:048]: Selecting channel 2[0m
+[20:25:54][1;31m[E][max31855:045]: No data received from MAX31855 (0xFFFFFFFF). Check wiring![0m
+[20:25:54][0;32m[I][max_result:115]: CH2=nan[0m
+[20:25:54][1;31m[E][component:297]: max31855.sensor set Error flag: unspecified[0m
+[20:25:55][0;36m[D][addrspi:048]: Selecting channel 1[0m
+[20:25:55][0;36m[D][addrspi:048]: Selecting channel 0[0m
+[20:25:55][0;36m[D][addrspi:048]: Selecting channel 3[0m
+[20:25:55][0;36m[D][addrspi:048]: Selecting channel 1[0m
+[20:25:55][1;31m[E][max31855:045]: No data received from MAX31855 (0xFFFFFFFF). Check wiring![0m
+[20:25:55][0;32m[I][max_result:103]: CH1=nan[0m
+[20:25:55][0;36m[D][addrspi:048]: Selecting channel 6[0m
+[20:25:55][0;36m[D][addrspi:048]: Selecting channel 0[0m
+[20:25:55][1;31m[E][max31855:045]: No data received from MAX31855 (0xFFFFFFFF). Check wiring![0m
+[20:25:55][0;32m[I][max_result:091]: CH0=nan[0m
+[20:25:55][0;36m[D][addrspi:048]: Selecting channel 3[0m
+[20:25:55][1;31m[E][max31855:045]: No data received from MAX31855 (0xFFFFFFFF). Check wiring![0m
+[20:25:55][0;32m[I][max_result:127]: CH3=nan[0m
+[20:25:55][0;36m[D][addrspi:048]: Selecting channel 6[0m
+[20:25:55][1;31m[E][max31855:045]: No data received from MAX31855 (0xFFFFFFFF). Check wiring![0m
+[20:25:55][0;32m[I][max_result:163]: CH6=nan[0m
+[20:25:55][0;36m[D][addrspi:048]: Selecting channel 4[0m
+[20:25:55][0;36m[D][addrspi:048]: Selecting channel 5[0m
+[20:25:55][0;36m[D][addrspi:048]: Selecting channel 7[0m
+[20:25:55][0;36m[D][addrspi:048]: Selecting channel 2[0m
+[20:25:55][0;36m[D][addrspi:048]: Selecting channel 4[0m
+[20:25:55][1;31m[E][max31855:045]: No data received from MAX31855 (0xFFFFFFFF). Check wiring![0m
+[20:25:55][0;32m[I][max_result:139]: CH4=nan[0m
+[20:25:55][0;36m[D][addrspi:048]: Selecting channel 5[0m
+[20:25:55][1;31m[E][max31855:045]: No data received from MAX31855 (0xFFFFFFFF). Check wiring![0m
+[20:25:55][0;32m[I][max_result:151]: CH5=nan[0m
+[20:25:55][0;36m[D][addrspi:048]: Selecting channel 7[0m
+[20:25:55][1;31m[E][max31855:045]: No data received from MAX31855 (0xFFFFFFFF). Check wiring![0m
+[20:25:55][0;32m[I][max_result:175]: CH7=nan[0m
+[20:25:56][0;36m[D][addrspi:048]: Selecting channel 2[0m
+[20:25:56][1;31m[E][max31855:045]: No data received from MAX31855 (0xFFFFFFFF). Check wiring![0m
+[20:25:56][0;32m[I][max_result:115]: CH2=nan[0m

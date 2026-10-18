@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-10-14T11:39:05.847057+00:00",
+  "hardware_tested": false,
+  "target": "STM System Board v1.1, excludes v1.0/v1.2 ESP32 variant",
+  "artifacts": [
+    {
+      "path": "work/builds/stm-1.88/thumbv7em-none-eabihf/release/main",
+      "sha256": "fd98ee80ead9ac5598d6402e3521469f6ecf7ba726a27f750176b3967da810b2",
+      "expected_sha256": "fd98ee80ead9ac5598d6402e3521469f6ecf7ba726a27f750176b3967da810b2",
+      "verified": true,
+      "frozen_path": "work/hil-kit/2026-10-14/main-fd98ee80ead9"
+    },
+    {
+      "path": "work/builds/stm-gateware/stm_sys_board-seed3.bit",
+      "sha256": "7db2ffceff7b70ebc5177167cb91e5150635fbaf0f2241c46756e920b48a41b0",
+      "expected_sha256": "7db2ffceff7b70ebc5177167cb91e5150635fbaf0f2241c46756e920b48a41b0",
+      "verified": true,
+      "frozen_path": "work/hil-kit/2026-10-14/stm_sys_board-seed3-7db2ffceff7b.bit"
+    },
+    {
+      "path": "work/builds/stm-gateware/stm_sys_board-seed3.svf",
+      "sha256": "ee945c1f6f9c7af859619e2857874b8b570690d75387b02ced04cfde59618dd4",
+      "expected_sha256": "ee945c1f6f9c7af859619e2857874b8b570690d75387b02ced04cfde59618dd4",
+      "verified": true,
+      "frozen_path": "work/hil-kit/2026-10-14/stm_sys_board-seed3-ee945c1f6f9c.svf"
+    },
+    {
+      "path": "work/builds/hil-probe/thumbv7em-none-eabihf/release/hil_probe",
+      "sha256": "2d7041e00b6da0abb47dadfdcf628e68cbc704624911eecb5586c22a556dded4",
+      "expected_sha256": "2d7041e00b6da0abb47dadfdcf628e68cbc704624911eecb5586c22a556dded4",
+      "verified": true,
+      "frozen_path": "work/hil-kit/2026-10-14/hil_probe-2d7041e00b6d"
+    },
+    {
+      "path": "work/builds/stm-integrated/stm_sys_board-strict.bit",
+      "sha256": "429830fa79099fff3ed3711a4c24f4e9d7d17ad48f16adf43620ddfaf68d18f5",
+      "expected_sha256": "429830fa79099fff3ed3711a4c24f4e9d7d17ad48f16adf43620ddfaf68d18f5",
+      "verified": true,
+      "frozen_path": "work/hil-kit/2026-10-14/stm_sys_board-strict-429830fa7909.bit"
+    }
+  ],
+  "candidate_build": "PASS",
+  "candidate_sources_match": true,
+  "programming_ready": false,
+  "blockers": [
+    "Actual PCB/JTAG/SWD identities and inherited pin map not reviewed",
+    "Physical connection and hardware action authorization pending",
+    "No working bidirectional host register service deployed; probe is read-only RTT",
+    "Direction turnarounds and external SPI IO timing not verified"
+  ],
+  "first_test": "Empty slots; volatile FPGA image only where supported; read-only RTT CSR IDs x8 with hil_probe after review",
+  "next_test": "ABI4 boot zero mask; scope SCK/RCLK/OE, approved single-line direction/output test with passive fixture",
+  "forbidden_by_this_manifest": [
+    "Automatic programming",
+    "Persistent FPGA/STM flash write",
+    "Unknown attached module output drive"
+  ],
+  "kasli": {
+    "source_sha256": {
+      "gateware/csr_bank.py": "78676c779959d2f8db329f00751602cb7e82c58a4004732da43a72bf805f5020",
+      "gateware/direction.py": "d94fb901bd478243a660b12c1582bb24613f59ceb645d589d574b2a542cf261e",
+      "gateware/direction_csr.py": "bd4ad618a28c36f554dc39173e66cf047a973c95841c07809025aabd5e7b3d80",
+      "gateware/gpio.py": "6c12c05b9a1b48ad0c729d14046a37b71a0800a4a5ec0b356613157c2ef2053a",
+      "gateware/kasli_uart_gpio.py": "e386abd8cb428fb533e641030e0ec7aae3e8a1c71ce391ac41dbd086c56deacf",
+      "gateware/pinmux.py": "10cf4f946ffddb0c143308f864621940972ef70a6c7a7f418879343cbe84bae0",
+      "gateware/slow_fabric.py": "bb120be24790cc8e6393d20c4939b36ec294aba123ffe792aa942c45d3473174"
+    },
+    "target": "kasli",
+    "hardware_tested": false,
+    "timestamp": "2026-10-13T19:18:33.969969+00:00",
+    "synthesis": "PASS",
+    "out_of_context_route": "PASS",
+    "timing": {
+      "setup_slack_ns": 8.936,
+      "hold_slack_ns": 0.11
+    },
+    "limitations": "Logical eight-slot fabric only. No SoC/EEM IO constraints or bitstream. 62.5 MHz constraint; no external IO timing proof.",
+    "result": "PASS"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "hardware_target": "STM System Board v1.1 (user confirmed)",
+  "hardware_tested": false,
+  "upstream_sources_modified": false,
+  "firmware": {
+    "rust": "1.88.0",
+    "target": "thumbv7em-none-eabihf",
+    "locked_release_build": "PASS",
+    "warnings": 99
+  },
+  "gateware": {
+    "dependencies": "upstream flake-pinned Migen/MiSoC/LiteX",
+    "python": "3.12.3",
+    "yosys": "0.69+272",
+    "nextpnr": "0.11.1-54-g861c57be",
+    "original_seed1_sys_mhz": 97.31,
+    "seed2_sys_mhz": 91.94,
+    "selected_seed": 3,
+    "strict_pnr": "PASS",
+    "seed3_sys_mhz": 100.3,
+    "required_sys_mhz": 100,
+    "qspi_report_mhz": 270.05,
+    "qspi_constraint_mhz": 133.01,
+    "external_io_timing_validated": false,
+    "note": "Modern FPGA tools, not exact historical Nix toolchain. Timing margin small; no board or external-clock/CDC verification."
+  },
+  "simulation": {
+    "original_slot_gpio_irq": "PASS",
+    "spi2wb_serial_bridge": "PASS: 25 MHz x1, 16-bit header, dummy5, IDs160..162, write/readback140",
+    "physical": "NOT_RUN",
+    "limitations": "Behavioral FD1P3BX and Wishbone RAM; no pads, metastability or full CSR bank. Harness sees one startup write to address 0, excluded from transaction checks; startup safety pending HIL. Two Wishbone reads observed per serial read; exactly-once read semantics FAIL in this harness. No read-side writes after startup."
+  },
+  "artifacts": [
+    {
+      "path": "work/builds/stm-1.88/thumbv7em-none-eabihf/release/main",
+      "size_bytes": 4017956,
+      "sha256": "fd98ee80ead9ac5598d6402e3521469f6ecf7ba726a27f750176b3967da810b2"
+    },
+    {
+      "path": "work/builds/stm-gateware/stm_sys_board-seed3.bit",
+      "size_bytes": 341696,
+      "sha256": "7db2ffceff7b70ebc5177167cb91e5150635fbaf0f2241c46756e920b48a41b0"
+    },
+    {
+      "path": "work/builds/stm-gateware/stm_sys_board-seed3.svf",
+      "size_bytes": 723352,
+      "sha256": "ee945c1f6f9c7af859619e2857874b8b570690d75387b02ced04cfde59618dd4"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+    "csr_bases": {
+        "gpio0": 0,
+        "slow_id": 2048,
+        "ctrl": 4096,
+        "identifier_mem": 6144
+    },
+    "csr_registers": {
+        "gpio0_output": {
+            "addr": 0,
+            "size": 1,
+            "type": "rw"
+        },
+        "gpio0_input": {
+            "addr": 4,
+            "size": 1,
+            "type": "ro"
+        },
+        "gpio0_oe": {
+            "addr": 8,
+            "size": 1,
+            "type": "rw"
+        },
+        "slow_id_abi": {
+            "addr": 2048,
+            "size": 1,
+            "type": "ro"
+        },
+        "ctrl_reset": {
+            "addr": 4096,
+            "size": 1,
+            "type": "rw"
+        },
+        "ctrl_scratch": {
+            "addr": 4100,
+            "size": 1,
+            "type": "rw"
+        },
+        "ctrl_bus_errors": {
+            "addr": 4104,
+            "size": 1,
+            "type": "ro"
+        }
+    },
+    "constants": {
+        "config_platform_name": "kasli_uart_gpio",
+        "config_clock_frequency": 62500000,
+        "config_cpu_type_none": null,
+        "config_cpu_variant_standard": null,
+        "config_cpu_family": null,
+        "config_cpu_name": "None",
+        "config_cpu_human_name": "Unknown",
+        "config_bios_no_build_time": null,
+        "config_identifier": "Sinara slow GPIO bring-up",
+        "config_csr_data_width": 32,
+        "config_csr_alignment": 32,
+        "config_csr_ordering_big": null,
+        "config_bus_standard": "wishbone",
+        "config_bus_data_width": 32,
+        "config_bus_address_width": 32,
+        "config_bus_bursting": 0
+    },
+    "memories": {
+        "csr": {
+            "base": 0,
+            "size": 65536,
+            "type": "io"
+        }
+    },
+    "cores": {
+        "gpio0": "SlowGPIO",
+        "slow_id": "SlowIdentity",
+        "ctrl": "SoCController"
+    }
+}

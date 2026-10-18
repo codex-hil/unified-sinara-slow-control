@@ -1,0 +1,4 @@
+Startup Wishbone writes in behavioral harness: 1 (excluded from transaction checks)
+LIMITATION: 8 Wishbone reads for four serial reads
+PASS upstream SPI2WB: 25MHz x1, 16-bit header, dummy5, IDs160..162, write/readback140, no read-side writes
+/srv/codex-hil-data/unified-sinara-slow-control/tests/stm_bridge_tb.v:76: $finish called at 8601000 (1ps)

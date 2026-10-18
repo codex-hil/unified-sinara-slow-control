@@ -1,0 +1,25 @@
+{
+  "result": "PASS",
+  "hardware_tested": false,
+  "synthesis_run": false,
+  "profile": "zotino_eem0",
+  "output_pairs": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    7
+  ],
+  "input_pairs": [
+    2,
+    6
+  ],
+  "verilog": "work/zotino-kasli-elaboration/gateware/kasli_uart_gpio.v",
+  "sha256": "eb0ffbbcd2499c4378c4c65f550e56d6dd5c0870844fb9c328be49bf580d5c19",
+  "limits": [
+    "synthetic EEM mapping, no electrical review",
+    "no P&R or physical loading",
+    "CPU-free UARTbone host bring-up, not native ESPHome runtime"
+  ]
+}

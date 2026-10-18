@@ -1,0 +1,17 @@
+[18:44:14][0;32m[I][app:060]: Running through setup()[0m
+[18:44:14][1;31m[E][component:297]: sinara_gpio_endpoint set Error flag: Register transport failed; reopen required[0m
+[18:44:14][1;31m[E][component:204]: sinara_gpio_endpoint was marked as failed[0m
+[18:44:14][1;31m[E][component:204]: sinara_sampler was marked as failed[0m
+[18:44:14][1;31m[E][component:297]: sinara_sampler set Error flag: unspecified[0m
+[18:44:14][0;32m[I][app:117]: setup() finished successfully![0m
+[18:44:14][0;32m[I][app:151]: ESPHome version 2026.9.0 compiled on 2026-10-17 18:43:38 +0100[0m
+[18:44:14][0;35m[C][logger:216]: Logger:
+  Max Level: DEBUG
+  Initial Level: DEBUG[0m
+[18:44:14][0;35m[C][logger:230]:   Task Log Buffer Slots: 64[0m
+[18:44:14][0;35m[C][sinara_endpoint:066]: Sampler STM GPIO endpoint: host transport; native STM/Kasli runtime port not implied[0m
+[18:44:14][1;31m[E][component:143]:   sinara_gpio_endpoint is marked FAILED: Register transport failed; reopen required[0m
+[18:44:14][0;35m[C][sinara_sampler:031]: Sampler 8-channel slow SPI/GPIO, v2.2 reference, all channels captured together[0m
+[18:44:14][1;31m[E][component:143]:   sinara_sampler is marked FAILED: unspecified[0m
+[18:44:14][0;35m[C][mdns:259]: mDNS:
+  Hostname: sampler-stm-loopback[0m

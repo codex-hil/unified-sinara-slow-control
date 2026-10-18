@@ -1,0 +1,7 @@
+{
+  "stm_csr_master_urukul_routes": "PASS",
+  "kasli_csr_master_urukul_routes": "PASS",
+  "stm_target_elaboration": "PASS",
+  "hardware_tested": false,
+  "scope": "CPLD8/attenuation only; logical EEM map; no physical adapter validation"
+}

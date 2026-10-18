@@ -1,0 +1,195 @@
+INFO ESPHome 2026.9.0
+INFO Reading configuration integrations/esphome/examples/sampler-stm-simulation.yaml...
+esphome:
+  name: sampler-stm-simulation
+  build_path: /srv/codex-hil-data/unified-sinara-slow-control/work/builds/sampler-stm-simulation
+  min_version: 2026.9.0
+  friendly_name: ''
+  platformio_options: {}
+  build_flags: []
+  environment_variables: {}
+  includes: []
+  includes_c: []
+  libraries: []
+  name_add_mac_suffix: false
+  merge_warnings: true
+  debug_scheduler: false
+  areas: []
+  devices: []
+host:
+  mac_address: 98:35:69:AB:F6:79
+logger:
+  level: DEBUG
+  baud_rate: 115200
+  tx_buffer_size: 512
+  deassert_rts_dtr: false
+  logs: {}
+  runtime_tag_levels: false
+external_components:
+  - source:
+      path: /srv/codex-hil-data/unified-sinara-slow-control/integrations/esphome/examples/../components
+      type: local
+    components:
+      - sinara_gpio_endpoint
+      - sinara_sampler
+    refresh: 1d
+sinara_gpio_endpoint:
+  - id: endpoint0
+    controller: stm_sys_board
+    mode: simulation
+    slot: 0
+    output_address: 0x00
+    input_address: 0x01
+    oe_address: 0x02
+    abi_address: 0x00
+    output_capable:
+      - 0
+      - 2
+      - 3
+      - 4
+      - 5
+      - 7
+    input_capable:
+      - 1
+      - 6
+    electrical_profile_reviewed: false
+    tcp_port: 1234
+    timeout_ms: 5000
+sinara_sampler:
+  - id: sampler0
+    endpoint_id: endpoint0
+    hardware_revision: v2.2
+    gains:
+      - 1
+      - 10
+      - 100
+      - 1000
+      - 1
+      - 10
+      - 100
+      - 1000
+    update_interval: 1s
+    pinmux:
+      adc_clk: 0
+      adc_miso: 1
+      sdr: 2
+      cnv: 3
+      pgia_clk: 4
+      pgia_mosi: 5
+      pgia_miso: 6
+      pgia_latch: 7
+sensor:
+  - platform: sinara_sampler
+    sampler_id: sampler0
+    channel: 0
+    name: Simulated Sampler CH0
+    on_value:
+      - then:
+          - lambda: !lambda |-
+              ESP_LOGI("sampler_result", "SIMULATED_CH0=%.8f", x);
+    disabled_by_default: false
+    force_update: false
+    unit_of_measurement: V
+    accuracy_decimals: 5
+    device_class: voltage
+    state_class: measurement
+  - platform: sinara_sampler
+    sampler_id: sampler0
+    channel: 1
+    name: Simulated Sampler CH1
+    on_value:
+      - then:
+          - lambda: !lambda |-
+              ESP_LOGI("sampler_result", "SIMULATED_CH1=%.8f", x);
+    disabled_by_default: false
+    force_update: false
+    unit_of_measurement: V
+    accuracy_decimals: 5
+    device_class: voltage
+    state_class: measurement
+  - platform: sinara_sampler
+    sampler_id: sampler0
+    channel: 2
+    name: Simulated Sampler CH2
+    on_value:
+      - then:
+          - lambda: !lambda |-
+              ESP_LOGI("sampler_result", "SIMULATED_CH2=%.8f", x);
+    disabled_by_default: false
+    force_update: false
+    unit_of_measurement: V
+    accuracy_decimals: 5
+    device_class: voltage
+    state_class: measurement
+  - platform: sinara_sampler
+    sampler_id: sampler0
+    channel: 3
+    name: Simulated Sampler CH3
+    on_value:
+      - then:
+          - lambda: !lambda |-
+              ESP_LOGI("sampler_result", "SIMULATED_CH3=%.8f", x);
+    disabled_by_default: false
+    force_update: false
+    unit_of_measurement: V
+    accuracy_decimals: 5
+    device_class: voltage
+    state_class: measurement
+  - platform: sinara_sampler
+    sampler_id: sampler0
+    channel: 4
+    name: Simulated Sampler CH4
+    on_value:
+      - then:
+          - lambda: !lambda |-
+              ESP_LOGI("sampler_result", "SIMULATED_CH4=%.8f", x);
+    disabled_by_default: false
+    force_update: false
+    unit_of_measurement: V
+    accuracy_decimals: 5
+    device_class: voltage
+    state_class: measurement
+  - platform: sinara_sampler
+    sampler_id: sampler0
+    channel: 5
+    name: Simulated Sampler CH5
+    on_value:
+      - then:
+          - lambda: !lambda |-
+              ESP_LOGI("sampler_result", "SIMULATED_CH5=%.8f", x);
+    disabled_by_default: false
+    force_update: false
+    unit_of_measurement: V
+    accuracy_decimals: 5
+    device_class: voltage
+    state_class: measurement
+  - platform: sinara_sampler
+    sampler_id: sampler0
+    channel: 6
+    name: Simulated Sampler CH6
+    on_value:
+      - then:
+          - lambda: !lambda |-
+              ESP_LOGI("sampler_result", "SIMULATED_CH6=%.8f", x);
+    disabled_by_default: false
+    force_update: false
+    unit_of_measurement: V
+    accuracy_decimals: 5
+    device_class: voltage
+    state_class: measurement
+  - platform: sinara_sampler
+    sampler_id: sampler0
+    channel: 7
+    name: Simulated Sampler CH7
+    on_value:
+      - then:
+          - lambda: !lambda |-
+              ESP_LOGI("sampler_result", "SIMULATED_CH7=%.8f", x);
+    disabled_by_default: false
+    force_update: false
+    unit_of_measurement: V
+    accuracy_decimals: 5
+    device_class: voltage
+    state_class: measurement
+
+INFO Configuration is valid!

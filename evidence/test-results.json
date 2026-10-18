@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-10-18T07:33:04.476726+00:00",
+  "hardware_tested": false,
+  "results": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "evidence/test-1.log"
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--manifest-path",
+        "firmware/stm-service/Cargo.toml"
+      ],
+      "exit_code": 0,
+      "log": "evidence/test-2.log"
+    },
+    {
+      "command": [
+        "cargo",
+        "test",
+        "--manifest-path",
+        "firmware/flash-serprog/Cargo.toml"
+      ],
+      "exit_code": 0,
+      "log": "evidence/test-3.log"
+    },
+    {
+      "command": [
+        "cargo",
+        "build",
+        "--example",
+        "stdio_simulator",
+        "--manifest-path",
+        "firmware/stm-service/Cargo.toml"
+      ],
+      "exit_code": 0,
+      "log": "evidence/test-4.log"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/check_reference.py"
+      ],
+      "exit_code": 0,
+      "log": "evidence/test-5.log"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/test_rust_wire.py"
+      ],
+      "exit_code": 0,
+      "log": "evidence/test-6.log"
+    }
+  ]
+}

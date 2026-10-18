@@ -1,0 +1,26 @@
+{
+  "status": "offline_build_pass_hardware_not_run",
+  "sources": {
+    "gateware": [
+      "stm-gateware",
+      "46f14f81d6a29c664f72d8c7373f4d346b43970d"
+    ],
+    "firmware": [
+      "stm-firmware",
+      "19bc5913abe66b39f5fce9cf45c9f7126b8782c4"
+    ]
+  },
+  "reason": "Gateware revision 3 / 15-bit address matches firmware U16 headers; target v1.1 confirmed by user. Physical programming and testing pending.",
+  "hardware_actions": false,
+  "hardware": {
+    "target": "STM System Board v1.1",
+    "release_tag": "v1.1rc1",
+    "release_commit": "6ef210dac91309d9d0770367e12a72a3db93f7f6",
+    "user_confirmation": "v1.1 jest ok",
+    "excluded": [
+      "v1.0: ECP5 connection bugs reported by user",
+      "v1.2: ESP32-capable variant excluded by user"
+    ]
+  },
+  "build_evidence": "evidence/stm-upstream-build-result.json"
+}

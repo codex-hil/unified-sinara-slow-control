@@ -1,0 +1,27 @@
+name: Offline software tests
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  core:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - name: Install host and pinned simulation dependencies
+        run: |
+          python -m pip install .
+          python -m pip install "migen @ git+https://github.com/m-labs/migen.git@e19524c963a8342952840983047557707fbe0b6a" "litex @ git+https://github.com/enjoy-digital/litex.git@b2759f69bcae8be0357fb2ee5eebe216365d1f00"
+      - name: Python, native C++ and Migen simulation tests
+        run: python -m unittest discover -s tests -v
+      - name: Rust gateway and flash protocol cores
+        run: |
+          cargo test --manifest-path firmware/stm-service/Cargo.toml
+          cargo test --manifest-path firmware/flash-serprog/Cargo.toml
+      - name: Cross-language gateway wire test
+        run: |
+          cargo build --example stdio_simulator --manifest-path firmware/stm-service/Cargo.toml
+          PYTHONPATH=src python tools/test_rust_wire.py

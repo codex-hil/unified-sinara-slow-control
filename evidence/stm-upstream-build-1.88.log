@@ -1,0 +1,925 @@
+warning: `/srv/codex-hil-data/unified-sinara-slow-control/work/upstream-stm/firmware/.cargo/config` is deprecated in favor of `config.toml`
+note: if you need to support cargo 1.38 or earlier, you can symlink `config` to `config.toml`
+   Compiling proc-macro2 v1.0.81
+   Compiling unicode-ident v1.0.12
+   Compiling autocfg v1.2.0
+   Compiling syn v1.0.109
+   Compiling nb v1.1.0
+   Compiling version_check v0.9.4
+   Compiling cortex-m v0.7.7
+   Compiling semver-parser v0.7.0
+   Compiling semver v0.9.0
+   Compiling libm v0.2.8
+   Compiling stable_deref_trait v1.2.0
+   Compiling nb v0.1.3
+   Compiling semver v1.0.22
+   Compiling void v1.0.2
+   Compiling rustc_version v0.2.3
+   Compiling num-traits v0.2.18
+   Compiling embedded-hal v0.2.7
+   Compiling bare-metal v0.2.5
+   Compiling vcell v0.1.3
+   Compiling volatile-register v0.2.2
+   Compiling byteorder v1.5.0
+   Compiling quote v1.0.36
+   Compiling bitfield v0.13.2
+   Compiling serde v1.0.198
+   Compiling rustc_version v0.4.0
+   Compiling syn v2.0.60
+   Compiling heapless v0.7.17
+   Compiling num-rational v0.3.2
+   Compiling typenum v1.17.0
+   Compiling hash32 v0.2.1
+   Compiling generic-array v0.14.7
+   Compiling no-std-net v0.5.0
+   Compiling num-integer v0.1.46
+   Compiling num-complex v0.3.1
+   Compiling cortex-m-rt v0.7.4
+   Compiling num-iter v0.1.44
+   Compiling indexmap v1.9.3
+   Compiling proc-macro-error-attr v1.0.4
+   Compiling generic-array v0.13.3
+   Compiling generic-array v0.12.4
+   Compiling num v0.3.1
+   Compiling as-slice v0.1.5
+   Compiling embedded-time v0.12.1
+   Compiling proc-macro-error v1.0.4
+   Compiling cortex-m v0.6.7
+   Compiling log v0.4.21
+   Compiling bit_field v0.10.2
+   Compiling ryu v1.0.17
+   Compiling hashbrown v0.12.3
+   Compiling aligned v0.3.5
+   Compiling paste v1.0.14
+   Compiling stm32h7 v0.14.0
+   Compiling bare-metal v1.0.0
+   Compiling atomic-polyfill v1.0.3
+   Compiling managed v0.8.0
+   Compiling bitflags v1.3.2
+   Compiling rtic-syntax v1.0.3
+   Compiling smoltcp v0.8.2
+   Compiling serde_derive v1.0.198
+   Compiling cortex-m-rtic v1.1.4
+   Compiling rtic-monotonic v1.0.0
+   Compiling idsp v0.7.1
+   Compiling ufmt-write v0.1.0
+   Compiling critical-section v1.1.2
+   Compiling gcd v2.3.0
+   Compiling fugit v0.3.7
+   Compiling rtt-target v0.3.1
+   Compiling shared-bus v0.2.2
+   Compiling embedded-dma v0.1.2
+   Compiling rtic-core v1.0.0
+   Compiling stm_sys_board v0.1.0 (/srv/codex-hil-data/unified-sinara-slow-control/work/upstream-stm/firmware)
+   Compiling bitrate v0.1.1
+   Compiling cast v0.3.0
+   Compiling nanorand v0.6.1
+   Compiling asm-delay v0.9.0
+   Compiling systick-monotonic v1.0.1
+   Compiling rtt-logger v0.2.1
+   Compiling shared-bus v0.3.1
+   Compiling mono-clock v0.1.1
+   Compiling enum-iterator-derive v0.6.0
+   Compiling smlang-macros v0.2.1
+   Compiling cortex-m-rt-macros v0.7.0
+   Compiling enum-iterator v0.6.0
+   Compiling derive_miniconf v0.3.0
+   Compiling derive_miniconf v0.5.0
+   Compiling cortex-m-rtic-macros v1.1.6
+   Compiling smlang v0.4.2
+   Compiling num_enum_derive v0.5.11
+   Compiling mcp23017 v1.0.0
+   Compiling micromath v2.1.0
+   Compiling mutex-trait v0.2.0
+   Compiling num_enum v0.5.11
+   Compiling num-complex v0.4.5
+   Compiling embedded-nal v0.6.0
+   Compiling serde-json-core v0.4.0
+   Compiling minimq v0.5.3
+   Compiling smoltcp-nal v0.2.1
+   Compiling miniconf v0.3.0
+   Compiling miniconf v0.5.0
+   Compiling stm32h7xx-hal v0.11.0
+warning: unused import: `InputPin`
+  --> src/hardware/setup.rs:16:44
+   |
+16 | use embedded_hal::digital::v2::{OutputPin, InputPin};
+   |                                            ^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `crate::hardware::DeviceIO`
+  --> src/hardware/setup.rs:17:5
+   |
+17 | use crate::hardware::DeviceIO;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `core::ptr::addr_of`
+ --> src/hardware/ecp5.rs:1:5
+  |
+1 | use core::ptr::addr_of;
+  |     ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `stm32h7xx_hal::pac::cec::ier::ARBLSTIE_R`
+ --> src/hardware/ecp5.rs:3:5
+  |
+3 | use stm32h7xx_hal::pac::cec::ier::ARBLSTIE_R;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unnecessary parentheses around `while` condition
+  --> src/hardware/ecp5.rs:73:15
+   |
+73 |         while (self.qspi.is_busy() != Ok(())){
+   |               ^                             ^
+   |
+   = note: `#[warn(unused_parens)]` on by default
+help: remove these parentheses
+   |
+73 -         while (self.qspi.is_busy() != Ok(())){
+73 +         while self.qspi.is_busy() != Ok(()) {
+   |
+
+warning: unnecessary parentheses around `while` condition
+  --> src/hardware/ecp5.rs:98:15
+   |
+98 |         while (self.qspi.is_busy() != Ok(())){
+   |               ^                             ^
+   |
+help: remove these parentheses
+   |
+98 -         while (self.qspi.is_busy() != Ok(())){
+98 +         while self.qspi.is_busy() != Ok(()) {
+   |
+
+warning: unnecessary parentheses around `if` condition
+   --> src/hardware/ecp5.rs:373:16
+    |
+373 |             if (write.len() - w_pointer >= 2){
+    |                ^                            ^
+    |
+help: remove these parentheses
+    |
+373 -             if (write.len() - w_pointer >= 2){
+373 +             if write.len() - w_pointer >= 2 {
+    |
+
+warning: unnecessary parentheses around `if` condition
+   --> src/hardware/ecp5.rs:389:21
+    |
+389 |             else if (write.len() - w_pointer == 1){
+    |                     ^                            ^
+    |
+help: remove these parentheses
+    |
+389 -             else if (write.len() - w_pointer == 1){
+389 +             else if write.len() - w_pointer == 1 {
+    |
+
+warning: unnecessary parentheses around `if` condition
+   --> src/hardware/ecp5.rs:411:12
+    |
+411 |         if (read.len() - r_pointer >= 2){
+    |            ^                           ^
+    |
+help: remove these parentheses
+    |
+411 -         if (read.len() - r_pointer >= 2){
+411 +         if read.len() - r_pointer >= 2 {
+    |
+
+warning: unnecessary parentheses around `if` condition
+   --> src/hardware/ecp5.rs:449:15
+    |
+449 |            if (write.len() - w_pointer >= 2){
+    |               ^                            ^
+    |
+help: remove these parentheses
+    |
+449 -            if (write.len() - w_pointer >= 2){
+449 +            if write.len() - w_pointer >= 2 {
+    |
+
+warning: unnecessary parentheses around `if` condition
+   --> src/hardware/ecp5.rs:456:20
+    |
+456 |            else if (write.len() - w_pointer == 1){
+    |                    ^                            ^
+    |
+help: remove these parentheses
+    |
+456 -            else if (write.len() - w_pointer == 1){
+456 +            else if write.len() - w_pointer == 1 {
+    |
+
+warning: unnecessary parentheses around `if` condition
+   --> src/hardware/ecp5.rs:477:15
+    |
+477 |            if (read.len() - r_pointer >= 2){
+    |               ^                           ^
+    |
+help: remove these parentheses
+    |
+477 -            if (read.len() - r_pointer >= 2){
+477 +            if read.len() - r_pointer >= 2 {
+    |
+
+warning: unused import: `crate::hardware::devices::boards::hvsup_isol::max_controller::Coefs`
+ --> src/hardware/devices/boards/hvsup_isol/mod.rs:1:5
+  |
+1 | use crate::hardware::devices::boards::hvsup_isol::max_controller::Coefs;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `SystemTimer` and `ecp5`
+ --> src/hardware/devices/boards/hvsup_isol/mod.rs:4:23
+  |
+4 | use crate::hardware::{ecp5, SystemTimer};
+  |                       ^^^^  ^^^^^^^^^^^
+
+warning: unused import: `stm32h7xx_hal::device::bdma::ch`
+ --> src/hardware/devices/boards/hvsup_isol/max_controller.rs:2:5
+  |
+2 | use stm32h7xx_hal::device::bdma::ch;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `SystemTimer`
+ --> src/hardware/devices/boards/hvsup_isol/hvsupnegneg.rs:2:44
+  |
+2 | use crate::hardware::{setup::BusReference, SystemTimer};
+  |                                            ^^^^^^^^^^^
+
+warning: unused import: `SystemTimer`
+ --> src/hardware/devices/boards/hvsup_isol/hvsupnegpos.rs:2:44
+  |
+2 | use crate::hardware::{setup::BusReference, SystemTimer};
+  |                                            ^^^^^^^^^^^
+
+warning: unused import: `SystemTimer`
+ --> src/hardware/devices/boards/hvsup_isol/hvsupposneg.rs:2:44
+  |
+2 | use crate::hardware::{setup::BusReference, SystemTimer};
+  |                                            ^^^^^^^^^^^
+
+warning: unused import: `SystemTimer`
+ --> src/hardware/devices/boards/hvsup_isol/hvsuppospos.rs:2:44
+  |
+2 | use crate::hardware::{setup::BusReference, SystemTimer};
+  |                                            ^^^^^^^^^^^
+
+warning: unused import: `embedded_hal::digital::v2::OutputPin`
+ --> src/hardware/devices/boards/magneto/mod.rs:1:5
+  |
+1 | use embedded_hal::digital::v2::OutputPin;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `heapless::binary_heap`
+ --> src/hardware/devices/boards/magneto/mod.rs:2:5
+  |
+2 | use heapless::binary_heap;
+  |     ^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `ECP5`
+ --> src/hardware/devices/boards/magneto/mod.rs:7:29
+  |
+7 | use crate::hardware::ecp5::{ECP5, OFFSET_TO_SLOT, OFFSET_TO_SPI, SPI};
+  |                             ^^^^
+
+warning: unused import: `SlotsBus`
+ --> src/hardware/devices/boards/magneto/mod.rs:8:44
+  |
+8 | use crate::hardware::setup::{BusReference, SlotsBus};
+  |                                            ^^^^^^^^
+
+warning: unused imports: `settings` and `telemetry`
+  --> src/hardware/devices/boards/magneto/mod.rs:10:18
+   |
+10 | use crate::net::{settings, telemetry};
+   |                  ^^^^^^^^  ^^^^^^^^^
+
+warning: unnecessary parentheses around assigned value
+   --> src/hardware/devices/boards/magneto/mod.rs:173:22
+    |
+173 |             value |= (1 << 3);
+    |                      ^      ^
+    |
+help: remove these parentheses
+    |
+173 -             value |= (1 << 3);
+173 +             value |= 1 << 3;
+    |
+
+warning: unnecessary parentheses around assigned value
+   --> src/hardware/devices/boards/magneto/mod.rs:176:22
+    |
+176 |             value |= (1 << 2);
+    |                      ^      ^
+    |
+help: remove these parentheses
+    |
+176 -             value |= (1 << 2);
+176 +             value |= 1 << 2;
+    |
+
+warning: unnecessary parentheses around assigned value
+   --> src/hardware/devices/boards/magneto/mod.rs:179:22
+    |
+179 |             value |= (1 << 1);
+    |                      ^      ^
+    |
+help: remove these parentheses
+    |
+179 -             value |= (1 << 1);
+179 +             value |= 1 << 1;
+    |
+
+warning: unused import: `SLOT`
+ --> src/hardware/devices/boards/isospi_8ch/mod.rs:4:29
+  |
+4 | use crate::hardware::ecp5::{SLOT, OFFSET_TO_SLOT, OFFSET_TO_SPI, SPI};
+  |                             ^^^^
+
+warning: unused imports: `Bandwidth` and `PeriodicSet`
+ --> src/hardware/devices/boards/isospi_8ch/mod.rs:7:47
+  |
+7 | use crate::hardware::devices::ic::mmc5983ma::{Bandwidth, ContinuousMeasurementFrequency, PeriodicSet};
+  |                                               ^^^^^^^^^                                  ^^^^^^^^^^^
+
+warning: type `IsoSPI_8ch` should have an upper camel case name
+  --> src/hardware/devices/boards/isospi_8ch/mod.rs:47:12
+   |
+47 | pub struct IsoSPI_8ch {
+   |            ^^^^^^^^^^ help: convert the identifier to upper camel case: `IsoSpi8ch`
+   |
+   = note: `#[warn(non_camel_case_types)]` on by default
+
+warning: unused import: `Read`
+ --> src/hardware/devices/ic/lm75a.rs:1:46
+  |
+1 | use embedded_hal::blocking::i2c::{WriteRead, Read};
+  |                                              ^^^^
+
+warning: unused import: `embedded_hal::prelude::_embedded_hal_blocking_delay_DelayUs`
+ --> src/hardware/devices/ic/eeprom.rs:2:5
+  |
+2 | use embedded_hal::prelude::_embedded_hal_blocking_delay_DelayUs;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `stm32h7xx_hal::i2c::Error`
+ --> src/hardware/devices/ic/eeprom.rs:3:5
+  |
+3 | use stm32h7xx_hal::i2c::Error;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `stm32h7xx_hal::i2c::I2c`
+ --> src/hardware/devices/ic/eeprom.rs:4:5
+  |
+4 | use stm32h7xx_hal::i2c::I2c;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `stm32h7xx_hal::device::I2C1`
+ --> src/hardware/devices/ic/eeprom.rs:5:5
+  |
+5 | use stm32h7xx_hal::device::I2C1;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::hardware::panic`
+ --> src/hardware/devices/ic/eeprom.rs:6:5
+  |
+6 | use crate::hardware::panic;
+  |     ^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::hardware::setup::BusReference`
+ --> src/hardware/devices/ic/mcp23s08.rs:1:5
+  |
+1 | use crate::hardware::setup::BusReference;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `ecp5`
+ --> src/hardware/devices/ic/mcp23s08.rs:2:23
+  |
+2 | use crate::hardware::{ecp5, ecp5::ECP5};
+  |                       ^^^^
+
+warning: unnecessary parentheses around `if` condition
+   --> src/hardware/devices/ic/max31865.rs:168:12
+    |
+168 |         if (temp >= 0.0) {
+    |            ^           ^
+    |
+help: remove these parentheses
+    |
+168 -         if (temp >= 0.0) {
+168 +         if temp >= 0.0 {
+    |
+
+warning: unused import: `self`
+ --> src/hardware/devices/ic/mmc5983ma.rs:4:29
+  |
+4 | use crate::hardware::ecp5::{self, ECP5};
+  |                             ^^^^
+
+warning: unused import: `crate::hardware::setup::BusReference`
+ --> src/hardware/devices/ic/mmc5983ma.rs:5:5
+  |
+5 | use crate::hardware::setup::BusReference;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: variant `CM_Off` should have an upper camel case name
+  --> src/hardware/devices/ic/mmc5983ma.rs:37:5
+   |
+37 |     CM_Off,
+   |     ^^^^^^ help: convert the identifier to upper camel case: `CmOff`
+
+warning: variant `CM_1Hz` should have an upper camel case name
+  --> src/hardware/devices/ic/mmc5983ma.rs:38:5
+   |
+38 |     CM_1Hz,
+   |     ^^^^^^ help: convert the identifier to upper camel case: `Cm1hz`
+
+warning: variant `CM_10Hz` should have an upper camel case name
+  --> src/hardware/devices/ic/mmc5983ma.rs:39:5
+   |
+39 |     CM_10Hz,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `Cm10hz`
+
+warning: variant `CM_20Hz` should have an upper camel case name
+  --> src/hardware/devices/ic/mmc5983ma.rs:40:5
+   |
+40 |     CM_20Hz,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `Cm20hz`
+
+warning: variant `CM_50Hz` should have an upper camel case name
+  --> src/hardware/devices/ic/mmc5983ma.rs:41:5
+   |
+41 |     CM_50Hz,
+   |     ^^^^^^^ help: convert the identifier to upper camel case: `Cm50hz`
+
+warning: variant `CM_100Hz` should have an upper camel case name
+  --> src/hardware/devices/ic/mmc5983ma.rs:42:5
+   |
+42 |     CM_100Hz,
+   |     ^^^^^^^^ help: convert the identifier to upper camel case: `Cm100hz`
+
+warning: variant `CM_200Hz` should have an upper camel case name
+  --> src/hardware/devices/ic/mmc5983ma.rs:43:5
+   |
+43 |     CM_200Hz,
+   |     ^^^^^^^^ help: convert the identifier to upper camel case: `Cm200hz`
+
+warning: variant `CM_1000Hz` should have an upper camel case name
+  --> src/hardware/devices/ic/mmc5983ma.rs:44:5
+   |
+44 |     CM_1000Hz,
+   |     ^^^^^^^^^ help: convert the identifier to upper camel case: `Cm1000hz`
+
+warning: type `P_Pres` should have an upper camel case name
+  --> src/hardware/mod.rs:81:14
+   |
+81 |     pub type P_Pres = (top::gpiob::PB14<top::InputPullUp>,
+   |              ^^^^^^ help: convert the identifier to upper camel case: `PPres`
+
+warning: type `P_RST` should have an upper camel case name
+  --> src/hardware/mod.rs:83:14
+   |
+83 |     pub type P_RST = top::gpioc::PC13<top::OutputPushPull>;
+   |              ^^^^^ help: convert the identifier to upper camel case: `PRst`
+
+warning: type `F_RST` should have an upper camel case name
+  --> src/hardware/mod.rs:84:14
+   |
+84 |     pub type F_RST = top::gpioc::PC12<top::OutputPushPull>;
+   |              ^^^^^ help: convert the identifier to upper camel case: `FRst`
+
+warning: type `P_IOs` should have an upper camel case name
+  --> src/hardware/mod.rs:85:14
+   |
+85 |     pub type P_IOs = (top::gpiob::PB6<top::InputFloating>,
+   |              ^^^^^ help: convert the identifier to upper camel case: `PIos`
+
+warning: type `F_IOs` should have an upper camel case name
+  --> src/hardware/mod.rs:88:14
+   |
+88 |     pub type F_IOs = (top::gpioc::PC14<top::InputFloating>,
+   |              ^^^^^ help: convert the identifier to upper camel case: `FIos`
+
+warning: unused doc comment
+   --> src/net/settings.rs:191:2
+    |
+191 | /  /// Supported devices:
+192 | |  /// HVSUP_ISOL:
+193 | |  ///     - HvSupPosPos
+194 | |  ///     - HvSupNegNeg
+...   |
+197 | |  /// SiLPA:
+198 | |  ///     - SilpaDefault - work in progress
+    | |__----------------------------------------^
+    |    |
+    |    rustdoc does not generate documentation for macro invocations
+    |
+    = help: to document an item produced by a macro, the macro must produce the documentation as part of its expansion
+    = note: `#[warn(unused_doc_comments)]` on by default
+
+warning: unused imports: `HvSupIsol`, `HvSupNegNeg`, `HvSupNegPos`, `HvSupPosNeg`, `HvSupPosPos`, `self`, `self`, `self`, and `self`
+  --> src/net/settings.rs:7:53
+   |
+7  |  use crate::hardware::devices::boards::hvsup_isol::{HvSupIsol, hvsuppospos::{self, HvSupPosPos},
+   |                                                     ^^^^^^^^^                ^^^^  ^^^^^^^^^^^
+8  |                                                         hvsupnegneg::{self, HvSupNegNeg},
+   |                                                                       ^^^^  ^^^^^^^^^^^
+9  |                                                         hvsupposneg::{self, HvSupPosNeg},
+   |                                                                       ^^^^  ^^^^^^^^^^^
+10 |                                                         hvsupnegpos::{self, HvSupNegPos},};
+   |                                                                       ^^^^  ^^^^^^^^^^^
+
+warning: unused imports: `Magneto` and `self`
+  --> src/net/settings.rs:13:50
+   |
+13 |  use crate::hardware::devices::boards::magneto::{self,Magneto};
+   |                                                  ^^^^ ^^^^^^^
+
+warning: unused import: `crate::hardware::hal`
+  --> src/net/settings.rs:16:6
+   |
+16 |  use crate::hardware::hal;
+   |      ^^^^^^^^^^^^^^^^^^^^
+
+warning: unreachable expression
+  --> src/hardware/devices/ic/eeprom.rs:72:29
+   |
+71 | ...                   panic!("Failed during EEPROM test data {} : {}", i, test_data[i]);
+   |                       ----------------------------------------------------------------- any code following this expression is unreachable
+72 | ...                   return Err(())
+   |                       ^^^^^^^^^^^^^^ unreachable expression
+   |
+   = note: `#[warn(unreachable_code)]` on by default
+
+warning: variable does not need to be mutable
+   --> src/hardware/setup.rs:448:9
+    |
+448 |     let mut cpcis_i2c = {
+    |         ----^^^^^^^^^
+    |         |
+    |         help: remove this `mut`
+    |
+    = note: `#[warn(unused_mut)]` on by default
+
+warning: value assigned to `address` is never read
+   --> src/hardware/ecp5.rs:197:17
+    |
+197 |         let mut address = 0;
+    |                 ^^^^^^^
+    |
+    = help: maybe it is overwritten before being read?
+    = note: `#[warn(unused_assignments)]` on by default
+
+warning: unused variable: `idle`
+   --> src/hardware/ecp5.rs:216:17
+    |
+216 |         let mut idle = [0x00, 0x00];
+    |                 ^^^^ help: if this is intentional, prefix it with an underscore: `_idle`
+    |
+    = note: `#[warn(unused_variables)]` on by default
+
+warning: variable does not need to be mutable
+   --> src/hardware/ecp5.rs:216:13
+    |
+216 |         let mut idle = [0x00, 0x00];
+    |             ----^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: unused variable: `data`
+   --> src/hardware/ecp5.rs:332:22
+    |
+332 |                      data: &mut[u8;2]){
+    |                      ^^^^ help: if this is intentional, prefix it with an underscore: `_data`
+
+warning: unused variable: `settings`
+  --> src/hardware/devices/boards/templogger/mod.rs:29:27
+   |
+29 |     pub fn finalize(self, settings: Settings, detectors: &mut [max31865::Max31865; 16]) -> Telemetry {
+   |                           ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_settings`
+
+warning: unused variable: `value`
+   --> src/hardware/devices/boards/templogger/mod.rs:161:25
+    |
+161 |                     let value = 0b1100_0010 | self.settings.max_settings[i].filter as u8;
+    |                         ^^^^^ help: if this is intentional, prefix it with an underscore: `_value`
+
+warning: variable does not need to be mutable
+   --> src/hardware/devices/boards/templogger/mod.rs:168:32
+    |
+168 |     fn init_readout(&mut self, mut channel: u8) -> () {
+    |                                ----^^^^^^^
+    |                                |
+    |                                help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/hardware/devices/boards/templogger/mod.rs:177:29
+    |
+177 |     fn read_temp(&mut self, mut channel: u8) -> u16 {
+    |                             ----^^^^^^^
+    |                             |
+    |                             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/hardware/devices/boards/templogger/mod.rs:192:13
+    |
+192 |         let mut address = OFFSET_TO_SLOT * self.slot_number + OFFSET_TO_SPI + SPI::IDLE;
+    |             ----^^^^^^^
+    |             |
+    |             help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/hardware/devices/boards/isospi_8ch/mod.rs:176:21
+    |
+176 |                 let mut result: u8;
+    |                     ----^^^^^^
+    |                     |
+    |                     help: remove this `mut`
+
+warning: variable does not need to be mutable
+   --> src/hardware/devices/boards/isospi_8ch/mod.rs:223:25
+    |
+223 |                     let mut result: (f32, f32, f32);
+    |                         ----^^^^^^
+    |                         |
+    |                         help: remove this `mut`
+
+warning: unused variable: `e`
+  --> src/hardware/devices/ic/eeprom.rs:76:21
+   |
+76 |                 Err(e) => {
+   |                     ^ help: if this is intentional, prefix it with an underscore: `_e`
+
+warning: fields `i2c`, `p_pres`, `p_rst`, `f_rst`, `p_ios`, and `f_ios` are never read
+   --> src/hardware/setup.rs:121:5
+    |
+120 | pub struct MonBus {
+    |            ------ fields in this struct
+121 |     i2c: hal::i2c::I2c<hal::stm32::I2C2>,
+    |     ^^^
+122 |     p_pres: MonBusTypes::P_Pres,
+    |     ^^^^^^
+123 |     p_rst: MonBusTypes::P_RST,
+    |     ^^^^^
+124 |     f_rst: MonBusTypes::F_RST,
+    |     ^^^^^
+125 |     p_ios: MonBusTypes::P_IOs,
+    |     ^^^^^
+126 |     f_ios: MonBusTypes::F_IOs,
+    |     ^^^^^
+    |
+    = note: `#[warn(dead_code)]` on by default
+
+warning: field `interface_ready` is never read
+  --> src/hardware/ecp5.rs:47:5
+   |
+45 | pub struct ECP5{
+   |            ---- field in this struct
+46 |     pub qspi: hal::xspi::Qspi<hal::device::QUADSPI>,
+47 |     interface_ready: ECP5InterfaceReady,
+   |     ^^^^^^^^^^^^^^^
+
+warning: methods `get_device_reg_addr`, `interface_is_ready`, and `spi_last_bytes` are never used
+   --> src/hardware/ecp5.rs:65:8
+    |
+52  | impl ECP5 {
+    | --------- methods in this implementation
+...
+65  |     fn get_device_reg_addr(&self, slot_number: u16) -> u16 {
+    |        ^^^^^^^^^^^^^^^^^^^
+...
+133 |     fn interface_is_ready(&mut self, slot_number: u16) -> bool {
+    |        ^^^^^^^^^^^^^^^^^^
+...
+330 |     fn spi_last_bytes(&mut self,
+    |        ^^^^^^^^^^^^^^
+
+warning: fields `dac_cs_nb` and `adc_cs_nb` are never read
+  --> src/hardware/devices/boards/magneto/mod.rs:98:5
+   |
+92 | pub struct Magneto{
+   |            ------- fields in this struct
+...
+98 |     dac_cs_nb:   u16,
+   |     ^^^^^^^^^
+99 |     adc_cs_nb:   u16,
+   |     ^^^^^^^^^
+
+warning: method `init_readout` is never used
+   --> src/hardware/devices/boards/templogger/mod.rs:168:8
+    |
+89  | impl TempLogger {
+    | --------------- method in this implementation
+...
+168 |     fn init_readout(&mut self, mut channel: u8) -> () {
+    |        ^^^^^^^^^^^^
+
+warning: method `enable_iso_spi_sleep` is never used
+  --> src/hardware/devices/boards/isospi_8ch/mod.rs:91:8
+   |
+56 | impl IsoSPI_8ch {
+   | --------------- method in this implementation
+...
+91 |     fn enable_iso_spi_sleep(&mut self){
+   |        ^^^^^^^^^^^^^^^^^^^^
+
+warning: constant `I2C_ADDR` is never used
+ --> src/hardware/devices/ic/lm75a.rs:3:7
+  |
+3 | const I2C_ADDR: [u8; 2] = [0x48 , 0x49];
+  |       ^^^^^^^^
+
+warning: creating a shared reference to mutable static
+   --> src/hardware/setup.rs:205:14
+    |
+205 |             (&__eitcm as *const u32).offset_from(&__sitcm as *const _) as usize;
+    |              ^^^^^^^^ shared reference to mutable static
+    |
+    = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/static-mut-references.html>
+    = note: shared references to mutable statics are dangerous; it's undefined behavior if the static is mutated or if a mutable reference is created for it while the shared reference lives
+    = note: `#[warn(static_mut_refs)]` on by default
+help: use `&raw const` instead to create a raw pointer
+    |
+205 |             (&raw const __eitcm as *const u32).offset_from(&__sitcm as *const _) as usize;
+    |               +++++++++
+
+warning: creating a shared reference to mutable static
+   --> src/hardware/setup.rs:205:50
+    |
+205 |             (&__eitcm as *const u32).offset_from(&__sitcm as *const _) as usize;
+    |                                                  ^^^^^^^^ shared reference to mutable static
+    |
+    = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/static-mut-references.html>
+    = note: shared references to mutable statics are dangerous; it's undefined behavior if the static is mutated or if a mutable reference is created for it while the shared reference lives
+help: use `&raw const` instead to create a raw pointer
+    |
+205 |             (&__eitcm as *const u32).offset_from(&raw const __sitcm as *const _) as usize;
+    |                                                   +++++++++
+
+warning: creating a mutable reference to mutable static
+   --> src/hardware/setup.rs:206:45
+    |
+206 |         let dst = slice::from_raw_parts_mut(&mut __sitcm as *mut _, len);
+    |                                             ^^^^^^^^^^^^ mutable reference to mutable static
+    |
+    = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/static-mut-references.html>
+    = note: mutable references to mutable statics are dangerous; it's undefined behavior if any other pointer to the static is used or if any other reference is created for the static while the mutable reference lives
+help: use `&raw mut` instead to create a raw pointer
+    |
+206 |         let dst = slice::from_raw_parts_mut(&raw mut __sitcm as *mut _, len);
+    |                                              +++
+
+warning: creating a shared reference to mutable static
+   --> src/hardware/setup.rs:207:41
+    |
+207 |         let src = slice::from_raw_parts(&__siitcm as *const _, len);
+    |                                         ^^^^^^^^^ shared reference to mutable static
+    |
+    = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/static-mut-references.html>
+    = note: shared references to mutable statics are dangerous; it's undefined behavior if the static is mutated or if a mutable reference is created for it while the shared reference lives
+help: use `&raw const` instead to create a raw pointer
+    |
+207 |         let src = slice::from_raw_parts(&raw const __siitcm as *const _, len);
+    |                                          +++++++++
+
+warning: creating a mutable reference to mutable static
+   --> src/hardware/setup.rs:619:22
+    |
+619 |             unsafe { &mut DES_RING },
+    |                      ^^^^^^^^^^^^^ mutable reference to mutable static
+    |
+    = note: for more information, see <https://doc.rust-lang.org/nightly/edition-guide/rust-2024/static-mut-references.html>
+    = note: mutable references to mutable statics are dangerous; it's undefined behavior if any other pointer to the static is used or if any other reference is created for the static while the mutable reference lives
+help: use `&raw mut` instead to create a raw pointer
+    |
+619 |             unsafe { &raw mut DES_RING },
+    |                       +++
+
+warning: module `SLOT` should have a snake case name
+  --> src/hardware/ecp5.rs:10:9
+   |
+10 | pub mod SLOT{     // SLOT registers map (OFFSET_TO_SLOT * slot_nb + slot_reg)
+   |         ^^^^ help: convert the identifier to snake case: `slot`
+   |
+   = note: `#[warn(non_snake_case)]` on by default
+
+warning: module `SPI` should have a snake case name
+  --> src/hardware/ecp5.rs:21:9
+   |
+21 | pub mod SPI{        // SPI Register map (OFFSET_TO_SLOT * slot_nb + OFFSET_TO_SPI + spi_reg)
+   |         ^^^ help: convert the identifier to snake case: `spi`
+
+warning: constant `sensor_count` should have an upper case name
+  --> src/hardware/devices/boards/isospi_8ch/mod.rs:11:7
+   |
+11 | const sensor_count: usize = 8;
+   |       ^^^^^^^^^^^^ help: convert the identifier to upper case: `SENSOR_COUNT`
+   |
+   = note: `#[warn(non_upper_case_globals)]` on by default
+
+warning: unused `Result` that must be used
+   --> src/hardware/devices/boards/isospi_8ch/mod.rs:115:13
+    |
+115 |             bus.ecp5.read_from_ecp5(160, &mut data); //expecting AAAA
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: this `Result` may be an `Err` variant, which should be handled
+    = note: `#[warn(unused_must_use)]` on by default
+help: use `let _ = ...` to ignore the resulting value
+    |
+115 |             let _ = bus.ecp5.read_from_ecp5(160, &mut data); //expecting AAAA
+    |             +++++++
+
+warning: unused `Result` that must be used
+   --> src/hardware/devices/boards/isospi_8ch/mod.rs:117:13
+    |
+117 |             bus.ecp5.read_from_ecp5(161, &mut data); //expecting 5555
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: this `Result` may be an `Err` variant, which should be handled
+help: use `let _ = ...` to ignore the resulting value
+    |
+117 |             let _ = bus.ecp5.read_from_ecp5(161, &mut data); //expecting 5555
+    |             +++++++
+
+warning: unused `Result` that must be used
+   --> src/hardware/devices/boards/isospi_8ch/mod.rs:119:13
+    |
+119 |             bus.ecp5.read_from_ecp5(162, &mut data); //expecting 0002
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: this `Result` may be an `Err` variant, which should be handled
+help: use `let _ = ...` to ignore the resulting value
+    |
+119 |             let _ = bus.ecp5.read_from_ecp5(162, &mut data); //expecting 0002
+    |             +++++++
+
+warning: unused `Result` that must be used
+   --> src/hardware/devices/boards/isospi_8ch/mod.rs:122:13
+    |
+122 |             bus.ecp5.read_from_ecp5(offset + SPI::LENGTH, &mut data);
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: this `Result` may be an `Err` variant, which should be handled
+help: use `let _ = ...` to ignore the resulting value
+    |
+122 |             let _ = bus.ecp5.read_from_ecp5(offset + SPI::LENGTH, &mut data);
+    |             +++++++
+
+warning: unused `Result` that must be used
+   --> src/hardware/devices/boards/isospi_8ch/mod.rs:125:13
+    |
+125 |             bus.ecp5.read_from_ecp5(offset + SPI::LENGTH, &mut data);
+    |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: this `Result` may be an `Err` variant, which should be handled
+help: use `let _ = ...` to ignore the resulting value
+    |
+125 |             let _ = bus.ecp5.read_from_ecp5(offset + SPI::LENGTH, &mut data);
+    |             +++++++
+
+warning: module `REGS` should have a snake case name
+ --> src/hardware/devices/ic/mcp23s08.rs:4:9
+  |
+4 | pub mod REGS{
+  |         ^^^^ help: convert the identifier to snake case: `regs`
+
+warning: module `REGS` should have a snake case name
+ --> src/hardware/devices/ic/max31865.rs:6:9
+  |
+6 | pub mod REGS {
+  |         ^^^^ help: convert the identifier to snake case: `regs`
+
+warning: module `STATE` should have a snake case name
+  --> src/hardware/devices/ic/max31865.rs:17:9
+   |
+17 | pub mod STATE {
+   |         ^^^^^ help: convert the identifier to snake case: `state`
+
+warning: module `FILTER` should have a snake case name
+  --> src/hardware/devices/ic/max31865.rs:24:9
+   |
+24 | pub mod FILTER {
+   |         ^^^^^^ help: convert the identifier to snake case: `filter`
+
+warning: variable `Rt` should have a snake case name
+   --> src/hardware/devices/ic/max31865.rs:159:17
+    |
+159 |         let mut Rt : f32;
+    |                 ^^ help: convert the identifier to snake case: `rt`
+
+warning: constant `Hz60` should have an upper case name
+  --> src/hardware/devices/ic/max31865.rs:25:15
+   |
+25 |     pub const Hz60: u8 = 0;
+   |               ^^^^ help: convert the identifier to upper case (notice the capitalization): `HZ60`
+
+warning: constant `Hz50` should have an upper case name
+  --> src/hardware/devices/ic/max31865.rs:26:15
+   |
+26 |     pub const Hz50: u8 = 1;
+   |               ^^^^ help: convert the identifier to upper case (notice the capitalization): `HZ50`
+
+warning: `stm_sys_board` (lib) generated 99 warnings (run `cargo fix --lib -p stm_sys_board` to apply 50 suggestions)
+    Finished `release` profile [optimized + debuginfo] target(s) in 1m 30s

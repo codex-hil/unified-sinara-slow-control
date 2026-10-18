@@ -1,0 +1,32 @@
+{
+  "hardware_tested": false,
+  "values_are_synthetic": true,
+  "driver": "unchanged ESPHome MAX31855",
+  "router": "unchanged pinned MODULIQ addrspi",
+  "spi": "ESPHome software SPI over FPGA GPIO",
+  "results": {
+    "unquoted": "REJECTED",
+    "wrong_slot": "REJECTED",
+    "line_range": "REJECTED",
+    "wrong_direction": "REJECTED",
+    "pullup": "REJECTED",
+    "duplicate_channel": "UPSTREAM_ACCEPTS",
+    "stm_upper_translator": "REJECTED",
+    "stm": {
+      "samples": 24,
+      "frames": 51,
+      "all_eight_addresses": true,
+      "preserve_unrelated_gpio": true,
+      "correct_frame_lengths": true,
+      "transport_fault_nan": true
+    },
+    "kasli": {
+      "samples": 24,
+      "frames": 51,
+      "all_eight_addresses": true,
+      "preserve_unrelated_gpio": true,
+      "correct_frame_lengths": true,
+      "transport_fault_nan": true
+    }
+  }
+}

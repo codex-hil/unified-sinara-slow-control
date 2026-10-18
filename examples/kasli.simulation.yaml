@@ -1,0 +1,25 @@
+# SIMULATION ONLY: module-side EEM0 map; synthetic controller CSR/adapter.
+schema_version: 1
+controller: kasli
+transport: litex_remote
+address: 127.0.0.1
+timeout_s: 5
+gateware_abi: sinara-gpio-v1
+bindings:
+  rf0:
+    endpoint: 0
+    mosi: 1
+    miso: 2
+    clk: 0
+    cs:
+    - 3
+    - 4
+    - 5
+    pinmux: urukul_eem0
+csr_map:
+  gpio0_output: 3758096384
+  gpio0_input: 3758096388
+  gpio0_oe: 3758096392
+  abi: 3758096396
+port: 1234
+use: simulation

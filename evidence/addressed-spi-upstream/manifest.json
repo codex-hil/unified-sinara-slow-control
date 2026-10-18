@@ -1,0 +1,32 @@
+{
+  "repository": "https://github.com/codex-hil/esphome-components",
+  "branch": "feature/mixed-signal-head",
+  "commit": "287274ec757c8fc1a277e9535e6a0876dd9afb59",
+  "files": [
+    {
+      "path": "components/addrspi/__init__.py",
+      "sha256": "b0e10f0fe6468e497726d7500a2d91621f11cd1b46b5e4f13728a171bb0e25a8"
+    },
+    {
+      "path": "components/addrspi/addrspi.h",
+      "sha256": "43eac6febf655fc2b8c8c566ff451832181d842384abfd15903ae0571c323e66"
+    },
+    {
+      "path": "components/addrspi/addrspi.cpp",
+      "sha256": "9bf3acb2879dd2ee0c07e6d9fa459e12e22b9f1f6b2de0df0d6d1ada68bd6f06"
+    },
+    {
+      "path": "components/addrspi2/__init__.py",
+      "sha256": "19f8064cb88223c5975b1b970d5222eef0b646abf7be577da18779cc5e058f38"
+    },
+    {
+      "path": "components/addrspi2/addrspi2.h",
+      "sha256": "2cb1e658a97411fe68b08d718230633116b43be629a862686fcfaf71e3af72b2"
+    },
+    {
+      "path": "components/addrspi2/addrspi2.cpp",
+      "sha256": "92dbd71db00f4384220d7986ad8b787cf7b2b15f7848d3336495cedcb3b1b875"
+    }
+  ],
+  "hardware_tested_here": false
+}

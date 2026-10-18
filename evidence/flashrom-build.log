@@ -1,0 +1,95 @@
+Cleaning... 0 files.
+The Meson build system
+Version: 1.12.1
+Source dir: /srv/codex-hil-data/unified-sinara-slow-control/references/flashrom
+Build dir: /srv/codex-hil-data/unified-sinara-slow-control/work/builds/flashrom
+Build type: native build
+Project name: flashrom
+Project version: v2.0.0-devel
+C compiler for the host machine: cc (gcc 13.3.0 "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0")
+C linker for the host machine: cc ld.bfd 2.42
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program git found: YES (/usr/bin/git)
+Program sphinx-build found: NO
+Compiler for C supports arguments -Wshadow: YES (cached)
+Compiler for C supports arguments -Wmissing-prototypes: YES (cached)
+Compiler for C supports arguments -Wwrite-strings: YES (cached)
+Compiler for C supports arguments -Wno-unused-parameter: YES (cached)
+Compiler for C supports arguments -Wno-address-of-packed-member: YES (cached)
+Compiler for C supports arguments -Wno-enum-conversion: YES (cached)
+Compiler for C supports arguments -Wno-missing-braces: YES (cached)
+Checking for function "clock_gettime" : YES (cached)
+Check usable header "sys/utsname.h" : YES (cached)
+Did not find pkg-config by name 'pkg-config'
+Found pkg-config: NO
+Did not find CMake 'cmake'
+Found CMake: NO
+Run-time dependency libpci found: NO  (tried pkg-config and cmake)
+Run-time dependency libusb-1.0 found: NO  (tried pkg-config and cmake)
+Run-time dependency libftdi1 found: NO  (tried pkg-config and cmake)
+Run-time dependency libjaylink found: NO  (tried pkg-config and cmake)
+Dependency libcrypto for host machine found: YES "3.0.13" (cached)
+Check usable header "getopt.h" : YES (cached)
+Checking for function "getopt_long" : YES (cached)
+Check usable header "pciutils/pci.h" : NO (cached)
+Header "string.h" has symbol "strndup" : NO (cached)
+Header "string.h" has symbol "strnlen" : NO (cached)
+Header "string.h" has symbol "strtok_r" : NO (cached)
+Has header "mtd/mtd-user.h" : YES (cached)
+Has header "linux/spi/spidev.h" : YES (cached)
+Did not find pkg-config by name 'pkg-config'
+Found pkg-config: NO
+Run-time dependency bash-completion found: NO  (tried pkg-config and cmake)
+Configuring flashrom.bash using configuration
+Build targets in project: 3
+
+flashrom v2.0.0-devel
+
+  Programmer
+    active              : dummy
+                          serprog
+    non active          : asm106x (not selected)
+                          atavia (not selected)
+                          buspirate_spi (not selected)
+                          ch341a_spi (not selected)
+                          ch347_spi (not selected)
+                          dediprog (not selected)
+                          digilent_spi (not selected)
+                          dirtyjtag_spi (not selected)
+                          fault (not selected)
+                          ft2232_spi (not selected)
+                          internal (not selected)
+                          jlink_spi (not selected)
+                          linux_mtd (not selected)
+                          linux_spi (not selected)
+                          parade_lspcon (not selected)
+                          mediatek_i2c_spi (not selected)
+                          mstarddc_spi (not selected)
+                          nic3com (not selected)
+                          nicintel (not selected)
+                          nicintel_eeprom (not selected)
+                          nicintel_spi (not selected)
+                          nicrealtek (not selected)
+                          nv_sma_spi (not selected)
+                          ogp_spi (not selected)
+                          pickit2_spi (not selected)
+                          pony_spi (not selected)
+                          raiden_debug_spi (not selected)
+                          realtek_mst_i2c_spi (not selected)
+                          spidriver (not selected)
+                          stlinkv3_spi (not selected)
+                          usbblaster_spi (not selected)
+
+  User defined options
+    documentation       : disabled
+    ich_descriptors_tool: disabled
+    man-pages           : disabled
+    programmer          : serprog,dummy
+    tests               : disabled
+
+Found ninja-1.13.2.git.kitware.jobserver-pipe-1 at /srv/codex-hil-data/unified-sinara-slow-control/work/flash-tools/bin/ninja
+ninja: Entering directory `/srv/codex-hil-data/unified-sinara-slow-control/work/builds/flashrom'
+ninja: no work to do.
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: /srv/codex-hil-data/unified-sinara-slow-control/work/flash-tools/bin/ninja -C /srv/codex-hil-data/unified-sinara-slow-control/work/builds/flashrom

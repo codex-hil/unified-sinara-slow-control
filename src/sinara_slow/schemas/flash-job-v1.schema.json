@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "operation",
+    "image",
+    "sha256",
+    "fpga_part",
+    "offset",
+    "format"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "operation": {
+      "const": "fpga_flash"
+    },
+    "image": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "fpga_part": {
+      "type": "string",
+      "minLength": 1
+    },
+    "offset": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 16777215
+    },
+    "reconfigure": {
+      "type": "boolean",
+      "default": false
+    },
+    "format": {
+      "const": "raw"
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

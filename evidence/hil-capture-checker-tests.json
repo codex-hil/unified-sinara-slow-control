@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "fixtures": "synthetic",
+  "hardware_tested": false,
+  "cli_checks": [
+    {
+      "fixture": "work/hil-capture-fixtures/synthetic-valid.txt",
+      "exit_code": 0,
+      "expected_exit": 0
+    },
+    {
+      "fixture": "work/hil-capture-fixtures/synthetic-corrupt.txt",
+      "exit_code": 1,
+      "expected_exit": 1
+    }
+  ]
+}

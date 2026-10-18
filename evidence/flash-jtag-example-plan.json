@@ -1,0 +1,22 @@
+{
+  "operation": "fpga_flash",
+  "controller": "stm_sys_board",
+  "board_id": "REPLACE_WITH_VERIFIED_STM_ID",
+  "board_revision": "v1.1",
+  "fpga_part": "lfe5u-85f",
+  "format": "raw",
+  "profile_reviewed": false,
+  "programmer": "openFPGALoader:REPLACE_WITH_CABLE:REPLACE_WITH_VERIFIED_SERIAL",
+  "image_sha256": "429830fa79099fff3ed3711a4c24f4e9d7d17ad48f16adf43620ddfaf68d18f5",
+  "image_bytes": 339313,
+  "offset": 0,
+  "capacity_bytes": 16777216,
+  "steps": [
+    "full_backup",
+    "patch_backup",
+    "flashrom_write_and_verify",
+    "independent_full_readback"
+  ],
+  "executed": false,
+  "hardware_validated": false
+}

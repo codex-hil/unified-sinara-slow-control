@@ -1,0 +1,172 @@
+# Synthetic pinout; zero-valued simulation, no physical wiring approval.
+esphome:
+  name: max31855-diot
+  build_path: /srv/codex-hil-data/unified-sinara-slow-control/work/builds/max31855-diot
+host: {}
+logger:
+  level: DEBUG
+external_components:
+- source:
+    type: local
+    path: ../components
+  components:
+  - spi
+  - sinara_gpio_endpoint
+  - sinara_gpio
+  - addrspi
+sinara_gpio_endpoint:
+  id: endpoint0
+  controller: stm_sys_board
+  mode: simulation
+  slot: 7
+  output_address: 120
+  input_address: 121
+  oe_address: 122
+  output_capable:
+  - 0
+  - 1
+  - 3
+  - 4
+  - 5
+  - 6
+  input_capable:
+  - 2
+sinara_gpio:
+  id: diot
+  endpoint_id: endpoint0
+spi:
+  id: slot_spi
+  interface: software
+  clk_pin:
+    sinara_gpio: diot
+    number: '7_0'
+  mosi_pin:
+    sinara_gpio: diot
+    number: '7_1'
+  miso_pin:
+    sinara_gpio: diot
+    number: '7_2'
+addrspi:
+  id: router
+  spi_id: slot_spi
+  address_pins:
+  - sinara_gpio: diot
+    number: '7_4'
+  - sinara_gpio: diot
+    number: '7_5'
+  - sinara_gpio: diot
+    number: '7_6'
+  channels:
+  - bus_id: tc0
+    channel: 0
+  - bus_id: tc1
+    channel: 1
+  - bus_id: tc2
+    channel: 2
+  - bus_id: tc3
+    channel: 3
+  - bus_id: tc4
+    channel: 4
+  - bus_id: tc5
+    channel: 5
+  - bus_id: tc6
+    channel: 6
+  - bus_id: tc7
+    channel: 7
+sensor:
+- platform: max31855
+  id: thermocouple0
+  name: Thermocouple 0
+  spi_id: tc0
+  cs_pin:
+    sinara_gpio: diot
+    number: '7_3'
+    allow_other_uses: true
+  update_interval: 2s
+  on_value:
+    then:
+    - lambda: ESP_LOGI("max_result", "CH0=%.2f", x);
+- platform: max31855
+  id: thermocouple1
+  name: Thermocouple 1
+  spi_id: tc1
+  cs_pin:
+    sinara_gpio: diot
+    number: '7_3'
+    allow_other_uses: true
+  update_interval: 2s
+  on_value:
+    then:
+    - lambda: ESP_LOGI("max_result", "CH1=%.2f", x);
+- platform: max31855
+  id: thermocouple2
+  name: Thermocouple 2
+  spi_id: tc2
+  cs_pin:
+    sinara_gpio: diot
+    number: '7_3'
+    allow_other_uses: true
+  update_interval: 2s
+  on_value:
+    then:
+    - lambda: ESP_LOGI("max_result", "CH2=%.2f", x);
+- platform: max31855
+  id: thermocouple3
+  name: Thermocouple 3
+  spi_id: tc3
+  cs_pin:
+    sinara_gpio: diot
+    number: '7_3'
+    allow_other_uses: true
+  update_interval: 2s
+  on_value:
+    then:
+    - lambda: ESP_LOGI("max_result", "CH3=%.2f", x);
+- platform: max31855
+  id: thermocouple4
+  name: Thermocouple 4
+  spi_id: tc4
+  cs_pin:
+    sinara_gpio: diot
+    number: '7_3'
+    allow_other_uses: true
+  update_interval: 2s
+  on_value:
+    then:
+    - lambda: ESP_LOGI("max_result", "CH4=%.2f", x);
+- platform: max31855
+  id: thermocouple5
+  name: Thermocouple 5
+  spi_id: tc5
+  cs_pin:
+    sinara_gpio: diot
+    number: '7_3'
+    allow_other_uses: true
+  update_interval: 2s
+  on_value:
+    then:
+    - lambda: ESP_LOGI("max_result", "CH5=%.2f", x);
+- platform: max31855
+  id: thermocouple6
+  name: Thermocouple 6
+  spi_id: tc6
+  cs_pin:
+    sinara_gpio: diot
+    number: '7_3'
+    allow_other_uses: true
+  update_interval: 2s
+  on_value:
+    then:
+    - lambda: ESP_LOGI("max_result", "CH6=%.2f", x);
+- platform: max31855
+  id: thermocouple7
+  name: Thermocouple 7
+  spi_id: tc7
+  cs_pin:
+    sinara_gpio: diot
+    number: '7_3'
+    allow_other_uses: true
+  update_interval: 2s
+  on_value:
+    then:
+    - lambda: ESP_LOGI("max_result", "CH7=%.2f", x);

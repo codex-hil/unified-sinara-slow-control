@@ -1,0 +1,14 @@
+Failed config
+
+sinara_bus: [source /srv/codex-hil-data/unified-sinara-slow-control/work/esphome-tests/slot_range.yaml:12]
+  - id: endpoint0
+    mode: simulation
+    
+    value must be at most 7.
+    slot: 8
+    port: 0
+INFO ESPHome 2026.9.0
+INFO Reading configuration /srv/codex-hil-data/unified-sinara-slow-control/work/esphome-tests/slot_range.yaml...
+INFO External components are overriding built-in components:
+  source: /srv/codex-hil-data/unified-sinara-slow-control/integrations/esphome/components
+  components: i2c, spi

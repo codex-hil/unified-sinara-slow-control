@@ -1,0 +1,14 @@
+{
+  "STM_System_Board_Extended.PDF": {
+    "url": "https://github.com/sinara-hw/STM_Sys_Board/releases/download/v1.1rc1/STM_System_Board_Extended.PDF",
+    "sha256": "4f2c24b04be57d269ccccffdf80844ad4fe4ac39724887b8b68a05a6ad73cecd"
+  },
+  "Urukul_v1.5.6_AD9910.PDF": {
+    "url": "https://github.com/sinara-hw/Urukul/releases/download/v1.5.6/Urukul_v1.5.6_AD9910.PDF",
+    "sha256": "d396dac013d284a4666ca5b93be0fbd265449437abda15722f1e2a41592bddd5"
+  },
+  "STM_sys_board.PDF": {
+    "url": "https://github.com/sinara-hw/STM_Sys_Board/releases/download/v1.0rc2/STM_sys_board.PDF",
+    "sha256": "5137b2162ebaae9cb55ca1ada74e432c7a2eb06e2023bbe79b68f3a0054c45dc"
+  }
+}

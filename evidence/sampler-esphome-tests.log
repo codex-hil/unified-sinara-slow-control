@@ -1,0 +1,21 @@
+tcp port: 0
+Connected with 127.0.0.1:58196
+Disconnect
+{
+  "stm_simulation": 24,
+  "stm_wire_model_then_fault": 16,
+  "stm_unreviewed": "PASS",
+  "stm_pin_overlap": "PASS",
+  "stm_wrong_direction": "PASS",
+  "stm_wrong_gain": "PASS",
+  "stm_duplicate_sensor": "PASS",
+  "stm_shared_endpoint": "PASS",
+  "kasli_simulation": 24,
+  "kasli_wire_model_then_fault": 8,
+  "kasli_unreviewed": "PASS",
+  "kasli_pin_overlap": "PASS",
+  "kasli_wrong_direction": "PASS",
+  "kasli_wrong_gain": "PASS",
+  "kasli_duplicate_sensor": "PASS",
+  "kasli_shared_endpoint": "PASS"
+}

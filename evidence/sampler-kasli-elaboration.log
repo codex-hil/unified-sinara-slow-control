@@ -1,0 +1,25 @@
+{
+  "result": "PASS",
+  "hardware_tested": false,
+  "synthesis_run": false,
+  "profile": "sampler_eem0",
+  "output_pairs": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    7
+  ],
+  "input_pairs": [
+    1,
+    6
+  ],
+  "verilog": "work/sampler-kasli-elaboration/gateware/kasli_uart_gpio.v",
+  "sha256": "3031db52a9e5ff76f6ce05f808e3d1cd62230de6e28a794d4a0cab202a02658b",
+  "limits": [
+    "synthetic EEM mapping, no electrical review",
+    "no P&R or physical loading",
+    "CPU-free UARTbone host bring-up, not native ESPHome runtime"
+  ]
+}

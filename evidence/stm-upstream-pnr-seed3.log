@@ -1,0 +1,719 @@
+Info: constraining clock net 'clk100' to 100.00 MHz
+Info: constraining clock net 'qspix10_clk' to 133.00 MHz
+
+Info: Logic utilisation before packing:
+Info:     Total LUT4s:      3276/83640     3%
+Info:         logic LUTs:   3206/83640     3%
+Info:         carry LUTs:     70/83640     0%
+Info:           RAM LUTs:      0/10455     0%
+Info:          RAMW LUTs:      0/20910     0%
+
+Info:      Total DFFs:      1874/83640     2%
+
+Info: Packing IOs..
+Info: pin 'spi_slave4_mosi$tr_io' constrained to Bel 'X54/Y0/PIOA'.
+Info: pin 'spi_slave4_miso$tr_io' constrained to Bel 'X63/Y0/PIOB'.
+Info: pin 'spi_slave4_cs$tr_io' constrained to Bel 'X49/Y0/PIOA'.
+Info: pin 'spi_slave4_clk$tr_io' constrained to Bel 'X60/Y0/PIOB'.
+Info: pin 'spi_dir_ctrl_mosi$tr_io' constrained to Bel 'X15/Y95/PIOB'.
+Info: pin 'spi_dir_ctrl_miso$tr_io' constrained to Bel 'X18/Y95/PIOA'.
+Info: pin 'spi_dir_ctrl_cs$tr_io' constrained to Bel 'X119/Y0/PIOA'.
+Info: pin 'spi_dir_ctrl_clk$tr_io' constrained to Bel 'X121/Y0/PIOB'.
+Info: slot_mlvds6[7] feeds TRELLIS_IO TRELLIS_IO_77, removing $nextpnr_ibuf slot_mlvds6[7].
+Info: pin 'TRELLIS_IO_77' constrained to Bel 'X6/Y0/PIOA'.
+Info: slot_mlvds6[6] feeds TRELLIS_IO TRELLIS_IO_76, removing $nextpnr_ibuf slot_mlvds6[6].
+Info: pin 'TRELLIS_IO_76' constrained to Bel 'X6/Y0/PIOB'.
+Info: slot_mlvds6[5] feeds TRELLIS_IO TRELLIS_IO_75, removing $nextpnr_ibuf slot_mlvds6[5].
+Info: pin 'TRELLIS_IO_75' constrained to Bel 'X15/Y0/PIOB'.
+Info: slot_mlvds6[4] feeds TRELLIS_IO TRELLIS_IO_74, removing $nextpnr_ibuf slot_mlvds6[4].
+Info: pin 'TRELLIS_IO_74' constrained to Bel 'X20/Y0/PIOA'.
+Info: slot_mlvds6[3] feeds TRELLIS_IO TRELLIS_IO_73, removing $nextpnr_ibuf slot_mlvds6[3].
+Info: pin 'TRELLIS_IO_73' constrained to Bel 'X13/Y0/PIOA'.
+Info: slot_mlvds6[2] feeds TRELLIS_IO TRELLIS_IO_72, removing $nextpnr_ibuf slot_mlvds6[2].
+Info: pin 'TRELLIS_IO_72' constrained to Bel 'X18/Y0/PIOA'.
+Info: slot_mlvds6[1] feeds TRELLIS_IO TRELLIS_IO_71, removing $nextpnr_ibuf slot_mlvds6[1].
+Info: pin 'TRELLIS_IO_71' constrained to Bel 'X18/Y0/PIOB'.
+Info: slot_mlvds6[0] feeds TRELLIS_IO TRELLIS_IO_70, removing $nextpnr_ibuf slot_mlvds6[0].
+Info: pin 'TRELLIS_IO_70' constrained to Bel 'X56/Y0/PIOA'.
+Info: slot_mlvds5[7] feeds TRELLIS_IO TRELLIS_IO_64, removing $nextpnr_ibuf slot_mlvds5[7].
+Info: pin 'TRELLIS_IO_64' constrained to Bel 'X58/Y0/PIOA'.
+Info: slot_mlvds5[6] feeds TRELLIS_IO TRELLIS_IO_63, removing $nextpnr_ibuf slot_mlvds5[6].
+Info: pin 'TRELLIS_IO_63' constrained to Bel 'X76/Y0/PIOA'.
+Info: slot_mlvds5[5] feeds TRELLIS_IO TRELLIS_IO_62, removing $nextpnr_ibuf slot_mlvds5[5].
+Info: pin 'TRELLIS_IO_62' constrained to Bel 'X9/Y0/PIOA'.
+Info: slot_mlvds5[4] feeds TRELLIS_IO TRELLIS_IO_61, removing $nextpnr_ibuf slot_mlvds5[4].
+Info: pin 'TRELLIS_IO_61' constrained to Bel 'X11/Y0/PIOA'.
+Info: slot_mlvds5[3] feeds TRELLIS_IO TRELLIS_IO_60, removing $nextpnr_ibuf slot_mlvds5[3].
+Info: pin 'TRELLIS_IO_60' constrained to Bel 'X56/Y0/PIOB'.
+Info: slot_mlvds5[2] feeds TRELLIS_IO TRELLIS_IO_59, removing $nextpnr_ibuf slot_mlvds5[2].
+Info: pin 'TRELLIS_IO_59' constrained to Bel 'X58/Y0/PIOB'.
+Info: slot_mlvds5[1] feeds TRELLIS_IO TRELLIS_IO_58, removing $nextpnr_ibuf slot_mlvds5[1].
+Info: pin 'TRELLIS_IO_58' constrained to Bel 'X71/Y0/PIOB'.
+Info: slot_mlvds5[0] feeds TRELLIS_IO TRELLIS_IO_57, removing $nextpnr_ibuf slot_mlvds5[0].
+Info: pin 'TRELLIS_IO_57' constrained to Bel 'X65/Y0/PIOB'.
+Info: slot_mlvds4[7] feeds TRELLIS_IO TRELLIS_IO_51, removing $nextpnr_ibuf slot_mlvds4[7].
+Info: pin 'TRELLIS_IO_51' constrained to Bel 'X11/Y0/PIOB'.
+Info: slot_mlvds4[6] feeds TRELLIS_IO TRELLIS_IO_50, removing $nextpnr_ibuf slot_mlvds4[6].
+Info: pin 'TRELLIS_IO_50' constrained to Bel 'X9/Y0/PIOB'.
+Info: slot_mlvds4[5] feeds TRELLIS_IO TRELLIS_IO_49, removing $nextpnr_ibuf slot_mlvds4[5].
+Info: pin 'TRELLIS_IO_49' constrained to Bel 'X15/Y0/PIOA'.
+Info: slot_mlvds4[4] feeds TRELLIS_IO TRELLIS_IO_48, removing $nextpnr_ibuf slot_mlvds4[4].
+Info: pin 'TRELLIS_IO_48' constrained to Bel 'X20/Y0/PIOB'.
+Info: slot_mlvds4[3] feeds TRELLIS_IO TRELLIS_IO_47, removing $nextpnr_ibuf slot_mlvds4[3].
+Info: pin 'TRELLIS_IO_47' constrained to Bel 'X74/Y0/PIOB'.
+Info: slot_mlvds4[2] feeds TRELLIS_IO TRELLIS_IO_46, removing $nextpnr_ibuf slot_mlvds4[2].
+Info: pin 'TRELLIS_IO_46' constrained to Bel 'X85/Y0/PIOA'.
+Info: slot_mlvds4[1] feeds TRELLIS_IO TRELLIS_IO_45, removing $nextpnr_ibuf slot_mlvds4[1].
+Info: pin 'TRELLIS_IO_45' constrained to Bel 'X83/Y0/PIOA'.
+Info: slot_mlvds4[0] feeds TRELLIS_IO TRELLIS_IO_44, removing $nextpnr_ibuf slot_mlvds4[0].
+Info: pin 'TRELLIS_IO_44' constrained to Bel 'X85/Y0/PIOB'.
+Info: slot_mlvds3[7] feeds TRELLIS_IO TRELLIS_IO_38, removing $nextpnr_ibuf slot_mlvds3[7].
+Info: pin 'TRELLIS_IO_38' constrained to Bel 'X51/Y0/PIOB'.
+Info: slot_mlvds3[6] feeds TRELLIS_IO TRELLIS_IO_37, removing $nextpnr_ibuf slot_mlvds3[6].
+Info: pin 'TRELLIS_IO_37' constrained to Bel 'X13/Y0/PIOB'.
+Info: slot_mlvds3[5] feeds TRELLIS_IO TRELLIS_IO_36, removing $nextpnr_ibuf slot_mlvds3[5].
+Info: pin 'TRELLIS_IO_36' constrained to Bel 'X60/Y0/PIOA'.
+Info: slot_mlvds3[4] feeds TRELLIS_IO TRELLIS_IO_35, removing $nextpnr_ibuf slot_mlvds3[4].
+Info: pin 'TRELLIS_IO_35' constrained to Bel 'X54/Y0/PIOB'.
+Info: slot_mlvds3[3] feeds TRELLIS_IO TRELLIS_IO_34, removing $nextpnr_ibuf slot_mlvds3[3].
+Info: pin 'TRELLIS_IO_34' constrained to Bel 'X96/Y0/PIOA'.
+Info: slot_mlvds3[2] feeds TRELLIS_IO TRELLIS_IO_33, removing $nextpnr_ibuf slot_mlvds3[2].
+Info: pin 'TRELLIS_IO_33' constrained to Bel 'X107/Y0/PIOA'.
+Info: slot_mlvds3[1] feeds TRELLIS_IO TRELLIS_IO_32, removing $nextpnr_ibuf slot_mlvds3[1].
+Info: pin 'TRELLIS_IO_32' constrained to Bel 'X107/Y0/PIOB'.
+Info: slot_mlvds3[0] feeds TRELLIS_IO TRELLIS_IO_31, removing $nextpnr_ibuf slot_mlvds3[0].
+Info: pin 'TRELLIS_IO_31' constrained to Bel 'X98/Y0/PIOA'.
+Info: slot_mlvds2[7] feeds TRELLIS_IO TRELLIS_IO_25, removing $nextpnr_ibuf slot_mlvds2[7].
+Info: pin 'TRELLIS_IO_25' constrained to Bel 'X76/Y0/PIOB'.
+Info: slot_mlvds2[6] feeds TRELLIS_IO TRELLIS_IO_24, removing $nextpnr_ibuf slot_mlvds2[6].
+Info: pin 'TRELLIS_IO_24' constrained to Bel 'X78/Y0/PIOA'.
+Info: slot_mlvds2[5] feeds TRELLIS_IO TRELLIS_IO_23, removing $nextpnr_ibuf slot_mlvds2[5].
+Info: pin 'TRELLIS_IO_23' constrained to Bel 'X78/Y0/PIOB'.
+Info: slot_mlvds2[4] feeds TRELLIS_IO TRELLIS_IO_22, removing $nextpnr_ibuf slot_mlvds2[4].
+Info: pin 'TRELLIS_IO_22' constrained to Bel 'X83/Y0/PIOB'.
+Info: slot_mlvds2[3] feeds TRELLIS_IO TRELLIS_IO_21, removing $nextpnr_ibuf slot_mlvds2[3].
+Info: pin 'TRELLIS_IO_21' constrained to Bel 'X112/Y0/PIOA'.
+Info: slot_mlvds2[2] feeds TRELLIS_IO TRELLIS_IO_20, removing $nextpnr_ibuf slot_mlvds2[2].
+Info: pin 'TRELLIS_IO_20' constrained to Bel 'X103/Y0/PIOB'.
+Info: slot_mlvds2[1] feeds TRELLIS_IO TRELLIS_IO_19, removing $nextpnr_ibuf slot_mlvds2[1].
+Info: pin 'TRELLIS_IO_19' constrained to Bel 'X110/Y0/PIOA'.
+Info: slot_mlvds2[0] feeds TRELLIS_IO TRELLIS_IO_18, removing $nextpnr_ibuf slot_mlvds2[0].
+Info: pin 'TRELLIS_IO_18' constrained to Bel 'X110/Y0/PIOB'.
+Info: slot_mlvds1[7] feeds TRELLIS_IO TRELLIS_IO_12, removing $nextpnr_ibuf slot_mlvds1[7].
+Info: pin 'TRELLIS_IO_12' constrained to Bel 'X101/Y0/PIOA'.
+Info: slot_mlvds1[6] feeds TRELLIS_IO TRELLIS_IO_11, removing $nextpnr_ibuf slot_mlvds1[6].
+Info: pin 'TRELLIS_IO_11' constrained to Bel 'X105/Y0/PIOA'.
+Info: slot_mlvds1[5] feeds TRELLIS_IO TRELLIS_IO_10, removing $nextpnr_ibuf slot_mlvds1[5].
+Info: pin 'TRELLIS_IO_10' constrained to Bel 'X112/Y0/PIOB'.
+Info: slot_mlvds1[4] feeds TRELLIS_IO TRELLIS_IO_9, removing $nextpnr_ibuf slot_mlvds1[4].
+Info: pin 'TRELLIS_IO_9' constrained to Bel 'X119/Y0/PIOB'.
+Info: slot_mlvds1[3] feeds TRELLIS_IO TRELLIS_IO_8, removing $nextpnr_ibuf slot_mlvds1[3].
+Info: pin 'TRELLIS_IO_8' constrained to Bel 'X96/Y0/PIOB'.
+Info: slot_mlvds1[2] feeds TRELLIS_IO TRELLIS_IO_7, removing $nextpnr_ibuf slot_mlvds1[2].
+Info: pin 'TRELLIS_IO_7' constrained to Bel 'X116/Y0/PIOA'.
+Info: slot_mlvds1[1] feeds TRELLIS_IO TRELLIS_IO_6, removing $nextpnr_ibuf slot_mlvds1[1].
+Info: pin 'TRELLIS_IO_6' constrained to Bel 'X116/Y0/PIOB'.
+Info: slot_mlvds1[0] feeds TRELLIS_IO TRELLIS_IO_5, removing $nextpnr_ibuf slot_mlvds1[0].
+Info: pin 'TRELLIS_IO_5' constrained to Bel 'X114/Y0/PIOB'.
+Info: pin 'slot8_d9_p$tr_io' constrained to Bel 'X0/Y56/PIOC'.
+Info: pin 'slot8_d8_p$tr_io' constrained to Bel 'X0/Y86/PIOC'.
+Info: slot8_d7_p feeds TRELLIS_IO TRELLIS_IO_87, removing $nextpnr_ibuf slot8_d7_p.
+Info: pin 'TRELLIS_IO_87' constrained to Bel 'X0/Y92/PIOA'.
+Info: slot8_d6_p feeds TRELLIS_IO TRELLIS_IO_86, removing $nextpnr_ibuf slot8_d6_p.
+Info: pin 'TRELLIS_IO_86' constrained to Bel 'X0/Y56/PIOA'.
+Info: slot8_d5_p feeds TRELLIS_IO TRELLIS_IO_85, removing $nextpnr_ibuf slot8_d5_p.
+Info: pin 'TRELLIS_IO_85' constrained to Bel 'X0/Y89/PIOA'.
+Info: slot8_d4_p feeds TRELLIS_IO TRELLIS_IO_84, removing $nextpnr_ibuf slot8_d4_p.
+Info: pin 'TRELLIS_IO_84' constrained to Bel 'X0/Y35/PIOA'.
+Info: pin 'slot8_d3_p$tr_io' constrained to Bel 'X0/Y14/PIOC'.
+Info: slot8_d2_p feeds TRELLIS_IO TRELLIS_IO_83, removing $nextpnr_ibuf slot8_d2_p.
+Info: pin 'TRELLIS_IO_83' constrained to Bel 'X126/Y53/PIOA'.
+Info: pin 'slot8_d1_p$tr_io' constrained to Bel 'X126/Y56/PIOC'.
+Info: pin 'slot8_d15_p$tr_io' constrained to Bel 'X126/Y86/PIOC'.
+Info: pin 'slot8_d14_p$tr_io' constrained to Bel 'X0/Y80/PIOC'.
+Info: pin 'slot8_d13_p$tr_io' constrained to Bel 'X0/Y92/PIOC'.
+Info: pin 'slot8_d12_p$tr_io' constrained to Bel 'X0/Y89/PIOC'.
+Info: pin 'slot8_d11_p$tr_io' constrained to Bel 'X0/Y77/PIOC'.
+Info: pin 'slot8_d10_p$tr_io' constrained to Bel 'X0/Y50/PIOC'.
+Info: pin 'slot8_d0_p$tr_io' constrained to Bel 'X126/Y20/PIOC'.
+Info: pin 'slot7_d9_p$tr_io' constrained to Bel 'X0/Y53/PIOC'.
+Info: pin 'slot7_d8_p$tr_io' constrained to Bel 'X0/Y47/PIOC'.
+Info: slot7_d7_p feeds TRELLIS_IO TRELLIS_IO_82, removing $nextpnr_ibuf slot7_d7_p.
+Info: pin 'TRELLIS_IO_82' constrained to Bel 'X0/Y80/PIOA'.
+Info: slot7_d6_p feeds TRELLIS_IO TRELLIS_IO_81, removing $nextpnr_ibuf slot7_d6_p.
+Info: pin 'TRELLIS_IO_81' constrained to Bel 'X0/Y77/PIOA'.
+Info: slot7_d5_p feeds TRELLIS_IO TRELLIS_IO_80, removing $nextpnr_ibuf slot7_d5_p.
+Info: pin 'TRELLIS_IO_80' constrained to Bel 'X0/Y86/PIOA'.
+Info: slot7_d4_p feeds TRELLIS_IO TRELLIS_IO_79, removing $nextpnr_ibuf slot7_d4_p.
+Info: pin 'TRELLIS_IO_79' constrained to Bel 'X0/Y14/PIOA'.
+Info: pin 'slot7_d3_p$tr_io' constrained to Bel 'X0/Y38/PIOC'.
+Info: slot7_d2_p feeds TRELLIS_IO TRELLIS_IO_78, removing $nextpnr_ibuf slot7_d2_p.
+Info: pin 'TRELLIS_IO_78' constrained to Bel 'X126/Y38/PIOA'.
+Info: pin 'slot7_d1_p$tr_io' constrained to Bel 'X126/Y14/PIOC'.
+Info: pin 'slot7_d15_p$tr_io' constrained to Bel 'X126/Y89/PIOC'.
+Info: pin 'slot7_d14_p$tr_io' constrained to Bel 'X0/Y83/PIOC'.
+Info: pin 'slot7_d13_p$tr_io' constrained to Bel 'X0/Y74/PIOC'.
+Info: pin 'slot7_d12_p$tr_io' constrained to Bel 'X0/Y71/PIOC'.
+Info: pin 'slot7_d11_p$tr_io' constrained to Bel 'X0/Y44/PIOC'.
+Info: pin 'slot7_d10_p$tr_io' constrained to Bel 'X0/Y41/PIOC'.
+Info: pin 'slot7_d0_p$tr_io' constrained to Bel 'X126/Y38/PIOC'.
+Info: slot6_d7_p feeds TRELLIS_IO TRELLIS_IO_69, removing $nextpnr_ibuf slot6_d7_p.
+Info: pin 'TRELLIS_IO_69' constrained to Bel 'X0/Y83/PIOA'.
+Info: slot6_d6_p feeds TRELLIS_IO TRELLIS_IO_68, removing $nextpnr_ibuf slot6_d6_p.
+Info: pin 'TRELLIS_IO_68' constrained to Bel 'X0/Y53/PIOA'.
+Info: slot6_d5_p feeds TRELLIS_IO TRELLIS_IO_67, removing $nextpnr_ibuf slot6_d5_p.
+Info: pin 'TRELLIS_IO_67' constrained to Bel 'X0/Y50/PIOA'.
+Info: slot6_d4_p feeds TRELLIS_IO TRELLIS_IO_66, removing $nextpnr_ibuf slot6_d4_p.
+Info: pin 'TRELLIS_IO_66' constrained to Bel 'X126/Y11/PIOA'.
+Info: pin 'slot6_d3_p$tr_io' constrained to Bel 'X0/Y17/PIOC'.
+Info: slot6_d2_p feeds TRELLIS_IO TRELLIS_IO_65, removing $nextpnr_ibuf slot6_d2_p.
+Info: pin 'TRELLIS_IO_65' constrained to Bel 'X126/Y50/PIOA'.
+Info: pin 'slot6_d1_p$tr_io' constrained to Bel 'X126/Y44/PIOC'.
+Info: pin 'slot6_d0_p$tr_io' constrained to Bel 'X126/Y50/PIOC'.
+Info: slot5_d7_p feeds TRELLIS_IO TRELLIS_IO_56, removing $nextpnr_ibuf slot5_d7_p.
+Info: pin 'TRELLIS_IO_56' constrained to Bel 'X0/Y74/PIOA'.
+Info: slot5_d6_p feeds TRELLIS_IO TRELLIS_IO_55, removing $nextpnr_ibuf slot5_d6_p.
+Info: pin 'TRELLIS_IO_55' constrained to Bel 'X0/Y71/PIOA'.
+Info: slot5_d5_p feeds TRELLIS_IO TRELLIS_IO_54, removing $nextpnr_ibuf slot5_d5_p.
+Info: pin 'TRELLIS_IO_54' constrained to Bel 'X0/Y47/PIOA'.
+Info: slot5_d4_p feeds TRELLIS_IO TRELLIS_IO_53, removing $nextpnr_ibuf slot5_d4_p.
+Info: pin 'TRELLIS_IO_53' constrained to Bel 'X126/Y17/PIOA'.
+Info: pin 'slot5_d3_p$tr_io' constrained to Bel 'X0/Y11/PIOC'.
+Info: slot5_d2_p feeds TRELLIS_IO TRELLIS_IO_52, removing $nextpnr_ibuf slot5_d2_p.
+Info: pin 'TRELLIS_IO_52' constrained to Bel 'X126/Y56/PIOA'.
+Info: pin 'slot5_d1_p$tr_io' constrained to Bel 'X126/Y41/PIOC'.
+Info: pin 'slot5_d0_p$tr_io' constrained to Bel 'X126/Y35/PIOC'.
+Info: slot4_d7_p feeds TRELLIS_IO TRELLIS_IO_43, removing $nextpnr_ibuf slot4_d7_p.
+Info: pin 'TRELLIS_IO_43' constrained to Bel 'X0/Y20/PIOA'.
+Info: slot4_d6_p feeds TRELLIS_IO TRELLIS_IO_42, removing $nextpnr_ibuf slot4_d6_p.
+Info: pin 'TRELLIS_IO_42' constrained to Bel 'X0/Y17/PIOA'.
+Info: slot4_d5_p feeds TRELLIS_IO TRELLIS_IO_41, removing $nextpnr_ibuf slot4_d5_p.
+Info: pin 'TRELLIS_IO_41' constrained to Bel 'X0/Y44/PIOA'.
+Info: slot4_d4_p feeds TRELLIS_IO TRELLIS_IO_40, removing $nextpnr_ibuf slot4_d4_p.
+Info: pin 'TRELLIS_IO_40' constrained to Bel 'X126/Y35/PIOA'.
+Info: pin 'slot4_d3_p$tr_io' constrained to Bel 'X0/Y20/PIOC'.
+Info: slot4_d2_p feeds TRELLIS_IO TRELLIS_IO_39, removing $nextpnr_ibuf slot4_d2_p.
+Info: pin 'TRELLIS_IO_39' constrained to Bel 'X126/Y47/PIOA'.
+Info: pin 'slot4_d1_p$tr_io' constrained to Bel 'X126/Y17/PIOC'.
+Info: pin 'slot4_d0_p$tr_io' constrained to Bel 'X126/Y71/PIOC'.
+Info: slot3_d7_p feeds TRELLIS_IO TRELLIS_IO_30, removing $nextpnr_ibuf slot3_d7_p.
+Info: pin 'TRELLIS_IO_30' constrained to Bel 'X0/Y41/PIOA'.
+Info: slot3_d6_p feeds TRELLIS_IO TRELLIS_IO_29, removing $nextpnr_ibuf slot3_d6_p.
+Info: pin 'TRELLIS_IO_29' constrained to Bel 'X0/Y11/PIOA'.
+Info: slot3_d5_p feeds TRELLIS_IO TRELLIS_IO_28, removing $nextpnr_ibuf slot3_d5_p.
+Info: pin 'TRELLIS_IO_28' constrained to Bel 'X0/Y38/PIOA'.
+Info: slot3_d4_p feeds TRELLIS_IO TRELLIS_IO_27, removing $nextpnr_ibuf slot3_d4_p.
+Info: pin 'TRELLIS_IO_27' constrained to Bel 'X126/Y20/PIOA'.
+Info: pin 'slot3_d3_p$tr_io' constrained to Bel 'X0/Y35/PIOC'.
+Info: slot3_d2_p feeds TRELLIS_IO TRELLIS_IO_26, removing $nextpnr_ibuf slot3_d2_p.
+Info: pin 'TRELLIS_IO_26' constrained to Bel 'X126/Y41/PIOA'.
+Info: pin 'slot3_d1_p$tr_io' constrained to Bel 'X126/Y47/PIOC'.
+Info: pin 'slot3_d0_p$tr_io' constrained to Bel 'X126/Y83/PIOC'.
+Info: slot2_d7_p feeds TRELLIS_IO TRELLIS_IO_17, removing $nextpnr_ibuf slot2_d7_p.
+Info: pin 'TRELLIS_IO_17' constrained to Bel 'X126/Y86/PIOA'.
+Info: slot2_d6_p feeds TRELLIS_IO TRELLIS_IO_16, removing $nextpnr_ibuf slot2_d6_p.
+Info: pin 'TRELLIS_IO_16' constrained to Bel 'X126/Y74/PIOA'.
+Info: slot2_d5_p feeds TRELLIS_IO TRELLIS_IO_15, removing $nextpnr_ibuf slot2_d5_p.
+Info: pin 'TRELLIS_IO_15' constrained to Bel 'X126/Y71/PIOA'.
+Info: slot2_d4_p feeds TRELLIS_IO TRELLIS_IO_14, removing $nextpnr_ibuf slot2_d4_p.
+Info: pin 'TRELLIS_IO_14' constrained to Bel 'X126/Y14/PIOA'.
+Info: pin 'slot2_d3_p$tr_io' constrained to Bel 'X126/Y11/PIOC'.
+Info: slot2_d2_p feeds TRELLIS_IO TRELLIS_IO_13, removing $nextpnr_ibuf slot2_d2_p.
+Info: pin 'TRELLIS_IO_13' constrained to Bel 'X126/Y44/PIOA'.
+Info: pin 'slot2_d1_p$tr_io' constrained to Bel 'X126/Y53/PIOC'.
+Info: pin 'slot2_d0_p$tr_io' constrained to Bel 'X126/Y74/PIOC'.
+Info: slot1_d7_p feeds TRELLIS_IO TRELLIS_IO_4, removing $nextpnr_ibuf slot1_d7_p.
+Info: pin 'TRELLIS_IO_4' constrained to Bel 'X126/Y83/PIOA'.
+Info: slot1_d6_p feeds TRELLIS_IO TRELLIS_IO_3, removing $nextpnr_ibuf slot1_d6_p.
+Info: pin 'TRELLIS_IO_3' constrained to Bel 'X126/Y77/PIOA'.
+Info: slot1_d5_p feeds TRELLIS_IO TRELLIS_IO_2, removing $nextpnr_ibuf slot1_d5_p.
+Info: pin 'TRELLIS_IO_2' constrained to Bel 'X126/Y89/PIOA'.
+Info: slot1_d4_p feeds TRELLIS_IO TRELLIS_IO_1, removing $nextpnr_ibuf slot1_d4_p.
+Info: pin 'TRELLIS_IO_1' constrained to Bel 'X126/Y92/PIOA'.
+Info: pin 'slot1_d3_p$tr_io' constrained to Bel 'X126/Y77/PIOC'.
+Info: slot1_d2_p feeds TRELLIS_IO TRELLIS_IO, removing $nextpnr_ibuf slot1_d2_p.
+Info: pin 'TRELLIS_IO' constrained to Bel 'X126/Y80/PIOA'.
+Info: pin 'slot1_d1_p$tr_io' constrained to Bel 'X126/Y92/PIOC'.
+Info: pin 'slot1_d0_p$tr_io' constrained to Bel 'X126/Y80/PIOC'.
+Info: pin 'qspix10_mosi$tr_io' constrained to Bel 'X110/Y95/PIOA'.
+Info: pin 'qspix10_miso$tr_io' constrained to Bel 'X110/Y95/PIOB'.
+Info: pin 'qspix10_cs_n$tr_io' constrained to Bel 'X116/Y95/PIOA'.
+Info: pin 'qspix10_clk$tr_io' constrained to Bel 'X63/Y0/PIOA'.
+Info: pin 'interrupts[7]$tr_io' constrained to Bel 'X74/Y0/PIOA'.
+Info: pin 'interrupts[6]$tr_io' constrained to Bel 'X114/Y0/PIOA'.
+Info: pin 'interrupts[5]$tr_io' constrained to Bel 'X4/Y0/PIOB'.
+Info: pin 'interrupts[4]$tr_io' constrained to Bel 'X49/Y0/PIOB'.
+Info: pin 'interrupts[3]$tr_io' constrained to Bel 'X65/Y0/PIOA'.
+Info: pin 'interrupts[2]$tr_io' constrained to Bel 'X4/Y95/PIOB'.
+Info: pin 'interrupts[1]$tr_io' constrained to Bel 'X13/Y95/PIOA'.
+Info: pin 'interrupts[0]$tr_io' constrained to Bel 'X4/Y95/PIOA'.
+Info: pin 'fsen$tr_io' constrained to Bel 'X105/Y0/PIOB'.
+Info: pin 'clk_stm$tr_io' constrained to Bel 'X4/Y0/PIOA'.
+Info: pin 'clk100$tr_io' constrained to Bel 'X121/Y0/PIOA'.
+Info: Packing constants..
+Info: Packing carries...
+Info: Packing LUTs...
+Info: Packing LUT5-7s...
+Info: Packing FFs...
+Info:     520 FFs paired with LUTs.
+Info: Generating derived timing constraints...
+Info: Promoting globals...
+Info:     promoting clock net clk100$TRELLIS_IO_IN to global network
+Info:     promoting clock net qspix10_clk$TRELLIS_IO_IN to global network
+Info:     promoting clock net FD1P3BX_Q to global network
+Info: Checksum: 0xea773331
+
+Info: Device utilisation:
+Info: 	          TRELLIS_IO:     151/    365    41%
+Info: 	                DCCA:       3/     56     5%
+Info: 	              DP16KD:       0/    208     0%
+Info: 	          MULT18X18D:       0/    156     0%
+Info: 	              ALU54B:       0/     78     0%
+Info: 	             EHXPLLL:       0/      4     0%
+Info: 	             EXTREFB:       0/      2     0%
+Info: 	                DCUA:       0/      2     0%
+Info: 	           PCSCLKDIV:       0/      2     0%
+Info: 	             IOLOGIC:       0/    224     0%
+Info: 	            SIOLOGIC:       0/    141     0%
+Info: 	                 GSR:       1/      1   100%
+Info: 	               JTAGG:       0/      1     0%
+Info: 	                OSCG:       0/      1     0%
+Info: 	               SEDGA:       0/      1     0%
+Info: 	                 DTR:       0/      1     0%
+Info: 	             USRMCLK:       0/      1     0%
+Info: 	             CLKDIVF:       0/      4     0%
+Info: 	           ECLKSYNCB:       0/     10     0%
+Info: 	             DLLDELD:       0/      8     0%
+Info: 	              DDRDLL:       0/      4     0%
+Info: 	             DQSBUFM:       0/     14     0%
+Info: 	     TRELLIS_ECLKBUF:       0/      8     0%
+Info: 	        ECLKBRIDGECS:       0/      2     0%
+Info: 	                DCSC:       0/      2     0%
+Info: 	          TRELLIS_FF:    1874/  83640     2%
+Info: 	        TRELLIS_COMB:    3314/  83640     3%
+Info: 	        TRELLIS_RAMW:       0/  10455     0%
+
+Info: Placed 152 cells based on constraints.
+Info: Creating initial analytic placement for 3699 cells, random placement wirelen = 383569.
+Info:     at initial placer iter 0, wirelen = 29761
+Info:     at initial placer iter 1, wirelen = 26490
+Info:     at initial placer iter 2, wirelen = 26285
+Info:     at initial placer iter 3, wirelen = 26468
+Info: Running main analytical placer, max placement attempts per cell = 3568456.
+Info:     at iteration #1, type ALL: wirelen solved = 26164, spread = 50667, legal = 51576; time = 0.11s
+Info:     at iteration #2, type ALL: wirelen solved = 28485, spread = 44773, legal = 45865; time = 0.09s
+Info:     at iteration #3, type ALL: wirelen solved = 30292, spread = 44106, legal = 45066; time = 0.09s
+Info:     at iteration #4, type ALL: wirelen solved = 31931, spread = 44018, legal = 44982; time = 0.08s
+Info:     at iteration #5, type ALL: wirelen solved = 34204, spread = 42531, legal = 43654; time = 0.08s
+Info:     at iteration #6, type ALL: wirelen solved = 35418, spread = 42245, legal = 43330; time = 0.07s
+Info: HeAP Placer Time: 0.97s
+Info:   of which solving equations: 0.55s
+Info:   of which spreading cells: 0.07s
+Info:   of which strict legalisation: 0.08s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 958, wirelen = 43330
+Info:   at iteration #5: temp = 0.000000, timing cost = 826, wirelen = 41717
+Info:   at iteration #10: temp = 0.000000, timing cost = 1470, wirelen = 41212
+Info:   at iteration #15: temp = 0.000000, timing cost = 1304, wirelen = 41059
+Info:   at iteration #20: temp = 0.000000, timing cost = 1319, wirelen = 40952
+Info:   at iteration #25: temp = 0.000000, timing cost = 1297, wirelen = 40908
+Info:   at iteration #26: temp = 0.000000, timing cost = 1292, wirelen = 40918 
+Info: SA placement time 5.23s
+
+Info: Max frequency for clock '$glbnet$qspix10_clk$TRELLIS_IO_IN': 232.50 MHz (PASS at 133.01 MHz)
+Info: Max frequency for clock             'clk_stm$TRELLIS_IO_IN': 1314.06 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock      '$glbnet$clk100$TRELLIS_IO_IN': 86.41 MHz (FAIL at 100.00 MHz)
+
+Info: Clock '$glbnet$FD1P3BX_Q' has no interior paths
+
+Info: Max delay <async>                                   -> <async>                                  : 12.48 ns
+Info: Max delay <async>                                   -> posedge $glbnet$clk100$TRELLIS_IO_IN     : 20.25 ns
+Info: Max delay <async>                                   -> posedge $glbnet$qspix10_clk$TRELLIS_IO_IN: 16.40 ns
+Info: Max delay posedge $glbnet$FD1P3BX_Q                 -> posedge $glbnet$clk100$TRELLIS_IO_IN     : 1.97 ns
+Info: Max delay posedge $glbnet$clk100$TRELLIS_IO_IN      -> <async>                                  : 17.73 ns
+Info: Max delay posedge $glbnet$clk100$TRELLIS_IO_IN      -> posedge $glbnet$qspix10_clk$TRELLIS_IO_IN: 1.33 ns
+Info: Max delay posedge $glbnet$qspix10_clk$TRELLIS_IO_IN -> <async>                                  : 15.01 ns
+Info: Max delay posedge $glbnet$qspix10_clk$TRELLIS_IO_IN -> posedge $glbnet$FD1P3BX_Q                : 1.80 ns
+Info: Max delay posedge $glbnet$qspix10_clk$TRELLIS_IO_IN -> posedge $glbnet$clk100$TRELLIS_IO_IN     : 3.88 ns
+Info: Max delay posedge clk_stm$TRELLIS_IO_IN             -> <async>                                  : 2.29 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 21 endpoint(s)
+Info:          + represents [1,21) endpoint(s)
+Info: [ -1573,   2635) |********************************************************+
+Info: [  2635,   6843) |************************************************************ 
+Info: [  6843,  11051) |***********************************+
+Info: [ 11051,  15259) | 
+Info: [ 15259,  19467) | 
+Info: [ 19467,  23675) | 
+Info: [ 23675,  27883) | 
+Info: [ 27883,  32091) | 
+Info: [ 32091,  36299) | 
+Info: [ 36299,  40507) | 
+Info: [ 40507,  44715) | 
+Info: [ 44715,  48923) | 
+Info: [ 48923,  53131) | 
+Info: [ 53131,  57339) | 
+Info: [ 57339,  61547) | 
+Info: [ 61547,  65755) | 
+Info: [ 65755,  69963) | 
+Info: [ 69963,  74171) | 
+Info: [ 74171,  78379) | 
+Info: [ 78379,  82587) |+
+Info: Checksum: 0xcd6ad892
+Info: Routing globals...
+Info:     routing clock net $glbnet$FD1P3BX_Q using global 0
+Info:     routing clock net $glbnet$qspix10_clk$TRELLIS_IO_IN using global 1
+Info:     routing clock net $glbnet$clk100$TRELLIS_IO_IN using global 2
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 13925 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:       1000 |      345        654 |  345   654 |     13443|       0.37       0.37|
+Info:       2000 |      663       1336 |  318   682 |     13003|       0.24       0.61|
+Info:       3000 |     1022       1977 |  359   641 |     12658|       0.25       0.86|
+Info:       4000 |     1307       2692 |  285   715 |     12110|       0.26       1.12|
+Info:       5000 |     1564       3435 |  257   743 |     11544|       0.26       1.37|
+Info:       6000 |     1906       4093 |  342   658 |     11124|       0.27       1.64|
+Info:       7000 |     2201       4798 |  295   705 |     10637|       0.30       1.94|
+Info:       8000 |     2493       5506 |  292   708 |     10237|       0.34       2.28|
+Info:       9000 |     2858       6141 |  365   635 |      9965|       0.31       2.59|
+Info:      10000 |     3249       6750 |  391   609 |      9781|       0.34       2.93|
+Info:      11000 |     3614       7385 |  365   635 |      9600|       0.32       3.25|
+Info:      12000 |     3946       8053 |  332   668 |      9274|       0.37       3.61|
+Info:      13000 |     4279       8720 |  333   667 |      9241|       0.33       3.94|
+Info:      14000 |     4657       9342 |  378   622 |      9096|       0.34       4.28|
+Info:      15000 |     4991      10008 |  334   666 |      8996|       0.29       4.57|
+Info:      16000 |     5394      10605 |  403   597 |      8648|       0.35       4.92|
+Info:      17000 |     5768      11231 |  374   626 |      8304|       0.36       5.28|
+Info:      18000 |     6228      11771 |  460   540 |      8080|       0.40       5.69|
+Info:      19000 |     6653      12346 |  425   575 |      7720|       0.43       6.11|
+Info:      20000 |     7108      12891 |  455   545 |      7514|       0.60       6.72|
+Info:      21000 |     7562      13437 |  454   546 |      7205|       0.43       7.15|
+Info:      22000 |     8009      13966 |  447   529 |      6912|       0.49       7.64|
+Info:      23000 |     8416      14543 |  407   577 |      6694|       0.45       8.09|
+Info:      24000 |     8818      15070 |  402   527 |      6291|       0.46       8.55|
+Info:      25000 |     9132      15617 |  314   547 |      5732|       0.31       8.86|
+Info:      26000 |     9461      16200 |  329   583 |      5363|       0.39       9.25|
+Info:      27000 |     9818      16795 |  357   595 |      4894|       0.42       9.66|
+Info:      28000 |    10246      17343 |  428   548 |      4434|       0.47      10.13|
+Info:      29000 |    10654      17927 |  408   584 |      3974|       0.54      10.67|
+Info:      30000 |    11033      18545 |  379   618 |      3497|       0.45      11.11|
+Info:      31000 |    11324      19246 |  291   701 |      2858|       0.44      11.55|
+Info:      32000 |    11639      19896 |  315   650 |      2403|       0.41      11.96|
+Info:      33000 |    11884      20644 |  245   748 |      1716|       0.35      12.32|
+Info:      34000 |    12255      21270 |  371   626 |      1203|       0.50      12.82|
+Info:      35000 |    12496      21889 |  241   619 |       540|       0.89      13.71|
+Info:      36000 |    12881      22403 |  385   514 |        84|       0.97      14.68|
+Info:      36387 |    13094      22568 |  213   165 |         0|       0.37      15.05|
+Info: Routing complete.
+Info: Router1 time 15.05s
+Info: Checksum: 0x53f62837
+
+Info: Critical path report for clock '$glbnet$qspix10_clk$TRELLIS_IO_IN' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source spi_slave_read_data_done_TRELLIS_FF_Q.Q
+Info:    routing  0.75  1.27 Net spi_slave_read_data_done (27,19) -> (27,18)
+Info:                          Sink multiregimpl31_LUT4_D.C
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/unified-sinara-slow-control/work/builds/stm-gateware/stm_sys_board.v:2035.6-2035.30
+Info:      logic  0.24  1.51 Source multiregimpl31_LUT4_D.F
+Info:    routing  0.65  2.16 Net multiregimpl31_LUT4_D_Z[2] (27,18) -> (30,18)
+Info:                          Sink spi_slave_sr_TRELLIS_FF_Q_CE_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  2.39 Source spi_slave_sr_TRELLIS_FF_Q_CE_LUT4_Z.F
+Info:    routing  0.89  3.28 Net spi_slave_sr_TRELLIS_FF_Q_CE (30,18) -> (34,19)
+Info:                          Sink spi_slave_sr_out_TRELLIS_FF_Q_14.LSR
+Info:      setup  0.42  3.70 Source spi_slave_sr_out_TRELLIS_FF_Q_14.LSR
+Info: 1.42 ns logic, 2.28 ns routing
+
+Info: Critical path report for clock 'clk_stm$TRELLIS_IO_IN' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source fsen_TRELLIS_FF_Q.Q
+Info:    routing  0.23  0.75 Net fsen$TRELLIS_IO_OUT (98,2) -> (98,2)
+Info:                          Sink fsen_LUT4_D.D
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/unified-sinara-slow-control/work/builds/stm-gateware/stm_sys_board.v:122.14-122.18
+Info:      logic  0.24  0.99 Source fsen_LUT4_D.F
+Info:    routing  0.13  1.12 Net fsen_LUT4_D_Z (98,2) -> (98,2)
+Info:                          Sink fsen_TRELLIS_FF_Q.DI
+Info:      setup  0.00  1.12 Source fsen_TRELLIS_FF_Q.DI
+Info: 0.76 ns logic, 0.36 ns routing
+
+Info: Critical path report for clock '$glbnet$clk100$TRELLIS_IO_IN' (posedge -> posedge):
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source slotcontroller5_spi_master_cnt_TRELLIS_FF_Q_2.Q
+Info:    routing  0.90  1.43 Net slotcontroller5_spi_master_cnt[2] (39,21) -> (39,20)
+Info:                          Sink slotcontroller5_spi_master_done_LUT4_Z_D_LUT4_Z_D_LUT4_Z.B
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/unified-sinara-slow-control/work/builds/stm-gateware/stm_sys_board.v:1159.12-1159.42
+Info:      logic  0.24  1.67 Source slotcontroller5_spi_master_done_LUT4_Z_D_LUT4_Z_D_LUT4_Z.F
+Info:    routing  0.42  2.09 Net slotcontroller5_spi_master_done_LUT4_Z_D_LUT4_Z_D[3] (39,20) -> (39,20)
+Info:                          Sink slotcontroller5_spi_master_done_LUT4_Z_D_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  2.32 Source slotcontroller5_spi_master_done_LUT4_Z_D_LUT4_Z.F
+Info:    routing  1.51  3.83 Net slotcontroller5_spi_master_cnt_TRELLIS_FF_Q_1_DI_LUT4_Z_C[2] (39,20) -> (51,20)
+Info:                          Sink slotcontroller5_spi_master_done_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  4.07 Source slotcontroller5_spi_master_done_LUT4_Z.F
+Info:    routing  0.66  4.73 Net slotcontroller5_spi_master_do_extend_LUT4_B_D[0] (51,20) -> (51,20)
+Info:                          Sink slotcontroller5_spi_master_do_extend_TRELLIS_FF_Q_DI_LUT4_Z_C_LUT4_C.A
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  4.96 Source slotcontroller5_spi_master_do_extend_TRELLIS_FF_Q_DI_LUT4_Z_C_LUT4_C.F
+Info:    routing  1.26  6.22 Net slot7_d9_p_LUT4_A_D_LUT4_D_Z[0] (51,20) -> (49,16)
+Info:                          Sink slotcontroller5_spi_master_do_extend_TRELLIS_FF_Q_DI_LUT4_Z_C_LUT4_C_Z_PFUMX_C0_BLUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  6.48 Source slotcontroller5_spi_master_do_extend_TRELLIS_FF_Q_DI_LUT4_Z_C_LUT4_C_Z_PFUMX_C0_BLUT_LUT4_Z.OFX
+Info:    routing  0.17  6.66 Net slotcontroller5_spi_master_do_extend_TRELLIS_FF_Q_DI_LUT4_Z_C_LUT4_C_Z_PFUMX_C0_Z[3] (49,16) -> (49,16)
+Info:                          Sink slotcontroller7_spi_master_end1_LUT4_B_Z_LUT4_D_1_Z_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  6.89 Source slotcontroller7_spi_master_end1_LUT4_B_Z_LUT4_D_1_Z_LUT4_Z.F
+Info:    routing  0.98  7.87 Net slotcontroller7_spi_master_end1_LUT4_B_Z_LUT4_D_1_Z[5] (49,16) -> (52,15)
+Info:                          Sink slotcontroller1_spi_master_end1_LUT4_A_Z_LUT4_D_1_Z_LUT4_C_Z_L6MUX21_Z_2_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  8.13 Source slotcontroller1_spi_master_end1_LUT4_A_Z_LUT4_D_1_Z_LUT4_C_Z_L6MUX21_Z_2_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  0.00  8.13 Net slotcontroller1_spi_master_end1_LUT4_A_Z_LUT4_D_1_Z_LUT4_C_Z_L6MUX21_Z_2_D1 (52,15) -> (52,15)
+Info:                          Sink slotcontroller1_spi_master_end1_LUT4_A_Z_LUT4_D_1_Z_LUT4_C_Z_L6MUX21_Z_2_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:157.70-157.72
+Info:      logic  0.24  8.37 Source slotcontroller1_spi_master_end1_LUT4_A_Z_LUT4_D_1_Z_LUT4_C_Z_L6MUX21_Z_2_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  0.69  9.06 Net slotcontroller1_spi_master_end1_LUT4_A_Z_LUT4_D_1_Z_LUT4_C_Z[3] (52,15) -> (51,14)
+Info:                          Sink csr_bus_dat_r_TRELLIS_FF_Q_15_DI_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  9.30 Source csr_bus_dat_r_TRELLIS_FF_Q_15_DI_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.F
+Info:    routing  0.00  9.30 Net csr_bus_dat_r_TRELLIS_FF_Q_15_DI_L6MUX21_Z_D1_PFUMX_Z_ALUT (51,14) -> (51,14)
+Info:                          Sink csr_bus_dat_r_TRELLIS_FF_Q_15_DI_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:141.30-141.32
+Info:      logic  0.17  9.46 Source csr_bus_dat_r_TRELLIS_FF_Q_15_DI_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.00  9.46 Net csr_bus_dat_r_TRELLIS_FF_Q_15_DI_L6MUX21_Z_D1 (51,14) -> (51,14)
+Info:                          Sink csr_bus_dat_r_TRELLIS_FF_Q_15_DI_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:141.38-141.40
+Info:      logic  0.24  9.70 Source csr_bus_dat_r_TRELLIS_FF_Q_15_DI_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  0.27  9.97 Net csr_bus_dat_r_TRELLIS_FF_Q_15_DI (51,14) -> (51,14)
+Info:                          Sink csr_bus_dat_r_TRELLIS_FF_Q_15.M
+Info:      setup  0.00  9.97 Source csr_bus_dat_r_TRELLIS_FF_Q_15.M
+Info: 3.10 ns logic, 6.87 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> '<async>':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source spi_dir_ctrl_miso$tr_io.O
+Info:    routing  8.33  8.33 Net spi_slave4_miso$TRELLIS_IO_OUT (18,95) -> (63,0)
+Info:                          Sink spi_slave4_miso$tr_io.I
+Info: 0.00 ns logic, 8.33 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$clk100$TRELLIS_IO_IN':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source TRELLIS_IO_4.O
+Info:    routing  9.34  9.34 Net csrs_logic0_input_w[7] (126,83) -> (40,16)
+Info:                          Sink slotcontroller0_slot_7_i_LUT4_B.B
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/unified-sinara-slow-control/work/builds/stm-gateware/stm_sys_board.v:171.6-171.30
+Info:      logic  0.24  9.58 Source slotcontroller0_slot_7_i_LUT4_B.F
+Info:    routing  0.00  9.58 Net slotcontroller0_slot_7_i_LUT4_B_Z (40,16) -> (40,16)
+Info:                          Sink slotcontroller0_slot_7_i_LUT4_B_Z_PFUMX_ALUT_BLUT_LUT4_Z.F1
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:133.22-133.24
+Info:      logic  0.17  9.74 Source slotcontroller0_slot_7_i_LUT4_B_Z_PFUMX_ALUT_BLUT_LUT4_Z.OFX
+Info:    routing  0.38  10.12 Net slotcontroller0_slot_7_i_LUT4_B_Z_PFUMX_ALUT_Z[4] (40,16) -> (40,16)
+Info:                          Sink slotcontroller3_slot_7_o_LUT4_A.M
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  10.37 Source slotcontroller3_slot_7_o_LUT4_A.OFX
+Info:    routing  0.68  11.05 Net slotcontroller3_slot_7_o_LUT4_A_Z_PFUMX_BLUT_Z[4] (40,16) -> (40,15)
+Info:                          Sink csr_bus_dat_r_TRELLIS_FF_Q_9_DI_PFUMX_Z_C0_L6MUX21_Z_2_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  11.31 Source csr_bus_dat_r_TRELLIS_FF_Q_9_DI_PFUMX_Z_C0_L6MUX21_Z_2_D1_L6MUX21_Z_D1_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.00  11.31 Net csr_bus_dat_r_TRELLIS_FF_Q_9_DI_PFUMX_Z_C0_L6MUX21_Z_2_D1_L6MUX21_Z_D1 (40,15) -> (40,15)
+Info:                          Sink csr_bus_dat_r_TRELLIS_FF_Q_9_DI_PFUMX_Z_C0_L6MUX21_Z_2_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:157.62-157.64
+Info:      logic  0.24  11.55 Source csr_bus_dat_r_TRELLIS_FF_Q_9_DI_PFUMX_Z_C0_L6MUX21_Z_2_D1_L6MUX21_Z_D1_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  0.00  11.55 Net csr_bus_dat_r_TRELLIS_FF_Q_9_DI_PFUMX_Z_C0_L6MUX21_Z_2_D1 (40,15) -> (40,15)
+Info:                          Sink csr_bus_dat_r_TRELLIS_FF_Q_9_DI_PFUMX_Z_C0_L6MUX21_Z_2_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.FXB
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:157.70-157.72
+Info:      logic  0.24  11.79 Source csr_bus_dat_r_TRELLIS_FF_Q_9_DI_PFUMX_Z_C0_L6MUX21_Z_2_D1_L6MUX21_Z_D0_PFUMX_Z_ALUT_LUT4_Z.OFX
+Info:    routing  1.40  13.19 Net csr_bus_dat_r_TRELLIS_FF_Q_9_DI_PFUMX_Z_C0[1] (40,15) -> (37,18)
+Info:                          Sink csr_bus_dat_r_TRELLIS_FF_Q_9_DI_PFUMX_Z_ALUT_LUT4_Z.B
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  13.43 Source csr_bus_dat_r_TRELLIS_FF_Q_9_DI_PFUMX_Z_ALUT_LUT4_Z.F
+Info:    routing  0.00  13.43 Net csr_bus_dat_r_TRELLIS_FF_Q_9_DI_PFUMX_Z_ALUT (37,18) -> (37,18)
+Info:                          Sink csr_bus_dat_r_TRELLIS_FF_Q_9_DI_PFUMX_Z_BLUT_LUT4_Z.F1
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:133.22-133.24
+Info:      logic  0.17  13.59 Source csr_bus_dat_r_TRELLIS_FF_Q_9_DI_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  0.62  14.22 Net csr_bus_dat_r_TRELLIS_FF_Q_9_DI (37,18) -> (37,19)
+Info:                          Sink csr_bus_dat_r_TRELLIS_FF_Q_9.M
+Info:      setup  0.00  14.22 Source csr_bus_dat_r_TRELLIS_FF_Q_9.M
+Info: 1.80 ns logic, 12.42 ns routing
+
+Info: Critical path report for cross-domain path '<async>' -> 'posedge $glbnet$qspix10_clk$TRELLIS_IO_IN':
+Info:       type curr  total name
+Info:     source  0.00  0.00 Source qspix10_cs_n$tr_io.O
+Info:    routing  9.71  9.71 Net qspix10_cs_n$TRELLIS_IO_IN (116,95) -> (29,19)
+Info:                          Sink spi_slave_read_sck_TRELLIS_FF_Q_LSR_LUT4_Z.C
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  9.94 Source spi_slave_read_sck_TRELLIS_FF_Q_LSR_LUT4_Z.F
+Info:    routing  0.85  10.79 Net spi_slave_read_sck_TRELLIS_FF_Q_LSR (29,19) -> (27,17)
+Info:                          Sink spi_slave_read_sck_TRELLIS_FF_Q.LSR
+Info:      setup  0.42  11.21 Source spi_slave_read_sck_TRELLIS_FF_Q.LSR
+Info: 0.66 ns logic, 10.55 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$FD1P3BX_Q' -> 'posedge $glbnet$clk100$TRELLIS_IO_IN':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source spi_slave_di_TRELLIS_FF_Q_9.Q
+Info:    routing  1.08  1.60 Net spi_slave_di[5] (32,23) -> (30,19)
+Info:                          Sink wishbone_dat_w_TRELLIS_FF_Q_6.M
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/unified-sinara-slow-control/work/builds/stm-gateware/stm_sys_board.v:2020.13-2020.25
+Info:      setup  0.00  1.60 Source wishbone_dat_w_TRELLIS_FF_Q_6.M
+Info: 0.52 ns logic, 1.08 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk100$TRELLIS_IO_IN' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source csrs_logic0_interrupt_w_TRELLIS_FF_Q_7.Q
+Info:    routing  1.37  1.90 Net csrs_logic0_interrupt_w[9] (45,2) -> (43,4)
+Info:                          Sink interrupts_LUT4_Z_7_D_LUT4_Z_1_D_PFUMX_Z_C0_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  2.13 Source interrupts_LUT4_Z_7_D_LUT4_Z_1_D_PFUMX_Z_C0_LUT4_Z.F
+Info:    routing  1.73  3.86 Net interrupts_LUT4_Z_7_D_LUT4_Z_1_D_PFUMX_Z_C0[4] (43,4) -> (43,5)
+Info:                          Sink interrupts_LUT4_Z_7_D_LUT4_Z_1_D_PFUMX_Z_BLUT_LUT4_Z.M
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.26  4.12 Source interrupts_LUT4_Z_7_D_LUT4_Z_1_D_PFUMX_Z_BLUT_LUT4_Z.OFX
+Info:    routing  1.49  5.61 Net interrupts_LUT4_Z_7_D_LUT4_Z_1_D[3] (43,5) -> (39,8)
+Info:                          Sink interrupts_LUT4_Z_7_D_LUT4_Z_1.D
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  5.84 Source interrupts_LUT4_Z_7_D_LUT4_Z_1.F
+Info:    routing  0.89  6.73 Net interrupts_LUT4_Z_7_D[3] (39,8) -> (39,8)
+Info:                          Sink interrupts_LUT4_Z_7.D
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  6.97 Source interrupts_LUT4_Z_7.F
+Info:    routing  7.20  14.17 Net interrupts[0]$TRELLIS_IO_OUT (39,8) -> (4,95)
+Info:                          Sink interrupts[0]$tr_io.I
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/unified-sinara-slow-control/work/builds/stm-gateware/stm_sys_board.v:26.20-26.30
+Info: 1.49 ns logic, 12.69 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$clk100$TRELLIS_IO_IN' -> 'posedge $glbnet$qspix10_clk$TRELLIS_IO_IN':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source spi_slave_read_data_wb_TRELLIS_FF_Q_11.Q
+Info:    routing  0.72  1.24 Net spi_slave_read_data_wb[5] (31,18) -> (31,17)
+Info:                          Sink multiregimpl20_TRELLIS_FF_Q_14.M
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/unified-sinara-slow-control/work/builds/stm-gateware/stm_sys_board.v:2030.13-2030.35
+Info:      setup  0.00  1.24 Source multiregimpl20_TRELLIS_FF_Q_14.M
+Info: 0.52 ns logic, 0.72 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$qspix10_clk$TRELLIS_IO_IN' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source spi_slave_sdo_TRELLIS_FF_Q.Q
+Info:    routing  9.43  9.95 Net qspix10_miso$TRELLIS_IO_OUT (28,12) -> (110,95)
+Info:                          Sink qspix10_miso$tr_io.I
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/unified-sinara-slow-control/work/builds/stm-gateware/stm_sys_board.v:2018.6-2018.19
+Info: 0.52 ns logic, 9.43 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$qspix10_clk$TRELLIS_IO_IN' -> 'posedge $glbnet$FD1P3BX_Q':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source spi_slave_sr_TRELLIS_FF_Q_6.Q
+Info:    routing  1.09  1.61 Net spi_slave_sr[4] (33,19) -> (32,23)
+Info:                          Sink spi_slave_di_TRELLIS_FF_Q_8.M
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/unified-sinara-slow-control/work/builds/stm-gateware/stm_sys_board.v:2021.13-2021.25
+Info:      setup  0.00  1.61 Source spi_slave_di_TRELLIS_FF_Q_8.M
+Info: 0.52 ns logic, 1.09 ns routing
+
+Info: Critical path report for cross-domain path 'posedge $glbnet$qspix10_clk$TRELLIS_IO_IN' -> 'posedge $glbnet$clk100$TRELLIS_IO_IN':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source spi_slave_read_data_done_TRELLIS_FF_Q.Q
+Info:    routing  0.75  1.28 Net spi_slave_read_data_done (27,19) -> (29,20)
+Info:                          Sink spi_slave_pulsesynchronizer0_toggle_o_r_LUT4_D_Z_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/unified-sinara-slow-control/work/builds/stm-gateware/stm_sys_board.v:2035.6-2035.30
+Info:      logic  0.24  1.52 Source spi_slave_pulsesynchronizer0_toggle_o_r_LUT4_D_Z_LUT4_Z.F
+Info:    routing  0.04  1.56 Net spi_slave_pulsesynchronizer0_toggle_o_r_LUT4_D_Z[4] (29,20) -> (29,20)
+Info:                          Sink wishbone_stb_TRELLIS_FF_Q_CE_LUT4_Z.D
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  1.79 Source wishbone_stb_TRELLIS_FF_Q_CE_LUT4_Z.F
+Info:    routing  0.74  2.53 Net wishbone_stb_TRELLIS_FF_Q_CE[1] (29,20) -> (31,21)
+Info:                          Sink wishbone_stb_TRELLIS_FF_Q_CE_LUT4_D.D
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/toolchains/gatemate/oss-cad-suite/lib/../share/yosys/lattice/cells_map_trellis.v:108.23-108.24
+Info:      logic  0.24  2.77 Source wishbone_stb_TRELLIS_FF_Q_CE_LUT4_D.F
+Info:    routing  0.65  3.42 Net wishbone_stb_TRELLIS_FF_Q_CE_LUT4_D_Z (31,21) -> (32,21)
+Info:                          Sink wishbone_adr_TRELLIS_FF_Q_7.CE
+Info:      setup  0.00  3.42 Source wishbone_adr_TRELLIS_FF_Q_7.CE
+Info: 1.23 ns logic, 2.18 ns routing
+
+Info: Critical path report for cross-domain path 'posedge clk_stm$TRELLIS_IO_IN' -> '<async>':
+Info:       type curr  total name
+Info:   clk-to-q  0.52  0.52 Source fsen_TRELLIS_FF_Q.Q
+Info:    routing  1.24  1.77 Net fsen$TRELLIS_IO_OUT (98,2) -> (105,0)
+Info:                          Sink fsen$tr_io.I
+Info:                          Defined in:
+Info:                               /srv/codex-hil-data/unified-sinara-slow-control/work/builds/stm-gateware/stm_sys_board.v:122.14-122.18
+Info: 0.52 ns logic, 1.24 ns routing
+
+Info: Max frequency for clock '$glbnet$qspix10_clk$TRELLIS_IO_IN': 270.05 MHz (PASS at 133.01 MHz)
+Info: Max frequency for clock             'clk_stm$TRELLIS_IO_IN': 894.45 MHz (PASS at 12.00 MHz)
+Info: Max frequency for clock      '$glbnet$clk100$TRELLIS_IO_IN': 100.30 MHz (PASS at 100.00 MHz)
+
+Info: Clock '$glbnet$FD1P3BX_Q' has no interior paths
+
+Info: Max delay <async>                                   -> <async>                                  : 8.33 ns
+Info: Max delay <async>                                   -> posedge $glbnet$clk100$TRELLIS_IO_IN     : 14.22 ns
+Info: Max delay <async>                                   -> posedge $glbnet$qspix10_clk$TRELLIS_IO_IN: 11.21 ns
+Info: Max delay posedge $glbnet$FD1P3BX_Q                 -> posedge $glbnet$clk100$TRELLIS_IO_IN     : 1.60 ns
+Info: Max delay posedge $glbnet$clk100$TRELLIS_IO_IN      -> <async>                                  : 14.17 ns
+Info: Max delay posedge $glbnet$clk100$TRELLIS_IO_IN      -> posedge $glbnet$qspix10_clk$TRELLIS_IO_IN: 1.24 ns
+Info: Max delay posedge $glbnet$qspix10_clk$TRELLIS_IO_IN -> <async>                                  : 9.95 ns
+Info: Max delay posedge $glbnet$qspix10_clk$TRELLIS_IO_IN -> posedge $glbnet$FD1P3BX_Q                : 1.61 ns
+Info: Max delay posedge $glbnet$qspix10_clk$TRELLIS_IO_IN -> posedge $glbnet$clk100$TRELLIS_IO_IN     : 3.42 ns
+Info: Max delay posedge clk_stm$TRELLIS_IO_IN             -> <async>                                  : 1.77 ns
+
+Info: Slack histogram:
+Info:  legend: * represents 29 endpoint(s)
+Info:          + represents [1,29) endpoint(s)
+Info: [    30,   4140) |*******************************************+
+Info: [  4140,   8250) |************************************************************ 
+Info: [  8250,  12360) |*******+
+Info: [ 12360,  16470) | 
+Info: [ 16470,  20580) | 
+Info: [ 20580,  24690) | 
+Info: [ 24690,  28800) | 
+Info: [ 28800,  32910) | 
+Info: [ 32910,  37020) | 
+Info: [ 37020,  41130) | 
+Info: [ 41130,  45240) | 
+Info: [ 45240,  49350) | 
+Info: [ 49350,  53460) | 
+Info: [ 53460,  57570) | 
+Info: [ 57570,  61680) | 
+Info: [ 61680,  65790) | 
+Info: [ 65790,  69900) | 
+Info: [ 69900,  74010) | 
+Info: [ 74010,  78120) | 
+Info: [ 78120,  82230) |+
+
+Info: Program finished normally.

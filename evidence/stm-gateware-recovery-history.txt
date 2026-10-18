@@ -1,0 +1,15 @@
+46f14f81d6a29c664f72d8c7373f4d346b43970d 2025-07-31T13:23:04+02:00 CS on all IO init
+8179feb8e3723d8fa1a83f1eb17cc5b881b4c4e0 2025-03-20T11:29:22+01:00 After first tests
+29dd60c53d80897a3041c07c28006a47f6535f90 2024-08-14T16:34:00+02:00 tpr init
+b84376286bf7971d7907b8945c3c677ba972fd61 2024-05-09T14:34:51+02:00 New pinout for SE IO after pin swapping
+820ca2cf0f51341b0720e23660734efb0d80b841 2024-05-09T14:34:51+02:00 Pinout changes to move spi clock inputs to clock capable pins
+d320bdf3f57629cc4c49dbcc721545cba38ab9bf 2024-05-09T14:34:51+02:00 Temporary code to use most IOs (and all potential clock inputs)
+6079e71e1ecd4981145f48faafe1a401f1c0c4f3 2024-05-09T14:34:51+02:00 Added MLVDS signals to all supported slots Direction of these signals in MLVDS transceivers is not yet supported
+6686a45e964420664990226990f125353cd5931a 2024-05-09T14:34:51+02:00 Increased number of slots to 8 to test pinout
+fcc6a84388e8bf090b42cb7d8a6dea1b5eafb505 2024-05-08T18:17:00+02:00 Update main.yml
+96f4c62fbbac0f22ce4fb48e3333330f4f01008f 2024-05-08T17:27:22+02:00 Update main.yml
+cb834047d3af7e06abfbc82b2197fb7f9c8bc79f 2024-05-08T17:11:36+02:00 Add github actions
+2ac13c4fc30881c1f185003a055b859ef203b846 2024-02-14T21:22:27+01:00 Updated constraints
+e72970acf6669d2f1d895f04fe6cd49629475370 2024-02-14T19:40:11+01:00 Updated pinout to v1.1
+439f6c79a0e6f97956fddf051432f39e696aa016 2023-03-23T16:45:47+01:00 Update misoc hash
+b0eb4f59830403068f2bd6dfcaf867b96cead7f2 2023-03-23T16:45:33+01:00 Update readme

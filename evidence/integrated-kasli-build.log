@@ -1,0 +1,1147 @@
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Oct 13 19:18:37 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source synth.tcl
+# read_verilog {/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v}
+# synth_design -top kasli_fabric -part xc7a100tfgg484-2 -mode out_of_context
+Command: synth_design -top kasli_fabric -part xc7a100tfgg484-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 71
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2033.312 ; gain = 414.672 ; free physical = 728 ; free virtual = 13203
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'kasli_fabric' [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6607]
+INFO: [Synth 8-6155] done synthesizing module 'kasli_fabric' (0#1) [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:2]
+WARNING: [Synth 8-6014] Unused sequential element fabric_done_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6047]
+WARNING: [Synth 8-6014] Unused sequential element fabric_shift_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6056]
+WARNING: [Synth 8-6014] Unused sequential element fabric_sck_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6065]
+WARNING: [Synth 8-6014] Unused sequential element fabric_latch_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6068]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller0_output_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6080]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller0_oe_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6084]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller0_interrupt_mask_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6088]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller0_spi_master_length_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6106]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller0_spi_master_cs_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6110]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller0_spi_master_cs_polarity_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6114]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller0_spi_master_div_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6118]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller0_spi_master_offline_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6122]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller0_spi_master_clk_polarity_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6126]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller0_spi_master_clk_phase_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6130]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller0_spi_master_lsb_first_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6134]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller0_spi_master_half_duplex_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6138]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller0_spi_master_end_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6142]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller1_output_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6146]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller1_oe_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6150]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller1_interrupt_mask_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6154]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller1_spi_master_length_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6172]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller1_spi_master_cs_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6176]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller1_spi_master_cs_polarity_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6180]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller1_spi_master_div_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6184]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller1_spi_master_offline_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6188]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller1_spi_master_clk_polarity_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6192]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller1_spi_master_clk_phase_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6196]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller1_spi_master_lsb_first_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6200]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller1_spi_master_half_duplex_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6204]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller1_spi_master_end_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6208]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller2_output_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6212]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller2_oe_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6216]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller2_interrupt_mask_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6220]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller2_spi_master_length_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6238]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller2_spi_master_cs_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6242]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller2_spi_master_cs_polarity_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6246]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller2_spi_master_div_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6250]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller2_spi_master_offline_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6254]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller2_spi_master_clk_polarity_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6258]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller2_spi_master_clk_phase_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6262]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller2_spi_master_lsb_first_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6266]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller2_spi_master_half_duplex_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6270]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller2_spi_master_end_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6274]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller3_output_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6278]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller3_oe_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6282]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller3_interrupt_mask_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6286]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller3_spi_master_length_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6304]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller3_spi_master_cs_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6308]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller3_spi_master_cs_polarity_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6312]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller3_spi_master_div_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6316]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller3_spi_master_offline_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6320]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller3_spi_master_clk_polarity_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6324]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller3_spi_master_clk_phase_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6328]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller3_spi_master_lsb_first_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6332]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller3_spi_master_half_duplex_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6336]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller3_spi_master_end_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6340]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller4_output_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6344]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller4_oe_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6348]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller4_interrupt_mask_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6352]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller4_spi_master_length_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6370]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller4_spi_master_cs_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6374]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller4_spi_master_cs_polarity_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6378]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller4_spi_master_div_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6382]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller4_spi_master_offline_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6386]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller4_spi_master_clk_polarity_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6390]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller4_spi_master_clk_phase_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6394]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller4_spi_master_lsb_first_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6398]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller4_spi_master_half_duplex_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6402]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller4_spi_master_end_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6406]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller5_output_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6410]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller5_oe_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6414]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller5_interrupt_mask_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6418]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller5_spi_master_length_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6436]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller5_spi_master_cs_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6440]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller5_spi_master_cs_polarity_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6444]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller5_spi_master_div_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6448]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller5_spi_master_offline_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6452]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller5_spi_master_clk_polarity_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6456]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller5_spi_master_clk_phase_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6460]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller5_spi_master_lsb_first_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6464]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller5_spi_master_half_duplex_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6468]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller5_spi_master_end_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6472]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller6_output_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6476]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller6_oe_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6480]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller6_interrupt_mask_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6484]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller6_spi_master_length_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6502]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller6_spi_master_cs_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6506]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller6_spi_master_cs_polarity_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6510]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller6_spi_master_div_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6514]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller6_spi_master_offline_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6518]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller6_spi_master_clk_polarity_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6522]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller6_spi_master_clk_phase_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6526]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller6_spi_master_lsb_first_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6530]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller6_spi_master_half_duplex_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6534]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller6_spi_master_end_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6538]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller7_output_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6542]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller7_oe_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6546]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller7_interrupt_mask_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6550]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller7_spi_master_length_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6568]
+WARNING: [Synth 8-6014] Unused sequential element slotcontroller7_spi_master_cs_re_reg was removed.  [/srv/codex-hil-data/unified-sinara-slow-control/work/integrated-stm/kasli-fabric.v:6572]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port bus_adr[10] in module kasli_fabric is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus_adr[9] in module kasli_fabric is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus_adr[8] in module kasli_fabric is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2166.281 ; gain = 547.641 ; free physical = 551 ; free virtual = 13030
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2172.219 ; gain = 553.578 ; free physical = 574 ; free virtual = 13053
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-2
+INFO: [Device 21-403] Loading part xc7a100tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2172.219 ; gain = 553.578 ; free physical = 574 ; free virtual = 13053
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'slotcontroller0_state_reg' in module 'kasli_fabric'
+INFO: [Synth 8-802] inferred FSM for state register 'slotcontroller1_state_reg' in module 'kasli_fabric'
+INFO: [Synth 8-802] inferred FSM for state register 'slotcontroller2_state_reg' in module 'kasli_fabric'
+INFO: [Synth 8-802] inferred FSM for state register 'slotcontroller3_state_reg' in module 'kasli_fabric'
+INFO: [Synth 8-802] inferred FSM for state register 'slotcontroller4_state_reg' in module 'kasli_fabric'
+INFO: [Synth 8-802] inferred FSM for state register 'slotcontroller5_state_reg' in module 'kasli_fabric'
+INFO: [Synth 8-802] inferred FSM for state register 'slotcontroller6_state_reg' in module 'kasli_fabric'
+INFO: [Synth 8-802] inferred FSM for state register 'slotcontroller7_state_reg' in module 'kasli_fabric'
+INFO: [Synth 8-802] inferred FSM for state register 'slowcontrolfabric_state_reg' in module 'kasli_fabric'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+*
+                 iSTATE4 |                              001 |                              001
+                 iSTATE3 |                              010 |                              010
+                 iSTATE0 |                              011 |                              011
+                 iSTATE1 |                              100 |                              100
+                 iSTATE2 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'slotcontroller1_state_reg' using encoding 'sequential' in module 'kasli_fabric'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+*
+                 iSTATE4 |                              001 |                              001
+                 iSTATE3 |                              010 |                              010
+                 iSTATE0 |                              011 |                              011
+                 iSTATE1 |                              100 |                              100
+                 iSTATE2 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'slotcontroller2_state_reg' using encoding 'sequential' in module 'kasli_fabric'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+*
+                 iSTATE4 |                              001 |                              001
+                 iSTATE3 |                              010 |                              010
+                 iSTATE0 |                              011 |                              011
+                 iSTATE1 |                              100 |                              100
+                 iSTATE2 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'slotcontroller3_state_reg' using encoding 'sequential' in module 'kasli_fabric'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+*
+                 iSTATE4 |                              001 |                              001
+                 iSTATE3 |                              010 |                              010
+                 iSTATE0 |                              011 |                              011
+                 iSTATE1 |                              100 |                              100
+                 iSTATE2 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'slotcontroller4_state_reg' using encoding 'sequential' in module 'kasli_fabric'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+*
+                 iSTATE4 |                              001 |                              001
+                 iSTATE3 |                              010 |                              010
+                 iSTATE0 |                              011 |                              011
+                 iSTATE1 |                              100 |                              100
+                 iSTATE2 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'slotcontroller5_state_reg' using encoding 'sequential' in module 'kasli_fabric'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+*
+                 iSTATE4 |                              001 |                              001
+                 iSTATE3 |                              010 |                              010
+                 iSTATE0 |                              011 |                              011
+                 iSTATE1 |                              100 |                              100
+                 iSTATE2 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'slotcontroller6_state_reg' using encoding 'sequential' in module 'kasli_fabric'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+*
+                 iSTATE4 |                              001 |                              001
+                 iSTATE3 |                              010 |                              010
+                 iSTATE0 |                              011 |                              011
+                 iSTATE1 |                              100 |                              100
+                 iSTATE2 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'slotcontroller7_state_reg' using encoding 'sequential' in module 'kasli_fabric'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+*
+                 iSTATE4 |                              001 |                              001
+                 iSTATE3 |                              010 |                              010
+                 iSTATE0 |                              011 |                              011
+                 iSTATE1 |                              100 |                              100
+                 iSTATE2 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'slotcontroller0_state_reg' using encoding 'sequential' in module 'kasli_fabric'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                              001 |                              001
+*
+                 iSTATE2 |                              010 |                              110
+                  iSTATE |                              100 |                              000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'slowcontrolfabric_state_reg' using encoding 'one-hot' in module 'kasli_fabric'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2191.203 ; gain = 572.562 ; free physical = 572 ; free virtual = 13071
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    7 Bit       Adders := 8     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 8     
++---XORs : 
+	   2 Input     16 Bit         XORs := 8     
+	   2 Input      1 Bit         XORs := 136   
++---Registers : 
+	               48 Bit    Registers := 4     
+	               16 Bit    Registers := 82    
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 8     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 16    
+	                2 Bit    Registers := 128   
+	                1 Bit    Registers := 123   
++---Muxes : 
+	   2 Input   48 Bit        Muxes := 2     
+	   3 Input   48 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 104   
+	   2 Input    8 Bit        Muxes := 8     
+	   2 Input    7 Bit        Muxes := 8     
+	   2 Input    6 Bit        Muxes := 1     
+	   3 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 16    
+	   6 Input    3 Bit        Muxes := 8     
+	   2 Input    3 Bit        Muxes := 32    
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 447   
+	   6 Input    1 Bit        Muxes := 88    
+	   3 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port bus_adr[10] in module kasli_fabric is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus_adr[9] in module kasli_fabric is either unconnected or has no load
+WARNING: [Synth 8-7129] Port bus_adr[8] in module kasli_fabric is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_slowcontrolfabric_state_reg[0]) is unused and will be removed from module kasli_fabric.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 2367.617 ; gain = 748.977 ; free physical = 375 ; free virtual = 12877
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 2373.555 ; gain = 754.914 ; free physical = 536 ; free virtual = 13038
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2381.562 ; gain = 762.922 ; free physical = 528 ; free virtual = 13030
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 2485.375 ; gain = 866.734 ; free physical = 490 ; free virtual = 12992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:24 . Memory (MB): peak = 2485.375 ; gain = 866.734 ; free physical = 482 ; free virtual = 12984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 2485.375 ; gain = 866.734 ; free physical = 482 ; free virtual = 12984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 2485.375 ; gain = 866.734 ; free physical = 482 ; free virtual = 12984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 2485.375 ; gain = 866.734 ; free physical = 482 ; free virtual = 12984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 2485.375 ; gain = 866.734 ; free physical = 482 ; free virtual = 12984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |     8|
+|2     |LUT2  |   298|
+|3     |LUT3  |   247|
+|4     |LUT4  |   449|
+|5     |LUT5  |   734|
+|6     |LUT6  |   583|
+|7     |MUXF7 |    16|
+|8     |FDRE  |  2101|
+|9     |FDSE  |    24|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  4460|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 2485.375 ; gain = 866.734 ; free physical = 482 ; free virtual = 12984
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 123 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 2485.375 ; gain = 866.734 ; free physical = 482 ; free virtual = 12984
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:25 . Memory (MB): peak = 2485.383 ; gain = 866.734 ; free physical = 484 ; free virtual = 12986
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2503.188 ; gain = 0.000 ; free physical = 563 ; free virtual = 13065
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'kasli_fabric' is not ideal for floorplanning, since the cellview 'kasli_fabric' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2627.793 ; gain = 0.000 ; free physical = 462 ; free virtual = 12979
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: e3ce5d1a
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:28 . Memory (MB): peak = 2627.828 ; gain = 1009.188 ; free physical = 462 ; free virtual = 12979
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2048.765; main = 2048.765; forked = 343.428
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3360.438; main = 2627.797; forked = 986.879
+# create_clock -name sys -period 16.000 [get_ports sys_clk]
+# opt_design
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.31 . Memory (MB): peak = 2691.824 ; gain = 63.996 ; free physical = 479 ; free virtual = 12997
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 34a9dc08e
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2691.824 ; gain = 0.000 ; free physical = 514 ; free virtual = 13056
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 34a9dc08e
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2864.824 ; gain = 0.000 ; free physical = 353 ; free virtual = 12895
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 34a9dc08e
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2864.824 ; gain = 0.000 ; free physical = 358 ; free virtual = 12900
+Phase 1 Initialization | Checksum: 34a9dc08e
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2864.824 ; gain = 0.000 ; free physical = 358 ; free virtual = 12900
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 34a9dc08e
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2864.824 ; gain = 0.000 ; free physical = 358 ; free virtual = 12900
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 34a9dc08e
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2864.824 ; gain = 0.000 ; free physical = 358 ; free virtual = 12900
+Phase 2 Timer Update And Timing Data Collection | Checksum: 34a9dc08e
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2864.824 ; gain = 0.000 ; free physical = 358 ; free virtual = 12900
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 8 inverters resulting in an inversion of 144 pins
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 303dcf324
+
+Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2864.824 ; gain = 0.000 ; free physical = 358 ; free virtual = 12900
+Retarget | Checksum: 303dcf324
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 8 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 303dcf324
+
+Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2864.824 ; gain = 0.000 ; free physical = 358 ; free virtual = 12900
+Constant propagation | Checksum: 303dcf324
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2864.824 ; gain = 0.000 ; free physical = 358 ; free virtual = 12900
+Phase 5 Sweep | Checksum: 303dcf324
+
+Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2864.824 ; gain = 0.000 ; free physical = 358 ; free virtual = 12900
+Sweep | Checksum: 303dcf324
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 303dcf324
+
+Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2896.840 ; gain = 32.016 ; free physical = 358 ; free virtual = 12900
+BUFG optimization | Checksum: 303dcf324
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 303dcf324
+
+Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2896.840 ; gain = 32.016 ; free physical = 358 ; free virtual = 12901
+Shift Register Optimization | Checksum: 303dcf324
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 303dcf324
+
+Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2896.840 ; gain = 32.016 ; free physical = 358 ; free virtual = 12901
+Post Processing Netlist | Checksum: 303dcf324
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 303dcf324
+
+Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2896.840 ; gain = 32.016 ; free physical = 358 ; free virtual = 12901
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2896.840 ; gain = 0.000 ; free physical = 358 ; free virtual = 12901
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 303dcf324
+
+Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2896.840 ; gain = 32.016 ; free physical = 358 ; free virtual = 12901
+Phase 9 Finalization | Checksum: 303dcf324
+
+Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2896.840 ; gain = 32.016 ; free physical = 358 ; free virtual = 12901
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               8  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 303dcf324
+
+Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2896.840 ; gain = 32.016 ; free physical = 358 ; free virtual = 12901
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 303dcf324
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2896.840 ; gain = 0.000 ; free physical = 358 ; free virtual = 12901
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 303dcf324
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2896.840 ; gain = 0.000 ; free physical = 358 ; free virtual = 12901
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2896.840 ; gain = 0.000 ; free physical = 358 ; free virtual = 12901
+INFO: [Common 17-83] Releasing license: Implementation
+21 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2896.840 ; gain = 269.012 ; free physical = 358 ; free virtual = 12901
+# place_design
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 6 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2896.840 ; gain = 0.000 ; free physical = 361 ; free virtual = 12905
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 28c9300a7
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2896.840 ; gain = 0.000 ; free physical = 361 ; free virtual = 12905
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2896.840 ; gain = 0.000 ; free physical = 361 ; free virtual = 12905
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 206938f02
+
+Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2896.840 ; gain = 0.000 ; free physical = 372 ; free virtual = 12917
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 2efa4ce16
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.91 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 364 ; free virtual = 12911
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 2efa4ce16
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.92 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 364 ; free virtual = 12911
+Phase 1 Placer Initialization | Checksum: 2efa4ce16
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.93 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 363 ; free virtual = 12910
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 2d16cd531
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 369 ; free virtual = 12916
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 2ffc30365
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 369 ; free virtual = 12916
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 2ffc30365
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 369 ; free virtual = 12916
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 23e04aa9e
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 363 ; free virtual = 12911
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 23e04aa9e
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 362 ; free virtual = 12911
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 88 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 41 nets or LUTs. Breaked 0 LUT, combined 41 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 362 ; free virtual = 12914
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |             41  |                    41  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |             41  |                    41  |           0  |           4  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 2af43aaeb
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 362 ; free virtual = 12915
+Phase 2.5 Global Place Phase2 | Checksum: 2fe62fb25
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 362 ; free virtual = 12915
+Phase 2 Global Placement | Checksum: 2fe62fb25
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 362 ; free virtual = 12915
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 303d6b8f0
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 365 ; free virtual = 12918
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 32dffc4cf
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 366 ; free virtual = 12919
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 311ec19f9
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 366 ; free virtual = 12919
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 29a5f902b
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 366 ; free virtual = 12919
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 2136cb593
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 370 ; free virtual = 12924
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 306e9c285
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 370 ; free virtual = 12924
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 28f574857
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 370 ; free virtual = 12924
+Phase 3 Detail Placement | Checksum: 28f574857
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 370 ; free virtual = 12924
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 270d90c2c
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 6 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=10.264 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1403f6b32
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 377 ; free virtual = 12932
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 26e1d4658
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 377 ; free virtual = 12932
+Phase 4.1.1.1 BUFG Insertion | Checksum: 270d90c2c
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 377 ; free virtual = 12932
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=10.264. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 2b4813b6c
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 377 ; free virtual = 12932
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 377 ; free virtual = 12932
+Phase 4.1 Post Commit Optimization | Checksum: 2b4813b6c
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 377 ; free virtual = 12932
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 2b4813b6c
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 377 ; free virtual = 12932
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 2b4813b6c
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 377 ; free virtual = 12932
+Phase 4.3 Placer Reporting | Checksum: 2b4813b6c
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 377 ; free virtual = 12932
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 377 ; free virtual = 12932
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 377 ; free virtual = 12932
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 338370703
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 377 ; free virtual = 12932
+Ending Placer Task | Checksum: 27a891f72
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 377 ; free virtual = 12932
+29 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2917.867 ; gain = 21.027 ; free physical = 377 ; free virtual = 12932
+# route_design
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 6 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: f61133e1 ConstDB: 0 ShapeSum: d2a58bfb RouteDB: b1d25f96
+WARNING: [Route 35-197] Clock port "sys_clk" does not have an associated HD.CLK_SRC. Without this constraint, timing analysis may not be accurate and upstream checks cannot be done to ensure correct clock placement.
+WARNING: [Route 35-198] Port "sys_rst" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "sys_rst". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_dat_w[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_dat_w[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_dat_w[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_dat_w[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_dat_w[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_dat_w[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_dat_w[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_dat_w[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_adr[2]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_adr[2]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_adr[3]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_adr[3]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_adr[1]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_adr[1]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_adr[0]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_adr[0]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_adr[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_adr[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_adr[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_adr[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_adr[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_adr[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_adr[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_adr[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_adr[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_adr[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_adr[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_adr[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_adr[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_adr[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_adr[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_adr[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_1_i_3" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_1_i_3". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_2_i_3" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_2_i_3". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_dat_w[7]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_dat_w[7]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_dat_w[6]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_dat_w[6]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_dat_w[5]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_dat_w[5]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_dat_w[4]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_dat_w[4]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_1_i_4" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_1_i_4". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_2_i_4" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_2_i_4". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_1_i_7" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_1_i_7". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_1_i_2" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_1_i_2". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_2_i_2" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_2_i_2". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_0_i_3" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_0_i_3". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_3_i_3" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_3_i_3". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_1_i_1" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_1_i_1". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_2_i_1" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_2_i_1". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_3_i_4" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_3_i_4". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_0_i_2" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_0_i_2". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_0_i_4" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_0_i_4". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_3_i_1" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_3_i_1". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_1_i" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_1_i". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_0_i_1" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_0_i_1". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_dat_w[12]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_dat_w[12]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_dat_w[15]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_dat_w[15]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_2_i" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_2_i". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_3_i" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_3_i". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_3_i_2" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_3_i_2". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_0_i" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_0_i". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_1_i_6" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_1_i_6". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_2_i_6" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_2_i_6". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_0_i_5" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_0_i_5". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_dat_w[8]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_dat_w[8]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_0_i_7" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_0_i_7". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_2_i_7" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_2_i_7". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_2_i_5" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_2_i_5". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_dat_w[11]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_dat_w[11]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_dat_w[14]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_dat_w[14]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_dat_w[9]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_dat_w[9]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_dat_w[13]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_dat_w[13]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_dat_w[10]" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_dat_w[10]". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_0_i_6" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_0_i_6". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_1_i_5" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_1_i_5". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_12_i_3" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_12_i_3". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_13_i_2" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_13_i_2". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_12_i_5" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_12_i_5". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_9_i_6" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_9_i_6". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_12_i_7" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_12_i_7". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_3_i_6" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_3_i_6". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_3_i_7" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_3_i_7". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_3_i_5" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_3_i_5". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_4_i_1" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_4_i_1". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_4_i_2" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_4_i_2". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_4_i" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_4_i". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_15_i_3" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_15_i_3". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_15_i_1" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_15_i_1". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_15_i" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_15_i". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_15_i_4" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_15_i_4". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_13_i_1" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_13_i_1". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_12_i_1" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_12_i_1". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_5_i_6" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_5_i_6". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_4_i_3" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_4_i_3". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_14_i_7" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_14_i_7". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_11_i_6" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_11_i_6". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_8_i" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_8_i". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_14_i" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_14_i". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_12_i_4" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_12_i_4". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_11_i" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_11_i". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_12_i" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_12_i". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_12_i_2" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_12_i_2". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_14_i_6" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_14_i_6". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_14_i_2" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_14_i_2". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_9_i_4" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_9_i_4". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_9_i_2" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_9_i_2". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_14_i_3" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_14_i_3". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_11_i_7" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_11_i_7". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_13_i_6" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_13_i_6". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_11_i_4" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_11_i_4". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_14_i_4" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_14_i_4". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_13_i_4" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_13_i_4". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_14_i_1" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_14_i_1". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "bus_we" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "bus_we". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_5_i_4" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_5_i_4". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_15_i_6" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_15_i_6". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "line_11_i_3" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "line_11_i_3". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+INFO: [Common 17-14] Message 'Route 35-198' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Constraints 18-8777] Unable to split tiles. All required files are not available.
+Post Restoration Checksum: NetGraph: b81abaeb | NumContArr: 33ef97f3 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2715c4818
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 484 ; free virtual = 13024
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2715c4818
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 484 ; free virtual = 13024
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2715c4818
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:22 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 484 ; free virtual = 13024
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 1b69227bc
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 483 ; free virtual = 13024
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=10.512 | TNS=0.000  | WHS=0.089  | THS=0.000  |
+
+
+Phase 2.4 Soft Constraint Pins - Fast Budgeting
+Phase 2.4 Soft Constraint Pins - Fast Budgeting | Checksum: 13cd10247
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 483 ; free virtual = 13024
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 3379
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 3379
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 13cd10247
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 483 ; free virtual = 13024
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 13cd10247
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 483 ; free virtual = 13024
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 3196cab03
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 483 ; free virtual = 13024
+Phase 4 Initial Routing | Checksum: 3196cab03
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 483 ; free virtual = 13024
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 211
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=8.934  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 2a849d030
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 479 ; free virtual = 13020
+Phase 5 Rip-up And Reroute | Checksum: 2a849d030
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 479 ; free virtual = 13020
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+Phase 6.1 Delay CleanUp | Checksum: 2a849d030
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 479 ; free virtual = 13020
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 2a849d030
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 479 ; free virtual = 13020
+Phase 6 Delay and Skew Optimization | Checksum: 2a849d030
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 479 ; free virtual = 13020
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=8.934  | TNS=0.000  | WHS=0.109  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 2ad6c3f64
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 479 ; free virtual = 13020
+Phase 7 Post Hold Fix | Checksum: 2ad6c3f64
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 479 ; free virtual = 13020
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.447143 %
+  Global Horizontal Routing Utilization  = 0.56401 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 2ad6c3f64
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 479 ; free virtual = 13020
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 2ad6c3f64
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:24 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 479 ; free virtual = 13020
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 287d8229a
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 479 ; free virtual = 13020
+
+Phase 11 Post Process Routing
+Phase 11 Post Process Routing | Checksum: 287d8229a
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 479 ; free virtual = 13020
+
+Phase 12 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=8.934  | TNS=0.000  | WHS=0.109  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 12 Post Router Timing | Checksum: 287d8229a
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 479 ; free virtual = 13020
+Total Elapsed time in route_design: 23.93 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: 15df71fd9
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 479 ; free virtual = 13020
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 15df71fd9
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 479 ; free virtual = 13020
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+10 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:24 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 478 ; free virtual = 13020
+# report_utilization -file utilization.rpt
+# report_timing_summary -file timing.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 6 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "sys_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+# report_drc -file drc.rpt
+Command: report_drc -file drc.rpt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/srv/codex-hil-data/toolchains/amd/Xilinx/2025.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /srv/codex-hil-data/unified-sinara-slow-control/work/builds/kasli-fabric/drc.rpt.
+report_drc completed successfully
+# write_checkpoint -force routed.dcp
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 446 ; free virtual = 12989
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 446 ; free virtual = 12989
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 445 ; free virtual = 12989
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 445 ; free virtual = 12991
+Wrote PlaceStorage: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 445 ; free virtual = 12993
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 445 ; free virtual = 12993
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 445 ; free virtual = 12993
+Write Physdb Complete: Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2917.867 ; gain = 0.000 ; free physical = 445 ; free virtual = 12993
+INFO: [Common 17-1381] The checkpoint '/srv/codex-hil-data/unified-sinara-slow-control/work/builds/kasli-fabric/routed.dcp' has been generated.
+# set setup [get_timing_paths -delay_type max -max_paths 1]
+# set hold [get_timing_paths -delay_type min -max_paths 1]
+# set sf [open result.txt w]
+# puts $sf [get_property SLACK $setup]
+# puts $sf [get_property SLACK $hold]
+# close $sf
+# if {[get_property SLACK $setup] < 0 || [get_property SLACK $hold] < 0} {error "timing failed"}
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 13 19:19:50 2026...
