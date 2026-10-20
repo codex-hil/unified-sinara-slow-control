@@ -318,3 +318,22 @@ Dalszy krok: sprawdzona mapa padów obu kontrolerów, natywna integracja BSP,
 a następnie loopback i dwie identycznie obsadzone kasety. Plan porównania
 zawiera docs/DUAL_CRATE_HIL.md. Sampler nadal wymaga rozwiązania dwóch
 magistral ADC/PGIA; pojedynczy nowy master na slot nie pokrywa obu naraz.
+
+## Wznowienie — 2026-10-20
+
+CI commita081c2e7 zakończyło się PASS (run39120901678). Dysk roboczy
+ma ponownie około19GiB wolnego miejsca. Zachowano obce, niezatwierdzone
+zmiany dokumentacji Sampler; nie przejęto pracy innego wątku.
+
+Dodano regresję rzeczywistego mostka QSPI na minimalnym wspieranym
+stosunku zegarów16:1: Wishbone ERR oraz brak odpowiedzi/timeout muszą
+odrzucić resztę burstu pod tym samym CS. Jawne skasowanie błędu i nowy
+CS pozwalają rozpocząć nową transakcję. Przerwane niepełne słowo nie
+powoduje zapisu. Test nie używa sprzętu ani modelu zastępującego mostek.
+
+HIL nadal NOT_RUN: brak potwierdzonego podłączenia i zweryfikowanych
+profili fizycznych. Żadnych resetów, programowania ani połączeń z
+urządzeniami laboratoryjnymi. Natywny ESPHome/BSP pozostaje niegotowy;
+nie jest to zakończone MVP sprzętowe. Następny etap programowy to
+integracja natywnego runtime i BSP; kolejne etapy sprzętowe wymagają
+uzgodnionej konfiguracji i własności urządzeń.

@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-20",
+  "prior_commit": "081c2e794c97a061286c860f90443a59af56ea1b",
+  "prior_ci": {
+    "run": 39120901678,
+    "conclusion": "success"
+  },
+  "hardware_tested": false,
+  "hardware_actions": [],
+  "hil_status": "NOT_RUN",
+  "hil_blockers": [
+    "No confirmed hardware attachment and ownership for this run",
+    "Physical controller pad profiles still unreviewed"
+  ],
+  "native_runtime_status": "ESPHome BSP/runtime integration remains incomplete",
+  "offline_work": "Actual QSPI RTL fault, partial-write and recovery regression",
+  "validation": {
+    "python_tests": 75,
+    "full_offline_suite": "PASS",
+    "report": "evidence/test-results.json"
+  }
+}

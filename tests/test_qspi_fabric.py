@@ -51,3 +51,56 @@ class QSPITests(unittest.TestCase):
             self.assertEqual((yield bridge.error),1)
             self.assertEqual((yield fabric.spi[0].tx_level),2)
         run_simulation(d,bench())
+
+    def test_fault_discards_burst_and_new_cs_recovers(self):
+        # A failed write is ambiguous: discard remaining words in that CS,
+        # do not replay it, and permit a new transaction after explicit clear.
+        from migen import Signal
+        for fault_mode,expected_error in [(0,3),(2,2)]:
+            with self.subTest(fault_mode=fault_mode):
+                d=Module();d.submodules.bridge=b=QSPIWishbone(timeout_cycles=16)
+                mode=Signal(2,reset=fault_mode)
+                d.comb += [b.bus.ack.eq(b.bus.cyc & (mode==1)),
+                           b.bus.err.eq(b.bus.cyc & (mode==2))]
+                issued=[]
+                def monitor():
+                    previous=False
+                    while True:
+                        pending=(yield b.bus.cyc)
+                        if pending and not previous:
+                            issued.append(((yield b.bus.adr),(yield b.bus.dat_w)))
+                        previous=pending
+                        yield
+                from migen.sim import passive
+                def bench():
+                    def wait(n=8):
+                        for _ in range(n):yield
+                    def nibble(value):
+                        yield b.sck.eq(0);yield b.dq_i.eq(value);yield from wait()
+                        yield b.sck.eq(1);yield from wait()
+                    def word(value):
+                        for shift in range(28,-1,-4):yield from nibble((value>>shift)&15)
+                    def begin():
+                        yield b.sck.eq(0);yield b.cs_n.eq(0);yield from wait()
+                        yield from word(0x02000040)
+                    def end():
+                        yield b.cs_n.eq(1);yield from wait()
+                        self.assertEqual((yield b.dq_oe),0)
+                    yield from wait()
+                    yield from begin()
+                    yield from word(0x12345678)
+                    yield from word(0xdeadbeef)
+                    yield from end()
+                    self.assertEqual((yield b.error),expected_error)
+                    self.assertEqual(issued,[(0x10,0x12345678)])
+                    yield mode.eq(1);yield b.clear_error.eq(1);yield
+                    yield b.clear_error.eq(0);yield from wait()
+                    self.assertEqual((yield b.error),0)
+                    # A partial word is never submitted to Wishbone.
+                    yield from begin();yield from nibble(0xa);yield from nibble(0xb)
+                    yield from end()
+                    self.assertEqual(len(issued),1)
+                    yield from begin();yield from word(0xa5a55a5a);yield from end()
+                    self.assertEqual(issued,[(0x10,0x12345678),(0x10,0xa5a55a5a)])
+                    self.assertEqual((yield b.error),0)
+                run_simulation(d,[bench(),passive(monitor)()])

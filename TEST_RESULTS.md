@@ -300,3 +300,14 @@ reference identity i cross-language wire PASS. Rerun fixture ESPHome
 wykrył losowe opóźnienie pierwszego pollingu przy obciążeniu syntezą;
 fixture wymusza teraz deterministyczny pierwszy odczyt ośmiu komponentów.
 Wyjaśnienie: evidence/scf5-cosim-rerun-note.txt.
+
+## Regresja QSPI — 2026-10-20
+
+`test_fault_discards_burst_and_new_cs_recovers` w rzeczywistej symulacji
+Migen sprawdza ERR i timeout Wishbone, odrzucenie kolejnego słowa w tej
+samej ramce, brak zapisu niepełnego słowa i odzyskanie po clear/new CS.
+SCK ma osiem cykli sys na półokres (16:1). Bez zmian RTL, bez HIL.
+Pełny wynik ponownego przebiegu: evidence/test-results.json.
+
+Pełny przebieg wznowienia:75 testów Pythona PASS, testy obu bibliotek Rust,
+identity źródeł i test protokołu Python–Rust PASS.
